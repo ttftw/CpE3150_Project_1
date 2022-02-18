@@ -1,0 +1,209 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+# Date created = 13:35:44  March 24, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		WIMPAVR_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY AVR_TEST
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:35:44  MARCH 24, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name BDF_FILE Register.bdf
+set_global_assignment -name BDF_FILE WMIPAVR.bdf
+set_global_assignment -name BDF_FILE Register_File.bdf
+set_global_assignment -name BDF_FILE 16_1_MUX.bdf
+set_global_assignment -name BDF_FILE 32_1_MUX.bdf
+set_global_assignment -name BDF_FILE WIMPAVR.bdf
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_G26 -to CLOCK
+set_global_assignment -name BDF_FILE Full_Adder.bdf
+set_global_assignment -name BDF_FILE 8_B_Ripple_Adder.bdf
+set_global_assignment -name BDF_FILE ADD_EN.bdf
+set_global_assignment -name BDF_FILE ALU.bdf
+set_global_assignment -name BDF_FILE IR_decoder.bdf
+set_global_assignment -name BDF_FILE LOGIC_EN.bdf
+set_global_assignment -name BDF_FILE SWAP_EN.bdf
+set_global_assignment -name BDF_FILE IR_encoder.bdf
+set_global_assignment -name BDF_FILE AVR_TEST.bdf
+set_global_assignment -name BDF_FILE PC_BLOCK.bdf
+set_global_assignment -name BDF_FILE DATA_LOAD_MUX.bdf
+set_location_assignment PIN_W19 -to BranchState
+set_location_assignment PIN_AC11 -to CE
+set_location_assignment PIN_AA13 -to D0
+set_location_assignment PIN_AC14 -to D1
+set_location_assignment PIN_AD15 -to D2
+set_location_assignment PIN_AE15 -to D3
+set_location_assignment PIN_AF13 -to D4
+set_location_assignment PIN_AE13 -to D5
+set_location_assignment PIN_AE12 -to D6
+set_location_assignment PIN_AD12 -to D7
+set_location_assignment PIN_P4 -to DESG1
+set_location_assignment PIN_P3 -to DESG2
+set_location_assignment PIN_M2 -to DESG3
+set_location_assignment PIN_M3 -to DESG4
+set_location_assignment PIN_M5 -to DESG5
+set_location_assignment PIN_M4 -to DESG6
+set_location_assignment PIN_L3 -to DESG7
+set_location_assignment PIN_L2 -to DESG8
+set_location_assignment PIN_L9 -to DESG9
+set_location_assignment PIN_L6 -to DESG10
+set_location_assignment PIN_L7 -to DESG11
+set_location_assignment PIN_P9 -to DESG12
+set_location_assignment PIN_U4 -to Display_SW
+set_location_assignment PIN_R2 -to DSEG0
+set_location_assignment PIN_N9 -to DSEG13
+set_location_assignment PIN_AF22 -to EXECUTE
+set_location_assignment PIN_AD8 -to IR0
+set_location_assignment PIN_AE6 -to IR1
+set_location_assignment PIN_AF6 -to IR2
+set_location_assignment PIN_AA9 -to IR3
+set_location_assignment PIN_AA10 -to IR4
+set_location_assignment PIN_AB10 -to IR5
+set_location_assignment PIN_AA11 -to IR6
+set_location_assignment PIN_Y11 -to IR7
+set_location_assignment PIN_AE7 -to IR8
+set_location_assignment PIN_AF7 -to IR9
+set_location_assignment PIN_AE8 -to IR10
+set_location_assignment PIN_AF8 -to IR11
+set_location_assignment PIN_W11 -to IR12
+set_location_assignment PIN_W12 -to IR13
+set_location_assignment PIN_AC9 -to IR14
+set_location_assignment PIN_AC10 -to IR15
+set_location_assignment PIN_AE9 -to LB
+set_location_assignment PIN_AD10 -to NOE
+set_location_assignment PIN_AF10 -to Q0_0
+set_location_assignment PIN_AB12 -to Q0_1
+set_location_assignment PIN_AC12 -to Q0_2
+set_location_assignment PIN_AD11 -to Q0_3
+set_location_assignment PIN_AE11 -to Q0_4
+set_location_assignment PIN_V14 -to Q0_5
+set_location_assignment PIN_V13 -to Q0_6
+set_location_assignment PIN_V20 -to Q1_0
+set_location_assignment PIN_V21 -to Q1_1
+set_location_assignment PIN_W21 -to Q1_2
+set_location_assignment PIN_Y22 -to Q1_3
+set_location_assignment PIN_AA24 -to Q1_4
+set_location_assignment PIN_AA23 -to Q1_5
+set_location_assignment PIN_AB24 -to Q1_6
+set_location_assignment PIN_AB23 -to Q2_0
+set_location_assignment PIN_V22 -to Q2_1
+set_location_assignment PIN_AC25 -to Q2_2
+set_location_assignment PIN_AC26 -to Q2_3
+set_location_assignment PIN_AB26 -to Q2_4
+set_location_assignment PIN_AB25 -to Q2_5
+set_location_assignment PIN_Y24 -to Q2_6
+set_location_assignment PIN_Y23 -to Q3_0
+set_location_assignment PIN_AA25 -to Q3_1
+set_location_assignment PIN_AA26 -to Q3_2
+set_location_assignment PIN_Y26 -to Q3_3
+set_location_assignment PIN_Y25 -to Q3_4
+set_location_assignment PIN_U22 -to Q3_5
+set_location_assignment PIN_W24 -to Q3_6
+set_location_assignment PIN_U9 -to RSEG0
+set_location_assignment PIN_U1 -to RSEG1
+set_location_assignment PIN_U2 -to RSEG2
+set_location_assignment PIN_T4 -to RSEG3
+set_location_assignment PIN_R7 -to RSEG4
+set_location_assignment PIN_R6 -to RSEG5
+set_location_assignment PIN_T3 -to RSEG6
+set_location_assignment PIN_T2 -to RSEG7
+set_location_assignment PIN_P6 -to RSEG8
+set_location_assignment PIN_P7 -to RSEG9
+set_location_assignment PIN_T9 -to RSEG10
+set_location_assignment PIN_R5 -to RSEG11
+set_location_assignment PIN_R4 -to RSEG12
+set_location_assignment PIN_R3 -to RSEG13
+set_location_assignment PIN_AE4 -to SRAM0
+set_location_assignment PIN_AF4 -to SRAM1
+set_location_assignment PIN_AC5 -to SRAM2
+set_location_assignment PIN_AC6 -to SRAM3
+set_location_assignment PIN_AD4 -to SRAM4
+set_location_assignment PIN_AD5 -to SRAM5
+set_location_assignment PIN_AE5 -to SRAM6
+set_location_assignment PIN_AF5 -to SRAM7
+set_location_assignment PIN_AD6 -to SRAM8
+set_location_assignment PIN_AD7 -to SRAM9
+set_location_assignment PIN_V10 -to SRAM10
+set_location_assignment PIN_V9 -to SRAM11
+set_location_assignment PIN_AC7 -to SRAM12
+set_location_assignment PIN_W8 -to SRAM13
+set_location_assignment PIN_W10 -to SRAM14
+set_location_assignment PIN_Y10 -to SRAM15
+set_location_assignment PIN_AB8 -to SRAM16
+set_location_assignment PIN_AC8 -to SRAM17
+set_location_assignment PIN_N25 -to SW0
+set_location_assignment PIN_N26 -to SW1
+set_location_assignment PIN_P25 -to SW2
+set_location_assignment PIN_AE14 -to SW3
+set_location_assignment PIN_AF14 -to SW4
+set_location_assignment PIN_AD13 -to SW5
+set_location_assignment PIN_AC13 -to SW6
+set_location_assignment PIN_C13 -to SW7
+set_location_assignment PIN_B13 -to SW8
+set_location_assignment PIN_A13 -to SW9
+set_location_assignment PIN_V2 -to SWITCH
+set_location_assignment PIN_AE22 -to SYSTEM_ON
+set_location_assignment PIN_AF9 -to UB
+set_location_assignment PIN_AE10 -to WE
+set_location_assignment PIN_V1 -to "Z-FLAG"
+set_location_assignment PIN_AE23 -to Z_FLAG
+set_global_assignment -name BDF_FILE 1_BIT_REGISTER.bdf
+set_global_assignment -name BDF_FILE ALU_TOP.bdf
+set_global_assignment -name BDF_FILE branch_logic.bdf
+set_global_assignment -name BDF_FILE State_Machine.bdf
+set_global_assignment -name BDF_FILE Z_LOGIC.bdf
+set_global_assignment -name BDF_FILE CARRY_LOGIC.bdf
+set_location_assignment PIN_AF23 -to C_FLAG
+set_global_assignment -name BDF_FILE 4_1_MUX.bdf
+set_global_assignment -name BDF_FILE LOAD_SELECT.bdf
+set_global_assignment -name BDF_FILE Control_Unit.bdf
+set_global_assignment -name BDF_FILE 16_B_REG.bdf
+set_location_assignment PIN_N23 -to RESET
+set_global_assignment -name MISC_FILE "C:/Users/Dom/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project/WIMPAVR.dpf"
+set_global_assignment -name BDF_FILE alu_control.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,377 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+7_SEGMENT_DISPLAY
+# storage
+db|WIMPAVR_Program.(1).cnf
+db|WIMPAVR_Program.(1).cnf
+# case_insensitive
+# source_file
+7_segment_display.bdf
+14041524aa4f587effd248584e1c1d6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_bit_7_seg:inst3|7_segment_display:inst
+8_bit_7_seg:inst3|7_segment_display:inst1
+8_bit_7_seg:inst4|7_segment_display:inst
+8_bit_7_seg:inst4|7_segment_display:inst1
+8_bit_7_seg:inst1|7_segment_display:inst
+8_bit_7_seg:inst1|7_segment_display:inst1
+8_bit_7_seg:inst2|7_segment_display:inst
+8_bit_7_seg:inst2|7_segment_display:inst1
+}
+# macro_sequence
+
+# end
+# entity
+A
+# storage
+db|WIMPAVR_Program.(2).cnf
+db|WIMPAVR_Program.(2).cnf
+# case_insensitive
+# source_file
+a.bdf
+e874f9f5794871da24c7cf42b2171
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_bit_7_seg:inst3|7_segment_display:inst|a:inst
+8_bit_7_seg:inst3|7_segment_display:inst1|a:inst
+8_bit_7_seg:inst4|7_segment_display:inst|a:inst
+8_bit_7_seg:inst4|7_segment_display:inst1|a:inst
+8_bit_7_seg:inst1|7_segment_display:inst|a:inst
+8_bit_7_seg:inst1|7_segment_display:inst1|a:inst
+8_bit_7_seg:inst2|7_segment_display:inst|a:inst
+8_bit_7_seg:inst2|7_segment_display:inst1|a:inst
+}
+# macro_sequence
+
+# end
+# entity
+B
+# storage
+db|WIMPAVR_Program.(3).cnf
+db|WIMPAVR_Program.(3).cnf
+# case_insensitive
+# source_file
+b.bdf
+89a78fcc2d17a7abb998cb563bed3381
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_bit_7_seg:inst3|7_segment_display:inst|b:inst1
+8_bit_7_seg:inst3|7_segment_display:inst1|b:inst1
+8_bit_7_seg:inst4|7_segment_display:inst|b:inst1
+8_bit_7_seg:inst4|7_segment_display:inst1|b:inst1
+8_bit_7_seg:inst1|7_segment_display:inst|b:inst1
+8_bit_7_seg:inst1|7_segment_display:inst1|b:inst1
+8_bit_7_seg:inst2|7_segment_display:inst|b:inst1
+8_bit_7_seg:inst2|7_segment_display:inst1|b:inst1
+}
+# macro_sequence
+
+# end
+# entity
+C
+# storage
+db|WIMPAVR_Program.(4).cnf
+db|WIMPAVR_Program.(4).cnf
+# case_insensitive
+# source_file
+c.bdf
+5ce4e4a28d72e27788625e7dcf43a972
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_bit_7_seg:inst3|7_segment_display:inst|c:inst2
+8_bit_7_seg:inst3|7_segment_display:inst1|c:inst2
+8_bit_7_seg:inst4|7_segment_display:inst|c:inst2
+8_bit_7_seg:inst4|7_segment_display:inst1|c:inst2
+8_bit_7_seg:inst1|7_segment_display:inst|c:inst2
+8_bit_7_seg:inst1|7_segment_display:inst1|c:inst2
+8_bit_7_seg:inst2|7_segment_display:inst|c:inst2
+8_bit_7_seg:inst2|7_segment_display:inst1|c:inst2
+}
+# macro_sequence
+
+# end
+# entity
+D
+# storage
+db|WIMPAVR_Program.(5).cnf
+db|WIMPAVR_Program.(5).cnf
+# case_insensitive
+# source_file
+d.bdf
+83dcb1ddc9616332381de5d1196189cc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_bit_7_seg:inst3|7_segment_display:inst|d:inst3
+8_bit_7_seg:inst3|7_segment_display:inst1|d:inst3
+8_bit_7_seg:inst4|7_segment_display:inst|d:inst3
+8_bit_7_seg:inst4|7_segment_display:inst1|d:inst3
+8_bit_7_seg:inst1|7_segment_display:inst|d:inst3
+8_bit_7_seg:inst1|7_segment_display:inst1|d:inst3
+8_bit_7_seg:inst2|7_segment_display:inst|d:inst3
+8_bit_7_seg:inst2|7_segment_display:inst1|d:inst3
+}
+# macro_sequence
+
+# end
+# entity
+E
+# storage
+db|WIMPAVR_Program.(6).cnf
+db|WIMPAVR_Program.(6).cnf
+# case_insensitive
+# source_file
+e.bdf
+fbfdd99a492dcdfa53e1c46473b45b7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_bit_7_seg:inst3|7_segment_display:inst|e:inst4
+8_bit_7_seg:inst3|7_segment_display:inst1|e:inst4
+8_bit_7_seg:inst4|7_segment_display:inst|e:inst4
+8_bit_7_seg:inst4|7_segment_display:inst1|e:inst4
+8_bit_7_seg:inst1|7_segment_display:inst|e:inst4
+8_bit_7_seg:inst1|7_segment_display:inst1|e:inst4
+8_bit_7_seg:inst2|7_segment_display:inst|e:inst4
+8_bit_7_seg:inst2|7_segment_display:inst1|e:inst4
+}
+# macro_sequence
+
+# end
+# entity
+F
+# storage
+db|WIMPAVR_Program.(7).cnf
+db|WIMPAVR_Program.(7).cnf
+# case_insensitive
+# source_file
+f.bdf
+b1fe58b92c050f9fd38db85a48e894
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_bit_7_seg:inst3|7_segment_display:inst|f:inst5
+8_bit_7_seg:inst3|7_segment_display:inst1|f:inst5
+8_bit_7_seg:inst4|7_segment_display:inst|f:inst5
+8_bit_7_seg:inst4|7_segment_display:inst1|f:inst5
+8_bit_7_seg:inst1|7_segment_display:inst|f:inst5
+8_bit_7_seg:inst1|7_segment_display:inst1|f:inst5
+8_bit_7_seg:inst2|7_segment_display:inst|f:inst5
+8_bit_7_seg:inst2|7_segment_display:inst1|f:inst5
+}
+# macro_sequence
+
+# end
+# entity
+G
+# storage
+db|WIMPAVR_Program.(8).cnf
+db|WIMPAVR_Program.(8).cnf
+# case_insensitive
+# source_file
+g.bdf
+eebca1724718b01db26fbae222ce5e49
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_bit_7_seg:inst3|7_segment_display:inst|g:inst6
+8_bit_7_seg:inst3|7_segment_display:inst1|g:inst6
+8_bit_7_seg:inst4|7_segment_display:inst|g:inst6
+8_bit_7_seg:inst4|7_segment_display:inst1|g:inst6
+8_bit_7_seg:inst1|7_segment_display:inst|g:inst6
+8_bit_7_seg:inst1|7_segment_display:inst1|g:inst6
+8_bit_7_seg:inst2|7_segment_display:inst|g:inst6
+8_bit_7_seg:inst2|7_segment_display:inst1|g:inst6
+}
+# macro_sequence
+
+# end
+# entity
+Input_Register
+# storage
+db|WIMPAVR_Program.(9).cnf
+db|WIMPAVR_Program.(9).cnf
+# case_insensitive
+# source_file
+input_register.bdf
+b2fdb13ac3f8fcb7532443b213bb76
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Input_Register:inst12
+Input_Register:inst
+}
+# macro_sequence
+
+# end
+# entity
+8_BIT_7_SEG
+# storage
+db|WIMPAVR_Program.(10).cnf
+db|WIMPAVR_Program.(10).cnf
+# case_insensitive
+# source_file
+8_bit_7_seg.bdf
+be3e513f8edd3d3bce8dadd62bbfcbba
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_bit_7_seg:inst3
+8_bit_7_seg:inst4
+8_bit_7_seg:inst1
+8_bit_7_seg:inst2
+}
+# macro_sequence
+
+# end
+# entity
+8_2_1_MUX
+# storage
+db|WIMPAVR_Program.(11).cnf
+db|WIMPAVR_Program.(11).cnf
+# case_insensitive
+# source_file
+8_2_1_mux.bdf
+e290d0a96649d8ef33a49819ed275a8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_2_1_mux:inst10
+8_2_1_mux:inst13
+8_2_1_mux:inst5
+8_2_1_mux:inst6
+}
+# macro_sequence
+
+# end
+# entity
+2_1_MUX
+# storage
+db|WIMPAVR_Program.(12).cnf
+db|WIMPAVR_Program.(12).cnf
+# case_insensitive
+# source_file
+2_1_mux.bdf
+c72d863e5fb8ede1ba260916ea89337
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_2_1_mux:inst10|2_1_mux:inst4
+8_2_1_mux:inst10|2_1_mux:inst5
+8_2_1_mux:inst10|2_1_mux:inst6
+8_2_1_mux:inst10|2_1_mux:inst7
+8_2_1_mux:inst10|2_1_mux:inst8
+8_2_1_mux:inst10|2_1_mux:inst9
+8_2_1_mux:inst10|2_1_mux:inst10
+8_2_1_mux:inst10|2_1_mux:inst11
+8_2_1_mux:inst13|2_1_mux:inst4
+8_2_1_mux:inst13|2_1_mux:inst5
+8_2_1_mux:inst13|2_1_mux:inst6
+8_2_1_mux:inst13|2_1_mux:inst7
+8_2_1_mux:inst13|2_1_mux:inst8
+8_2_1_mux:inst13|2_1_mux:inst9
+8_2_1_mux:inst13|2_1_mux:inst10
+8_2_1_mux:inst13|2_1_mux:inst11
+8_2_1_mux:inst5|2_1_mux:inst4
+8_2_1_mux:inst5|2_1_mux:inst5
+8_2_1_mux:inst5|2_1_mux:inst6
+8_2_1_mux:inst5|2_1_mux:inst7
+8_2_1_mux:inst5|2_1_mux:inst8
+8_2_1_mux:inst5|2_1_mux:inst9
+8_2_1_mux:inst5|2_1_mux:inst10
+8_2_1_mux:inst5|2_1_mux:inst11
+8_2_1_mux:inst6|2_1_mux:inst4
+8_2_1_mux:inst6|2_1_mux:inst5
+8_2_1_mux:inst6|2_1_mux:inst6
+8_2_1_mux:inst6|2_1_mux:inst7
+8_2_1_mux:inst6|2_1_mux:inst8
+8_2_1_mux:inst6|2_1_mux:inst9
+8_2_1_mux:inst6|2_1_mux:inst10
+8_2_1_mux:inst6|2_1_mux:inst11
+}
+# macro_sequence
+
+# end
+# entity
+Program
+# storage
+db|WIMPAVR_Program.(0).cnf
+db|WIMPAVR_Program.(0).cnf
+# case_insensitive
+# source_file
+program.bdf
+c0d81664c0bc269dfb5a31b5fc0418
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,1257 @@
+TimeQuest Timing Analyzer report for WIMPAVR_Program
+Sun Jun 09 14:37:37 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Minimum Pulse Width: 'Push_button1'
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Minimum Pulse Width: 'Push_button1'
+ 24. Setup Times
+ 25. Hold Times
+ 26. Clock to Output Times
+ 27. Minimum Clock to Output Times
+ 28. Propagation Delay
+ 29. Minimum Propagation Delay
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Progagation Delay
+ 36. Minimum Progagation Delay
+ 37. Clock Transfers
+ 38. Report TCCS
+ 39. Report RSKM
+ 40. Unconstrained Paths
+ 41. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name      ; WIMPAVR_Program                                    ;
+; Device Family      ; Cyclone II                                         ;
+; Device Name        ; EP2C5F256C6                                        ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                     ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+; Clock Name   ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets          ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+; Push_button1 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Push_button1 } ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++--------------+--------+----------------+
+; Clock        ; Slack  ; End Point TNS  ;
++--------------+--------+----------------+
+; Push_button1 ; -1.222 ; -33.222        ;
++--------------+--------+----------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'Push_button1'                                                                        ;
++--------+--------------+----------------+------------------+--------------+------------+-------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock        ; Clock Edge ; Target                        ;
++--------+--------------+----------------+------------------+--------------+------------+-------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Push_button1 ; Rise       ; Push_button1                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst1    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst1    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst10   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst10   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst11   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst11   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst12   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst12   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst13   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst13   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst14   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst14   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst15   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst15   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst2    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst2    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst3    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst3    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst4    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst4    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst5    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst5    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst6    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst6    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst7    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst7    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst8    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst8    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst9    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst9    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst1     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst1     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst10    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst10    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst11    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst11    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst12    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst12    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst13    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst13    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst14    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst14    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst15    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst15    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst2     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst2     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst3     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst3     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst4     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst4     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst5     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst5     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst6     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst6     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst7     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst7     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst8     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst8     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst9     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst9     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; Push_button1|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Push_button1|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst10|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst10|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst11|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst11|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst12|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst12|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst13|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst13|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst14|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst14|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst15|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst15|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst16|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst16|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst16|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst16|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst16~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst16~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst16~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst16~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst1|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst1|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst2|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst2|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst3|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst3|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst4|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst4|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst5|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst5|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst6|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst6|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst7|clk               ;
++--------+--------------+----------------+------------------+--------------+------------+-------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; In0       ; Push_button1 ; 2.166 ; 2.166 ; Rise       ; Push_button1    ;
+; In1       ; Push_button1 ; 2.702 ; 2.702 ; Rise       ; Push_button1    ;
+; In2       ; Push_button1 ; 2.493 ; 2.493 ; Rise       ; Push_button1    ;
+; In3       ; Push_button1 ; 2.462 ; 2.462 ; Rise       ; Push_button1    ;
+; In4       ; Push_button1 ; 2.192 ; 2.192 ; Rise       ; Push_button1    ;
+; In5       ; Push_button1 ; 2.636 ; 2.636 ; Rise       ; Push_button1    ;
+; In6       ; Push_button1 ; 2.190 ; 2.190 ; Rise       ; Push_button1    ;
+; In7       ; Push_button1 ; 2.667 ; 2.667 ; Rise       ; Push_button1    ;
+; In8       ; Push_button1 ; 2.175 ; 2.175 ; Rise       ; Push_button1    ;
+; In9       ; Push_button1 ; 2.389 ; 2.389 ; Rise       ; Push_button1    ;
+; In10      ; Push_button1 ; 2.101 ; 2.101 ; Rise       ; Push_button1    ;
+; In11      ; Push_button1 ; 2.170 ; 2.170 ; Rise       ; Push_button1    ;
+; In12      ; Push_button1 ; 2.476 ; 2.476 ; Rise       ; Push_button1    ;
+; In13      ; Push_button1 ; 2.179 ; 2.179 ; Rise       ; Push_button1    ;
+; In14      ; Push_button1 ; 2.442 ; 2.442 ; Rise       ; Push_button1    ;
+; In15      ; Push_button1 ; 2.427 ; 2.427 ; Rise       ; Push_button1    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Hold Times                                                                ;
++-----------+--------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+--------------+--------+--------+------------+-----------------+
+; In0       ; Push_button1 ; -1.934 ; -1.934 ; Rise       ; Push_button1    ;
+; In1       ; Push_button1 ; -2.466 ; -2.466 ; Rise       ; Push_button1    ;
+; In2       ; Push_button1 ; -2.254 ; -2.254 ; Rise       ; Push_button1    ;
+; In3       ; Push_button1 ; -2.229 ; -2.229 ; Rise       ; Push_button1    ;
+; In4       ; Push_button1 ; -1.961 ; -1.961 ; Rise       ; Push_button1    ;
+; In5       ; Push_button1 ; -2.403 ; -2.403 ; Rise       ; Push_button1    ;
+; In6       ; Push_button1 ; -1.959 ; -1.959 ; Rise       ; Push_button1    ;
+; In7       ; Push_button1 ; -2.432 ; -2.432 ; Rise       ; Push_button1    ;
+; In8       ; Push_button1 ; -1.939 ; -1.939 ; Rise       ; Push_button1    ;
+; In9       ; Push_button1 ; -2.153 ; -2.153 ; Rise       ; Push_button1    ;
+; In10      ; Push_button1 ; -1.871 ; -1.871 ; Rise       ; Push_button1    ;
+; In11      ; Push_button1 ; -1.940 ; -1.940 ; Rise       ; Push_button1    ;
+; In12      ; Push_button1 ; -2.241 ; -2.241 ; Rise       ; Push_button1    ;
+; In13      ; Push_button1 ; -1.949 ; -1.949 ; Rise       ; Push_button1    ;
+; In14      ; Push_button1 ; -2.208 ; -2.208 ; Rise       ; Push_button1    ;
+; In15      ; Push_button1 ; -2.194 ; -2.194 ; Rise       ; Push_button1    ;
++-----------+--------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; A0        ; Push_button1 ; 7.604 ; 7.604 ; Rise       ; Push_button1    ;
+; A1        ; Push_button1 ; 7.648 ; 7.648 ; Rise       ; Push_button1    ;
+; A2        ; Push_button1 ; 7.163 ; 7.163 ; Rise       ; Push_button1    ;
+; A3        ; Push_button1 ; 7.465 ; 7.465 ; Rise       ; Push_button1    ;
+; A4        ; Push_button1 ; 7.918 ; 7.918 ; Rise       ; Push_button1    ;
+; A5        ; Push_button1 ; 7.911 ; 7.911 ; Rise       ; Push_button1    ;
+; A6        ; Push_button1 ; 7.904 ; 7.904 ; Rise       ; Push_button1    ;
+; A7        ; Push_button1 ; 7.922 ; 7.922 ; Rise       ; Push_button1    ;
+; A8        ; Push_button1 ; 7.601 ; 7.601 ; Rise       ; Push_button1    ;
+; A9        ; Push_button1 ; 7.662 ; 7.662 ; Rise       ; Push_button1    ;
+; A10       ; Push_button1 ; 7.442 ; 7.442 ; Rise       ; Push_button1    ;
+; A11       ; Push_button1 ; 7.294 ; 7.294 ; Rise       ; Push_button1    ;
+; A12       ; Push_button1 ; 7.670 ; 7.670 ; Rise       ; Push_button1    ;
+; A13       ; Push_button1 ; 7.654 ; 7.654 ; Rise       ; Push_button1    ;
+; A14       ; Push_button1 ; 7.160 ; 7.160 ; Rise       ; Push_button1    ;
+; A15       ; Push_button1 ; 7.305 ; 7.305 ; Rise       ; Push_button1    ;
+; D0        ; Push_button1 ; 7.891 ; 7.891 ; Rise       ; Push_button1    ;
+; D1        ; Push_button1 ; 7.325 ; 7.325 ; Rise       ; Push_button1    ;
+; D2        ; Push_button1 ; 7.882 ; 7.882 ; Rise       ; Push_button1    ;
+; D3        ; Push_button1 ; 7.895 ; 7.895 ; Rise       ; Push_button1    ;
+; D4        ; Push_button1 ; 7.997 ; 7.997 ; Rise       ; Push_button1    ;
+; D5        ; Push_button1 ; 7.604 ; 7.604 ; Rise       ; Push_button1    ;
+; D6        ; Push_button1 ; 7.641 ; 7.641 ; Rise       ; Push_button1    ;
+; D7        ; Push_button1 ; 8.025 ; 8.025 ; Rise       ; Push_button1    ;
+; D8        ; Push_button1 ; 7.108 ; 7.108 ; Rise       ; Push_button1    ;
+; D9        ; Push_button1 ; 7.720 ; 7.720 ; Rise       ; Push_button1    ;
+; D10       ; Push_button1 ; 7.623 ; 7.623 ; Rise       ; Push_button1    ;
+; D11       ; Push_button1 ; 7.439 ; 7.439 ; Rise       ; Push_button1    ;
+; D12       ; Push_button1 ; 7.777 ; 7.777 ; Rise       ; Push_button1    ;
+; D13       ; Push_button1 ; 7.423 ; 7.423 ; Rise       ; Push_button1    ;
+; D14       ; Push_button1 ; 7.661 ; 7.661 ; Rise       ; Push_button1    ;
+; D15       ; Push_button1 ; 7.327 ; 7.327 ; Rise       ; Push_button1    ;
+; HEX_0_A   ; Push_button1 ; 8.535 ; 8.535 ; Rise       ; Push_button1    ;
+; HEX_0_B   ; Push_button1 ; 8.483 ; 8.483 ; Rise       ; Push_button1    ;
+; HEX_0_C   ; Push_button1 ; 8.511 ; 8.511 ; Rise       ; Push_button1    ;
+; HEX_0_D   ; Push_button1 ; 8.203 ; 8.203 ; Rise       ; Push_button1    ;
+; HEX_0_E   ; Push_button1 ; 8.352 ; 8.352 ; Rise       ; Push_button1    ;
+; HEX_0_F   ; Push_button1 ; 8.354 ; 8.354 ; Rise       ; Push_button1    ;
+; HEX_0_G   ; Push_button1 ; 8.256 ; 8.256 ; Rise       ; Push_button1    ;
+; HEX_1_A   ; Push_button1 ; 8.551 ; 8.551 ; Rise       ; Push_button1    ;
+; HEX_1_B   ; Push_button1 ; 8.442 ; 8.442 ; Rise       ; Push_button1    ;
+; HEX_1_C   ; Push_button1 ; 9.060 ; 9.060 ; Rise       ; Push_button1    ;
+; HEX_1_D   ; Push_button1 ; 8.521 ; 8.521 ; Rise       ; Push_button1    ;
+; HEX_1_E   ; Push_button1 ; 8.854 ; 8.854 ; Rise       ; Push_button1    ;
+; HEX_1_F   ; Push_button1 ; 8.824 ; 8.824 ; Rise       ; Push_button1    ;
+; HEX_1_G   ; Push_button1 ; 8.606 ; 8.606 ; Rise       ; Push_button1    ;
+; HEX_2_A   ; Push_button1 ; 8.261 ; 8.261 ; Rise       ; Push_button1    ;
+; HEX_2_B   ; Push_button1 ; 8.434 ; 8.434 ; Rise       ; Push_button1    ;
+; HEX_2_C   ; Push_button1 ; 8.134 ; 8.134 ; Rise       ; Push_button1    ;
+; HEX_2_D   ; Push_button1 ; 8.474 ; 8.474 ; Rise       ; Push_button1    ;
+; HEX_2_E   ; Push_button1 ; 7.907 ; 7.907 ; Rise       ; Push_button1    ;
+; HEX_2_F   ; Push_button1 ; 8.286 ; 8.286 ; Rise       ; Push_button1    ;
+; HEX_2_G   ; Push_button1 ; 8.525 ; 8.525 ; Rise       ; Push_button1    ;
+; HEX_3_A   ; Push_button1 ; 8.252 ; 8.252 ; Rise       ; Push_button1    ;
+; HEX_3_B   ; Push_button1 ; 8.198 ; 8.198 ; Rise       ; Push_button1    ;
+; HEX_3_C   ; Push_button1 ; 8.393 ; 8.393 ; Rise       ; Push_button1    ;
+; HEX_3_D   ; Push_button1 ; 9.063 ; 9.063 ; Rise       ; Push_button1    ;
+; HEX_3_E   ; Push_button1 ; 8.349 ; 8.349 ; Rise       ; Push_button1    ;
+; HEX_3_F   ; Push_button1 ; 8.351 ; 8.351 ; Rise       ; Push_button1    ;
+; HEX_3_G   ; Push_button1 ; 8.668 ; 8.668 ; Rise       ; Push_button1    ;
+; HEX_4_A   ; Push_button1 ; 8.632 ; 8.632 ; Rise       ; Push_button1    ;
+; HEX_4_B   ; Push_button1 ; 8.731 ; 8.731 ; Rise       ; Push_button1    ;
+; HEX_4_C   ; Push_button1 ; 8.235 ; 8.235 ; Rise       ; Push_button1    ;
+; HEX_4_D   ; Push_button1 ; 8.801 ; 8.801 ; Rise       ; Push_button1    ;
+; HEX_4_E   ; Push_button1 ; 8.406 ; 8.406 ; Rise       ; Push_button1    ;
+; HEX_4_F   ; Push_button1 ; 8.071 ; 8.071 ; Rise       ; Push_button1    ;
+; HEX_4_G   ; Push_button1 ; 8.376 ; 8.376 ; Rise       ; Push_button1    ;
+; HEX_5_A   ; Push_button1 ; 8.362 ; 8.362 ; Rise       ; Push_button1    ;
+; HEX_5_B   ; Push_button1 ; 8.811 ; 8.811 ; Rise       ; Push_button1    ;
+; HEX_5_C   ; Push_button1 ; 8.487 ; 8.487 ; Rise       ; Push_button1    ;
+; HEX_5_D   ; Push_button1 ; 8.548 ; 8.548 ; Rise       ; Push_button1    ;
+; HEX_5_E   ; Push_button1 ; 8.549 ; 8.549 ; Rise       ; Push_button1    ;
+; HEX_5_F   ; Push_button1 ; 8.827 ; 8.827 ; Rise       ; Push_button1    ;
+; HEX_5_G   ; Push_button1 ; 8.778 ; 8.778 ; Rise       ; Push_button1    ;
+; HEX_6_A   ; Push_button1 ; 8.286 ; 8.286 ; Rise       ; Push_button1    ;
+; HEX_6_B   ; Push_button1 ; 8.403 ; 8.403 ; Rise       ; Push_button1    ;
+; HEX_6_C   ; Push_button1 ; 8.164 ; 8.164 ; Rise       ; Push_button1    ;
+; HEX_6_D   ; Push_button1 ; 8.715 ; 8.715 ; Rise       ; Push_button1    ;
+; HEX_6_E   ; Push_button1 ; 8.595 ; 8.595 ; Rise       ; Push_button1    ;
+; HEX_6_F   ; Push_button1 ; 8.283 ; 8.283 ; Rise       ; Push_button1    ;
+; HEX_6_G   ; Push_button1 ; 8.492 ; 8.492 ; Rise       ; Push_button1    ;
+; HEX_7_A   ; Push_button1 ; 8.281 ; 8.281 ; Rise       ; Push_button1    ;
+; HEX_7_B   ; Push_button1 ; 8.578 ; 8.578 ; Rise       ; Push_button1    ;
+; HEX_7_C   ; Push_button1 ; 8.281 ; 8.281 ; Rise       ; Push_button1    ;
+; HEX_7_D   ; Push_button1 ; 8.352 ; 8.352 ; Rise       ; Push_button1    ;
+; HEX_7_E   ; Push_button1 ; 8.363 ; 8.363 ; Rise       ; Push_button1    ;
+; HEX_7_F   ; Push_button1 ; 8.401 ; 8.401 ; Rise       ; Push_button1    ;
+; HEX_7_G   ; Push_button1 ; 8.343 ; 8.343 ; Rise       ; Push_button1    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; A0        ; Push_button1 ; 7.604 ; 7.604 ; Rise       ; Push_button1    ;
+; A1        ; Push_button1 ; 7.648 ; 7.648 ; Rise       ; Push_button1    ;
+; A2        ; Push_button1 ; 7.163 ; 7.163 ; Rise       ; Push_button1    ;
+; A3        ; Push_button1 ; 7.465 ; 7.465 ; Rise       ; Push_button1    ;
+; A4        ; Push_button1 ; 7.918 ; 7.918 ; Rise       ; Push_button1    ;
+; A5        ; Push_button1 ; 7.911 ; 7.911 ; Rise       ; Push_button1    ;
+; A6        ; Push_button1 ; 7.904 ; 7.904 ; Rise       ; Push_button1    ;
+; A7        ; Push_button1 ; 7.922 ; 7.922 ; Rise       ; Push_button1    ;
+; A8        ; Push_button1 ; 7.601 ; 7.601 ; Rise       ; Push_button1    ;
+; A9        ; Push_button1 ; 7.662 ; 7.662 ; Rise       ; Push_button1    ;
+; A10       ; Push_button1 ; 7.442 ; 7.442 ; Rise       ; Push_button1    ;
+; A11       ; Push_button1 ; 7.294 ; 7.294 ; Rise       ; Push_button1    ;
+; A12       ; Push_button1 ; 7.670 ; 7.670 ; Rise       ; Push_button1    ;
+; A13       ; Push_button1 ; 7.654 ; 7.654 ; Rise       ; Push_button1    ;
+; A14       ; Push_button1 ; 7.160 ; 7.160 ; Rise       ; Push_button1    ;
+; A15       ; Push_button1 ; 7.305 ; 7.305 ; Rise       ; Push_button1    ;
+; D0        ; Push_button1 ; 7.891 ; 7.891 ; Rise       ; Push_button1    ;
+; D1        ; Push_button1 ; 7.325 ; 7.325 ; Rise       ; Push_button1    ;
+; D2        ; Push_button1 ; 7.882 ; 7.882 ; Rise       ; Push_button1    ;
+; D3        ; Push_button1 ; 7.895 ; 7.895 ; Rise       ; Push_button1    ;
+; D4        ; Push_button1 ; 7.997 ; 7.997 ; Rise       ; Push_button1    ;
+; D5        ; Push_button1 ; 7.604 ; 7.604 ; Rise       ; Push_button1    ;
+; D6        ; Push_button1 ; 7.641 ; 7.641 ; Rise       ; Push_button1    ;
+; D7        ; Push_button1 ; 8.025 ; 8.025 ; Rise       ; Push_button1    ;
+; D8        ; Push_button1 ; 7.108 ; 7.108 ; Rise       ; Push_button1    ;
+; D9        ; Push_button1 ; 7.720 ; 7.720 ; Rise       ; Push_button1    ;
+; D10       ; Push_button1 ; 7.623 ; 7.623 ; Rise       ; Push_button1    ;
+; D11       ; Push_button1 ; 7.439 ; 7.439 ; Rise       ; Push_button1    ;
+; D12       ; Push_button1 ; 7.777 ; 7.777 ; Rise       ; Push_button1    ;
+; D13       ; Push_button1 ; 7.423 ; 7.423 ; Rise       ; Push_button1    ;
+; D14       ; Push_button1 ; 7.661 ; 7.661 ; Rise       ; Push_button1    ;
+; D15       ; Push_button1 ; 7.327 ; 7.327 ; Rise       ; Push_button1    ;
+; HEX_0_A   ; Push_button1 ; 7.913 ; 7.913 ; Rise       ; Push_button1    ;
+; HEX_0_B   ; Push_button1 ; 7.873 ; 7.873 ; Rise       ; Push_button1    ;
+; HEX_0_C   ; Push_button1 ; 7.864 ; 7.864 ; Rise       ; Push_button1    ;
+; HEX_0_D   ; Push_button1 ; 7.557 ; 7.557 ; Rise       ; Push_button1    ;
+; HEX_0_E   ; Push_button1 ; 7.889 ; 7.889 ; Rise       ; Push_button1    ;
+; HEX_0_F   ; Push_button1 ; 7.904 ; 7.904 ; Rise       ; Push_button1    ;
+; HEX_0_G   ; Push_button1 ; 7.806 ; 7.806 ; Rise       ; Push_button1    ;
+; HEX_1_A   ; Push_button1 ; 7.947 ; 7.947 ; Rise       ; Push_button1    ;
+; HEX_1_B   ; Push_button1 ; 7.934 ; 7.934 ; Rise       ; Push_button1    ;
+; HEX_1_C   ; Push_button1 ; 8.148 ; 8.148 ; Rise       ; Push_button1    ;
+; HEX_1_D   ; Push_button1 ; 7.918 ; 7.918 ; Rise       ; Push_button1    ;
+; HEX_1_E   ; Push_button1 ; 8.115 ; 8.115 ; Rise       ; Push_button1    ;
+; HEX_1_F   ; Push_button1 ; 8.084 ; 8.084 ; Rise       ; Push_button1    ;
+; HEX_1_G   ; Push_button1 ; 7.864 ; 7.864 ; Rise       ; Push_button1    ;
+; HEX_2_A   ; Push_button1 ; 7.771 ; 7.771 ; Rise       ; Push_button1    ;
+; HEX_2_B   ; Push_button1 ; 7.885 ; 7.885 ; Rise       ; Push_button1    ;
+; HEX_2_C   ; Push_button1 ; 7.670 ; 7.670 ; Rise       ; Push_button1    ;
+; HEX_2_D   ; Push_button1 ; 7.654 ; 7.654 ; Rise       ; Push_button1    ;
+; HEX_2_E   ; Push_button1 ; 7.610 ; 7.610 ; Rise       ; Push_button1    ;
+; HEX_2_F   ; Push_button1 ; 7.987 ; 7.987 ; Rise       ; Push_button1    ;
+; HEX_2_G   ; Push_button1 ; 8.227 ; 8.227 ; Rise       ; Push_button1    ;
+; HEX_3_A   ; Push_button1 ; 7.603 ; 7.603 ; Rise       ; Push_button1    ;
+; HEX_3_B   ; Push_button1 ; 7.721 ; 7.721 ; Rise       ; Push_button1    ;
+; HEX_3_C   ; Push_button1 ; 7.942 ; 7.942 ; Rise       ; Push_button1    ;
+; HEX_3_D   ; Push_button1 ; 8.585 ; 8.585 ; Rise       ; Push_button1    ;
+; HEX_3_E   ; Push_button1 ; 7.864 ; 7.864 ; Rise       ; Push_button1    ;
+; HEX_3_F   ; Push_button1 ; 7.870 ; 7.870 ; Rise       ; Push_button1    ;
+; HEX_3_G   ; Push_button1 ; 8.186 ; 8.186 ; Rise       ; Push_button1    ;
+; HEX_4_A   ; Push_button1 ; 7.956 ; 7.956 ; Rise       ; Push_button1    ;
+; HEX_4_B   ; Push_button1 ; 7.912 ; 7.912 ; Rise       ; Push_button1    ;
+; HEX_4_C   ; Push_button1 ; 7.556 ; 7.556 ; Rise       ; Push_button1    ;
+; HEX_4_D   ; Push_button1 ; 8.123 ; 8.123 ; Rise       ; Push_button1    ;
+; HEX_4_E   ; Push_button1 ; 7.894 ; 7.894 ; Rise       ; Push_button1    ;
+; HEX_4_F   ; Push_button1 ; 7.582 ; 7.582 ; Rise       ; Push_button1    ;
+; HEX_4_G   ; Push_button1 ; 7.878 ; 7.878 ; Rise       ; Push_button1    ;
+; HEX_5_A   ; Push_button1 ; 7.716 ; 7.716 ; Rise       ; Push_button1    ;
+; HEX_5_B   ; Push_button1 ; 8.165 ; 8.165 ; Rise       ; Push_button1    ;
+; HEX_5_C   ; Push_button1 ; 8.009 ; 8.009 ; Rise       ; Push_button1    ;
+; HEX_5_D   ; Push_button1 ; 8.070 ; 8.070 ; Rise       ; Push_button1    ;
+; HEX_5_E   ; Push_button1 ; 8.070 ; 8.070 ; Rise       ; Push_button1    ;
+; HEX_5_F   ; Push_button1 ; 8.351 ; 8.351 ; Rise       ; Push_button1    ;
+; HEX_5_G   ; Push_button1 ; 8.144 ; 8.144 ; Rise       ; Push_button1    ;
+; HEX_6_A   ; Push_button1 ; 7.789 ; 7.789 ; Rise       ; Push_button1    ;
+; HEX_6_B   ; Push_button1 ; 7.782 ; 7.782 ; Rise       ; Push_button1    ;
+; HEX_6_C   ; Push_button1 ; 7.699 ; 7.699 ; Rise       ; Push_button1    ;
+; HEX_6_D   ; Push_button1 ; 8.208 ; 8.208 ; Rise       ; Push_button1    ;
+; HEX_6_E   ; Push_button1 ; 8.170 ; 8.170 ; Rise       ; Push_button1    ;
+; HEX_6_F   ; Push_button1 ; 7.854 ; 7.854 ; Rise       ; Push_button1    ;
+; HEX_6_G   ; Push_button1 ; 8.065 ; 8.065 ; Rise       ; Push_button1    ;
+; HEX_7_A   ; Push_button1 ; 7.593 ; 7.593 ; Rise       ; Push_button1    ;
+; HEX_7_B   ; Push_button1 ; 7.922 ; 7.922 ; Rise       ; Push_button1    ;
+; HEX_7_C   ; Push_button1 ; 7.653 ; 7.653 ; Rise       ; Push_button1    ;
+; HEX_7_D   ; Push_button1 ; 7.663 ; 7.663 ; Rise       ; Push_button1    ;
+; HEX_7_E   ; Push_button1 ; 7.876 ; 7.876 ; Rise       ; Push_button1    ;
+; HEX_7_F   ; Push_button1 ; 7.915 ; 7.915 ; Rise       ; Push_button1    ;
+; HEX_7_G   ; Push_button1 ; 7.855 ; 7.855 ; Rise       ; Push_button1    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++--------------+-------------+-------+----+----+-------+
+; Input Port   ; Output Port ; RR    ; RF ; FR ; FF    ;
++--------------+-------------+-------+----+----+-------+
+; Push_button2 ; WE          ; 8.904 ;    ;    ; 8.904 ;
++--------------+-------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++--------------+-------------+-------+----+----+-------+
+; Input Port   ; Output Port ; RR    ; RF ; FR ; FF    ;
++--------------+-------------+-------+----+----+-------+
+; Push_button2 ; WE          ; 8.904 ;    ;    ; 8.904 ;
++--------------+-------------+-------+----+----+-------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++--------------+--------+----------------+
+; Clock        ; Slack  ; End Point TNS  ;
++--------------+--------+----------------+
+; Push_button1 ; -1.222 ; -33.222        ;
++--------------+--------+----------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'Push_button1'                                                                        ;
++--------+--------------+----------------+------------------+--------------+------------+-------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock        ; Clock Edge ; Target                        ;
++--------+--------------+----------------+------------------+--------------+------------+-------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; Push_button1 ; Rise       ; Push_button1                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst1    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst1    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst10   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst10   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst11   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst11   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst12   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst12   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst13   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst13   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst14   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst14   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst15   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst15   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst2    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst2    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst3    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst3    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst4    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst4    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst5    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst5    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst6    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst6    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst7    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst7    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst8    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst8    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst1|inst9    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst1|inst9    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst1     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst1     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst10    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst10    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst11    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst11    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst12    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst12    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst13    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst13    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst14    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst14    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst15    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst15    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst2     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst2     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst3     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst3     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst4     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst4     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst5     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst5     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst6     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst6     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst7     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst7     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst8     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst8     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; Push_button1 ; Rise       ; Input_Register:inst|inst9     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Input_Register:inst|inst9     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; Push_button1|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; Push_button1|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst10|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst10|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst11|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst11|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst12|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst12|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst13|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst13|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst14|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst14|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst15|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst15|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst16|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst16|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst16|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst16|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst16~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst16~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst16~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst16~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst1|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst1|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst2|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst2|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst3|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst3|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst4|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst4|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst5|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst5|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst6|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; Push_button1 ; Rise       ; inst1|inst6|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; Push_button1 ; Rise       ; inst1|inst7|clk               ;
++--------+--------------+----------------+------------------+--------------+------------+-------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; In0       ; Push_button1 ; 1.379 ; 1.379 ; Rise       ; Push_button1    ;
+; In1       ; Push_button1 ; 1.584 ; 1.584 ; Rise       ; Push_button1    ;
+; In2       ; Push_button1 ; 1.499 ; 1.499 ; Rise       ; Push_button1    ;
+; In3       ; Push_button1 ; 1.478 ; 1.478 ; Rise       ; Push_button1    ;
+; In4       ; Push_button1 ; 1.342 ; 1.342 ; Rise       ; Push_button1    ;
+; In5       ; Push_button1 ; 1.534 ; 1.534 ; Rise       ; Push_button1    ;
+; In6       ; Push_button1 ; 1.341 ; 1.341 ; Rise       ; Push_button1    ;
+; In7       ; Push_button1 ; 1.559 ; 1.559 ; Rise       ; Push_button1    ;
+; In8       ; Push_button1 ; 1.367 ; 1.367 ; Rise       ; Push_button1    ;
+; In9       ; Push_button1 ; 1.459 ; 1.459 ; Rise       ; Push_button1    ;
+; In10      ; Push_button1 ; 1.328 ; 1.328 ; Rise       ; Push_button1    ;
+; In11      ; Push_button1 ; 1.362 ; 1.362 ; Rise       ; Push_button1    ;
+; In12      ; Push_button1 ; 1.491 ; 1.491 ; Rise       ; Push_button1    ;
+; In13      ; Push_button1 ; 1.375 ; 1.375 ; Rise       ; Push_button1    ;
+; In14      ; Push_button1 ; 1.465 ; 1.465 ; Rise       ; Push_button1    ;
+; In15      ; Push_button1 ; 1.454 ; 1.454 ; Rise       ; Push_button1    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Hold Times                                                                ;
++-----------+--------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+--------------+--------+--------+------------+-----------------+
+; In0       ; Push_button1 ; -1.256 ; -1.256 ; Rise       ; Push_button1    ;
+; In1       ; Push_button1 ; -1.457 ; -1.457 ; Rise       ; Push_button1    ;
+; In2       ; Push_button1 ; -1.370 ; -1.370 ; Rise       ; Push_button1    ;
+; In3       ; Push_button1 ; -1.354 ; -1.354 ; Rise       ; Push_button1    ;
+; In4       ; Push_button1 ; -1.220 ; -1.220 ; Rise       ; Push_button1    ;
+; In5       ; Push_button1 ; -1.410 ; -1.410 ; Rise       ; Push_button1    ;
+; In6       ; Push_button1 ; -1.220 ; -1.220 ; Rise       ; Push_button1    ;
+; In7       ; Push_button1 ; -1.432 ; -1.432 ; Rise       ; Push_button1    ;
+; In8       ; Push_button1 ; -1.242 ; -1.242 ; Rise       ; Push_button1    ;
+; In9       ; Push_button1 ; -1.333 ; -1.333 ; Rise       ; Push_button1    ;
+; In10      ; Push_button1 ; -1.206 ; -1.206 ; Rise       ; Push_button1    ;
+; In11      ; Push_button1 ; -1.240 ; -1.240 ; Rise       ; Push_button1    ;
+; In12      ; Push_button1 ; -1.364 ; -1.364 ; Rise       ; Push_button1    ;
+; In13      ; Push_button1 ; -1.254 ; -1.254 ; Rise       ; Push_button1    ;
+; In14      ; Push_button1 ; -1.341 ; -1.341 ; Rise       ; Push_button1    ;
+; In15      ; Push_button1 ; -1.329 ; -1.329 ; Rise       ; Push_button1    ;
++-----------+--------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; A0        ; Push_button1 ; 4.081 ; 4.081 ; Rise       ; Push_button1    ;
+; A1        ; Push_button1 ; 4.149 ; 4.149 ; Rise       ; Push_button1    ;
+; A2        ; Push_button1 ; 3.894 ; 3.894 ; Rise       ; Push_button1    ;
+; A3        ; Push_button1 ; 4.026 ; 4.026 ; Rise       ; Push_button1    ;
+; A4        ; Push_button1 ; 4.289 ; 4.289 ; Rise       ; Push_button1    ;
+; A5        ; Push_button1 ; 4.287 ; 4.287 ; Rise       ; Push_button1    ;
+; A6        ; Push_button1 ; 4.282 ; 4.282 ; Rise       ; Push_button1    ;
+; A7        ; Push_button1 ; 4.297 ; 4.297 ; Rise       ; Push_button1    ;
+; A8        ; Push_button1 ; 4.085 ; 4.085 ; Rise       ; Push_button1    ;
+; A9        ; Push_button1 ; 4.127 ; 4.127 ; Rise       ; Push_button1    ;
+; A10       ; Push_button1 ; 4.020 ; 4.020 ; Rise       ; Push_button1    ;
+; A11       ; Push_button1 ; 3.942 ; 3.942 ; Rise       ; Push_button1    ;
+; A12       ; Push_button1 ; 4.168 ; 4.168 ; Rise       ; Push_button1    ;
+; A13       ; Push_button1 ; 4.147 ; 4.147 ; Rise       ; Push_button1    ;
+; A14       ; Push_button1 ; 3.883 ; 3.883 ; Rise       ; Push_button1    ;
+; A15       ; Push_button1 ; 3.943 ; 3.943 ; Rise       ; Push_button1    ;
+; D0        ; Push_button1 ; 4.263 ; 4.263 ; Rise       ; Push_button1    ;
+; D1        ; Push_button1 ; 3.966 ; 3.966 ; Rise       ; Push_button1    ;
+; D2        ; Push_button1 ; 4.257 ; 4.257 ; Rise       ; Push_button1    ;
+; D3        ; Push_button1 ; 4.265 ; 4.265 ; Rise       ; Push_button1    ;
+; D4        ; Push_button1 ; 4.316 ; 4.316 ; Rise       ; Push_button1    ;
+; D5        ; Push_button1 ; 4.104 ; 4.104 ; Rise       ; Push_button1    ;
+; D6        ; Push_button1 ; 4.148 ; 4.148 ; Rise       ; Push_button1    ;
+; D7        ; Push_button1 ; 4.334 ; 4.334 ; Rise       ; Push_button1    ;
+; D8        ; Push_button1 ; 3.860 ; 3.860 ; Rise       ; Push_button1    ;
+; D9        ; Push_button1 ; 4.195 ; 4.195 ; Rise       ; Push_button1    ;
+; D10       ; Push_button1 ; 4.094 ; 4.094 ; Rise       ; Push_button1    ;
+; D11       ; Push_button1 ; 4.020 ; 4.020 ; Rise       ; Push_button1    ;
+; D12       ; Push_button1 ; 4.204 ; 4.204 ; Rise       ; Push_button1    ;
+; D13       ; Push_button1 ; 4.040 ; 4.040 ; Rise       ; Push_button1    ;
+; D14       ; Push_button1 ; 4.157 ; 4.157 ; Rise       ; Push_button1    ;
+; D15       ; Push_button1 ; 3.959 ; 3.959 ; Rise       ; Push_button1    ;
+; HEX_0_A   ; Push_button1 ; 4.562 ; 4.562 ; Rise       ; Push_button1    ;
+; HEX_0_B   ; Push_button1 ; 4.464 ; 4.464 ; Rise       ; Push_button1    ;
+; HEX_0_C   ; Push_button1 ; 4.483 ; 4.483 ; Rise       ; Push_button1    ;
+; HEX_0_D   ; Push_button1 ; 4.393 ; 4.393 ; Rise       ; Push_button1    ;
+; HEX_0_E   ; Push_button1 ; 4.466 ; 4.466 ; Rise       ; Push_button1    ;
+; HEX_0_F   ; Push_button1 ; 4.473 ; 4.473 ; Rise       ; Push_button1    ;
+; HEX_0_G   ; Push_button1 ; 4.374 ; 4.374 ; Rise       ; Push_button1    ;
+; HEX_1_A   ; Push_button1 ; 4.564 ; 4.564 ; Rise       ; Push_button1    ;
+; HEX_1_B   ; Push_button1 ; 4.509 ; 4.509 ; Rise       ; Push_button1    ;
+; HEX_1_C   ; Push_button1 ; 4.782 ; 4.782 ; Rise       ; Push_button1    ;
+; HEX_1_D   ; Push_button1 ; 4.540 ; 4.540 ; Rise       ; Push_button1    ;
+; HEX_1_E   ; Push_button1 ; 4.689 ; 4.689 ; Rise       ; Push_button1    ;
+; HEX_1_F   ; Push_button1 ; 4.670 ; 4.670 ; Rise       ; Push_button1    ;
+; HEX_1_G   ; Push_button1 ; 4.575 ; 4.575 ; Rise       ; Push_button1    ;
+; HEX_2_A   ; Push_button1 ; 4.420 ; 4.420 ; Rise       ; Push_button1    ;
+; HEX_2_B   ; Push_button1 ; 4.444 ; 4.444 ; Rise       ; Push_button1    ;
+; HEX_2_C   ; Push_button1 ; 4.322 ; 4.322 ; Rise       ; Push_button1    ;
+; HEX_2_D   ; Push_button1 ; 4.454 ; 4.454 ; Rise       ; Push_button1    ;
+; HEX_2_E   ; Push_button1 ; 4.209 ; 4.209 ; Rise       ; Push_button1    ;
+; HEX_2_F   ; Push_button1 ; 4.444 ; 4.444 ; Rise       ; Push_button1    ;
+; HEX_2_G   ; Push_button1 ; 4.562 ; 4.562 ; Rise       ; Push_button1    ;
+; HEX_3_A   ; Push_button1 ; 4.374 ; 4.374 ; Rise       ; Push_button1    ;
+; HEX_3_B   ; Push_button1 ; 4.396 ; 4.396 ; Rise       ; Push_button1    ;
+; HEX_3_C   ; Push_button1 ; 4.494 ; 4.494 ; Rise       ; Push_button1    ;
+; HEX_3_D   ; Push_button1 ; 4.762 ; 4.762 ; Rise       ; Push_button1    ;
+; HEX_3_E   ; Push_button1 ; 4.417 ; 4.417 ; Rise       ; Push_button1    ;
+; HEX_3_F   ; Push_button1 ; 4.414 ; 4.414 ; Rise       ; Push_button1    ;
+; HEX_3_G   ; Push_button1 ; 4.587 ; 4.587 ; Rise       ; Push_button1    ;
+; HEX_4_A   ; Push_button1 ; 4.582 ; 4.582 ; Rise       ; Push_button1    ;
+; HEX_4_B   ; Push_button1 ; 4.611 ; 4.611 ; Rise       ; Push_button1    ;
+; HEX_4_C   ; Push_button1 ; 4.405 ; 4.405 ; Rise       ; Push_button1    ;
+; HEX_4_D   ; Push_button1 ; 4.645 ; 4.645 ; Rise       ; Push_button1    ;
+; HEX_4_E   ; Push_button1 ; 4.425 ; 4.425 ; Rise       ; Push_button1    ;
+; HEX_4_F   ; Push_button1 ; 4.297 ; 4.297 ; Rise       ; Push_button1    ;
+; HEX_4_G   ; Push_button1 ; 4.416 ; 4.416 ; Rise       ; Push_button1    ;
+; HEX_5_A   ; Push_button1 ; 4.486 ; 4.486 ; Rise       ; Push_button1    ;
+; HEX_5_B   ; Push_button1 ; 4.683 ; 4.683 ; Rise       ; Push_button1    ;
+; HEX_5_C   ; Push_button1 ; 4.567 ; 4.567 ; Rise       ; Push_button1    ;
+; HEX_5_D   ; Push_button1 ; 4.550 ; 4.550 ; Rise       ; Push_button1    ;
+; HEX_5_E   ; Push_button1 ; 4.551 ; 4.551 ; Rise       ; Push_button1    ;
+; HEX_5_F   ; Push_button1 ; 4.647 ; 4.647 ; Rise       ; Push_button1    ;
+; HEX_5_G   ; Push_button1 ; 4.658 ; 4.658 ; Rise       ; Push_button1    ;
+; HEX_6_A   ; Push_button1 ; 4.440 ; 4.440 ; Rise       ; Push_button1    ;
+; HEX_6_B   ; Push_button1 ; 4.498 ; 4.498 ; Rise       ; Push_button1    ;
+; HEX_6_C   ; Push_button1 ; 4.341 ; 4.341 ; Rise       ; Push_button1    ;
+; HEX_6_D   ; Push_button1 ; 4.587 ; 4.587 ; Rise       ; Push_button1    ;
+; HEX_6_E   ; Push_button1 ; 4.521 ; 4.521 ; Rise       ; Push_button1    ;
+; HEX_6_F   ; Push_button1 ; 4.382 ; 4.382 ; Rise       ; Push_button1    ;
+; HEX_6_G   ; Push_button1 ; 4.464 ; 4.464 ; Rise       ; Push_button1    ;
+; HEX_7_A   ; Push_button1 ; 4.371 ; 4.371 ; Rise       ; Push_button1    ;
+; HEX_7_B   ; Push_button1 ; 4.569 ; 4.569 ; Rise       ; Push_button1    ;
+; HEX_7_C   ; Push_button1 ; 4.405 ; 4.405 ; Rise       ; Push_button1    ;
+; HEX_7_D   ; Push_button1 ; 4.412 ; 4.412 ; Rise       ; Push_button1    ;
+; HEX_7_E   ; Push_button1 ; 4.442 ; 4.442 ; Rise       ; Push_button1    ;
+; HEX_7_F   ; Push_button1 ; 4.482 ; 4.482 ; Rise       ; Push_button1    ;
+; HEX_7_G   ; Push_button1 ; 4.415 ; 4.415 ; Rise       ; Push_button1    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; A0        ; Push_button1 ; 4.081 ; 4.081 ; Rise       ; Push_button1    ;
+; A1        ; Push_button1 ; 4.149 ; 4.149 ; Rise       ; Push_button1    ;
+; A2        ; Push_button1 ; 3.894 ; 3.894 ; Rise       ; Push_button1    ;
+; A3        ; Push_button1 ; 4.026 ; 4.026 ; Rise       ; Push_button1    ;
+; A4        ; Push_button1 ; 4.289 ; 4.289 ; Rise       ; Push_button1    ;
+; A5        ; Push_button1 ; 4.287 ; 4.287 ; Rise       ; Push_button1    ;
+; A6        ; Push_button1 ; 4.282 ; 4.282 ; Rise       ; Push_button1    ;
+; A7        ; Push_button1 ; 4.297 ; 4.297 ; Rise       ; Push_button1    ;
+; A8        ; Push_button1 ; 4.085 ; 4.085 ; Rise       ; Push_button1    ;
+; A9        ; Push_button1 ; 4.127 ; 4.127 ; Rise       ; Push_button1    ;
+; A10       ; Push_button1 ; 4.020 ; 4.020 ; Rise       ; Push_button1    ;
+; A11       ; Push_button1 ; 3.942 ; 3.942 ; Rise       ; Push_button1    ;
+; A12       ; Push_button1 ; 4.168 ; 4.168 ; Rise       ; Push_button1    ;
+; A13       ; Push_button1 ; 4.147 ; 4.147 ; Rise       ; Push_button1    ;
+; A14       ; Push_button1 ; 3.883 ; 3.883 ; Rise       ; Push_button1    ;
+; A15       ; Push_button1 ; 3.943 ; 3.943 ; Rise       ; Push_button1    ;
+; D0        ; Push_button1 ; 4.263 ; 4.263 ; Rise       ; Push_button1    ;
+; D1        ; Push_button1 ; 3.966 ; 3.966 ; Rise       ; Push_button1    ;
+; D2        ; Push_button1 ; 4.257 ; 4.257 ; Rise       ; Push_button1    ;
+; D3        ; Push_button1 ; 4.265 ; 4.265 ; Rise       ; Push_button1    ;
+; D4        ; Push_button1 ; 4.316 ; 4.316 ; Rise       ; Push_button1    ;
+; D5        ; Push_button1 ; 4.104 ; 4.104 ; Rise       ; Push_button1    ;
+; D6        ; Push_button1 ; 4.148 ; 4.148 ; Rise       ; Push_button1    ;
+; D7        ; Push_button1 ; 4.334 ; 4.334 ; Rise       ; Push_button1    ;
+; D8        ; Push_button1 ; 3.860 ; 3.860 ; Rise       ; Push_button1    ;
+; D9        ; Push_button1 ; 4.195 ; 4.195 ; Rise       ; Push_button1    ;
+; D10       ; Push_button1 ; 4.094 ; 4.094 ; Rise       ; Push_button1    ;
+; D11       ; Push_button1 ; 4.020 ; 4.020 ; Rise       ; Push_button1    ;
+; D12       ; Push_button1 ; 4.204 ; 4.204 ; Rise       ; Push_button1    ;
+; D13       ; Push_button1 ; 4.040 ; 4.040 ; Rise       ; Push_button1    ;
+; D14       ; Push_button1 ; 4.157 ; 4.157 ; Rise       ; Push_button1    ;
+; D15       ; Push_button1 ; 3.959 ; 3.959 ; Rise       ; Push_button1    ;
+; HEX_0_A   ; Push_button1 ; 4.294 ; 4.294 ; Rise       ; Push_button1    ;
+; HEX_0_B   ; Push_button1 ; 4.226 ; 4.226 ; Rise       ; Push_button1    ;
+; HEX_0_C   ; Push_button1 ; 4.219 ; 4.219 ; Rise       ; Push_button1    ;
+; HEX_0_D   ; Push_button1 ; 4.130 ; 4.130 ; Rise       ; Push_button1    ;
+; HEX_0_E   ; Push_button1 ; 4.257 ; 4.257 ; Rise       ; Push_button1    ;
+; HEX_0_F   ; Push_button1 ; 4.271 ; 4.271 ; Rise       ; Push_button1    ;
+; HEX_0_G   ; Push_button1 ; 4.174 ; 4.174 ; Rise       ; Push_button1    ;
+; HEX_1_A   ; Push_button1 ; 4.324 ; 4.324 ; Rise       ; Push_button1    ;
+; HEX_1_B   ; Push_button1 ; 4.312 ; 4.312 ; Rise       ; Push_button1    ;
+; HEX_1_C   ; Push_button1 ; 4.411 ; 4.411 ; Rise       ; Push_button1    ;
+; HEX_1_D   ; Push_button1 ; 4.299 ; 4.299 ; Rise       ; Push_button1    ;
+; HEX_1_E   ; Push_button1 ; 4.367 ; 4.367 ; Rise       ; Push_button1    ;
+; HEX_1_F   ; Push_button1 ; 4.347 ; 4.347 ; Rise       ; Push_button1    ;
+; HEX_1_G   ; Push_button1 ; 4.249 ; 4.249 ; Rise       ; Push_button1    ;
+; HEX_2_A   ; Push_button1 ; 4.239 ; 4.239 ; Rise       ; Push_button1    ;
+; HEX_2_B   ; Push_button1 ; 4.236 ; 4.236 ; Rise       ; Push_button1    ;
+; HEX_2_C   ; Push_button1 ; 4.141 ; 4.141 ; Rise       ; Push_button1    ;
+; HEX_2_D   ; Push_button1 ; 4.128 ; 4.128 ; Rise       ; Push_button1    ;
+; HEX_2_E   ; Push_button1 ; 4.086 ; 4.086 ; Rise       ; Push_button1    ;
+; HEX_2_F   ; Push_button1 ; 4.320 ; 4.320 ; Rise       ; Push_button1    ;
+; HEX_2_G   ; Push_button1 ; 4.431 ; 4.431 ; Rise       ; Push_button1    ;
+; HEX_3_A   ; Push_button1 ; 4.109 ; 4.109 ; Rise       ; Push_button1    ;
+; HEX_3_B   ; Push_button1 ; 4.218 ; 4.218 ; Rise       ; Push_button1    ;
+; HEX_3_C   ; Push_button1 ; 4.316 ; 4.316 ; Rise       ; Push_button1    ;
+; HEX_3_D   ; Push_button1 ; 4.586 ; 4.586 ; Rise       ; Push_button1    ;
+; HEX_3_E   ; Push_button1 ; 4.208 ; 4.208 ; Rise       ; Push_button1    ;
+; HEX_3_F   ; Push_button1 ; 4.207 ; 4.207 ; Rise       ; Push_button1    ;
+; HEX_3_G   ; Push_button1 ; 4.380 ; 4.380 ; Rise       ; Push_button1    ;
+; HEX_4_A   ; Push_button1 ; 4.314 ; 4.314 ; Rise       ; Push_button1    ;
+; HEX_4_B   ; Push_button1 ; 4.291 ; 4.291 ; Rise       ; Push_button1    ;
+; HEX_4_C   ; Push_button1 ; 4.127 ; 4.127 ; Rise       ; Push_button1    ;
+; HEX_4_D   ; Push_button1 ; 4.375 ; 4.375 ; Rise       ; Push_button1    ;
+; HEX_4_E   ; Push_button1 ; 4.201 ; 4.201 ; Rise       ; Push_button1    ;
+; HEX_4_F   ; Push_button1 ; 4.070 ; 4.070 ; Rise       ; Push_button1    ;
+; HEX_4_G   ; Push_button1 ; 4.203 ; 4.203 ; Rise       ; Push_button1    ;
+; HEX_5_A   ; Push_button1 ; 4.222 ; 4.222 ; Rise       ; Push_button1    ;
+; HEX_5_B   ; Push_button1 ; 4.422 ; 4.422 ; Rise       ; Push_button1    ;
+; HEX_5_C   ; Push_button1 ; 4.365 ; 4.365 ; Rise       ; Push_button1    ;
+; HEX_5_D   ; Push_button1 ; 4.334 ; 4.334 ; Rise       ; Push_button1    ;
+; HEX_5_E   ; Push_button1 ; 4.334 ; 4.334 ; Rise       ; Push_button1    ;
+; HEX_5_F   ; Push_button1 ; 4.436 ; 4.436 ; Rise       ; Push_button1    ;
+; HEX_5_G   ; Push_button1 ; 4.402 ; 4.402 ; Rise       ; Push_button1    ;
+; HEX_6_A   ; Push_button1 ; 4.247 ; 4.247 ; Rise       ; Push_button1    ;
+; HEX_6_B   ; Push_button1 ; 4.254 ; 4.254 ; Rise       ; Push_button1    ;
+; HEX_6_C   ; Push_button1 ; 4.157 ; 4.157 ; Rise       ; Push_button1    ;
+; HEX_6_D   ; Push_button1 ; 4.395 ; 4.395 ; Rise       ; Push_button1    ;
+; HEX_6_E   ; Push_button1 ; 4.337 ; 4.337 ; Rise       ; Push_button1    ;
+; HEX_6_F   ; Push_button1 ; 4.195 ; 4.195 ; Rise       ; Push_button1    ;
+; HEX_6_G   ; Push_button1 ; 4.282 ; 4.282 ; Rise       ; Push_button1    ;
+; HEX_7_A   ; Push_button1 ; 4.099 ; 4.099 ; Rise       ; Push_button1    ;
+; HEX_7_B   ; Push_button1 ; 4.299 ; 4.299 ; Rise       ; Push_button1    ;
+; HEX_7_C   ; Push_button1 ; 4.131 ; 4.131 ; Rise       ; Push_button1    ;
+; HEX_7_D   ; Push_button1 ; 4.138 ; 4.138 ; Rise       ; Push_button1    ;
+; HEX_7_E   ; Push_button1 ; 4.240 ; 4.240 ; Rise       ; Push_button1    ;
+; HEX_7_F   ; Push_button1 ; 4.278 ; 4.278 ; Rise       ; Push_button1    ;
+; HEX_7_G   ; Push_button1 ; 4.203 ; 4.203 ; Rise       ; Push_button1    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++--------------+-------------+-------+----+----+-------+
+; Input Port   ; Output Port ; RR    ; RF ; FR ; FF    ;
++--------------+-------------+-------+----+----+-------+
+; Push_button2 ; WE          ; 5.074 ;    ;    ; 5.074 ;
++--------------+-------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++--------------+-------------+-------+----+----+-------+
+; Input Port   ; Output Port ; RR    ; RF ; FR ; FF    ;
++--------------+-------------+-------+----+----+-------+
+; Push_button2 ; WE          ; 5.074 ;    ;    ; 5.074 ;
++--------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
+;  Push_button1    ; N/A   ; N/A  ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -33.222             ;
+;  Push_button1    ; N/A   ; N/A  ; N/A      ; N/A     ; -33.222             ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; In0       ; Push_button1 ; 2.166 ; 2.166 ; Rise       ; Push_button1    ;
+; In1       ; Push_button1 ; 2.702 ; 2.702 ; Rise       ; Push_button1    ;
+; In2       ; Push_button1 ; 2.493 ; 2.493 ; Rise       ; Push_button1    ;
+; In3       ; Push_button1 ; 2.462 ; 2.462 ; Rise       ; Push_button1    ;
+; In4       ; Push_button1 ; 2.192 ; 2.192 ; Rise       ; Push_button1    ;
+; In5       ; Push_button1 ; 2.636 ; 2.636 ; Rise       ; Push_button1    ;
+; In6       ; Push_button1 ; 2.190 ; 2.190 ; Rise       ; Push_button1    ;
+; In7       ; Push_button1 ; 2.667 ; 2.667 ; Rise       ; Push_button1    ;
+; In8       ; Push_button1 ; 2.175 ; 2.175 ; Rise       ; Push_button1    ;
+; In9       ; Push_button1 ; 2.389 ; 2.389 ; Rise       ; Push_button1    ;
+; In10      ; Push_button1 ; 2.101 ; 2.101 ; Rise       ; Push_button1    ;
+; In11      ; Push_button1 ; 2.170 ; 2.170 ; Rise       ; Push_button1    ;
+; In12      ; Push_button1 ; 2.476 ; 2.476 ; Rise       ; Push_button1    ;
+; In13      ; Push_button1 ; 2.179 ; 2.179 ; Rise       ; Push_button1    ;
+; In14      ; Push_button1 ; 2.442 ; 2.442 ; Rise       ; Push_button1    ;
+; In15      ; Push_button1 ; 2.427 ; 2.427 ; Rise       ; Push_button1    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Hold Times                                                                ;
++-----------+--------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+--------------+--------+--------+------------+-----------------+
+; In0       ; Push_button1 ; -1.256 ; -1.256 ; Rise       ; Push_button1    ;
+; In1       ; Push_button1 ; -1.457 ; -1.457 ; Rise       ; Push_button1    ;
+; In2       ; Push_button1 ; -1.370 ; -1.370 ; Rise       ; Push_button1    ;
+; In3       ; Push_button1 ; -1.354 ; -1.354 ; Rise       ; Push_button1    ;
+; In4       ; Push_button1 ; -1.220 ; -1.220 ; Rise       ; Push_button1    ;
+; In5       ; Push_button1 ; -1.410 ; -1.410 ; Rise       ; Push_button1    ;
+; In6       ; Push_button1 ; -1.220 ; -1.220 ; Rise       ; Push_button1    ;
+; In7       ; Push_button1 ; -1.432 ; -1.432 ; Rise       ; Push_button1    ;
+; In8       ; Push_button1 ; -1.242 ; -1.242 ; Rise       ; Push_button1    ;
+; In9       ; Push_button1 ; -1.333 ; -1.333 ; Rise       ; Push_button1    ;
+; In10      ; Push_button1 ; -1.206 ; -1.206 ; Rise       ; Push_button1    ;
+; In11      ; Push_button1 ; -1.240 ; -1.240 ; Rise       ; Push_button1    ;
+; In12      ; Push_button1 ; -1.364 ; -1.364 ; Rise       ; Push_button1    ;
+; In13      ; Push_button1 ; -1.254 ; -1.254 ; Rise       ; Push_button1    ;
+; In14      ; Push_button1 ; -1.341 ; -1.341 ; Rise       ; Push_button1    ;
+; In15      ; Push_button1 ; -1.329 ; -1.329 ; Rise       ; Push_button1    ;
++-----------+--------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; A0        ; Push_button1 ; 7.604 ; 7.604 ; Rise       ; Push_button1    ;
+; A1        ; Push_button1 ; 7.648 ; 7.648 ; Rise       ; Push_button1    ;
+; A2        ; Push_button1 ; 7.163 ; 7.163 ; Rise       ; Push_button1    ;
+; A3        ; Push_button1 ; 7.465 ; 7.465 ; Rise       ; Push_button1    ;
+; A4        ; Push_button1 ; 7.918 ; 7.918 ; Rise       ; Push_button1    ;
+; A5        ; Push_button1 ; 7.911 ; 7.911 ; Rise       ; Push_button1    ;
+; A6        ; Push_button1 ; 7.904 ; 7.904 ; Rise       ; Push_button1    ;
+; A7        ; Push_button1 ; 7.922 ; 7.922 ; Rise       ; Push_button1    ;
+; A8        ; Push_button1 ; 7.601 ; 7.601 ; Rise       ; Push_button1    ;
+; A9        ; Push_button1 ; 7.662 ; 7.662 ; Rise       ; Push_button1    ;
+; A10       ; Push_button1 ; 7.442 ; 7.442 ; Rise       ; Push_button1    ;
+; A11       ; Push_button1 ; 7.294 ; 7.294 ; Rise       ; Push_button1    ;
+; A12       ; Push_button1 ; 7.670 ; 7.670 ; Rise       ; Push_button1    ;
+; A13       ; Push_button1 ; 7.654 ; 7.654 ; Rise       ; Push_button1    ;
+; A14       ; Push_button1 ; 7.160 ; 7.160 ; Rise       ; Push_button1    ;
+; A15       ; Push_button1 ; 7.305 ; 7.305 ; Rise       ; Push_button1    ;
+; D0        ; Push_button1 ; 7.891 ; 7.891 ; Rise       ; Push_button1    ;
+; D1        ; Push_button1 ; 7.325 ; 7.325 ; Rise       ; Push_button1    ;
+; D2        ; Push_button1 ; 7.882 ; 7.882 ; Rise       ; Push_button1    ;
+; D3        ; Push_button1 ; 7.895 ; 7.895 ; Rise       ; Push_button1    ;
+; D4        ; Push_button1 ; 7.997 ; 7.997 ; Rise       ; Push_button1    ;
+; D5        ; Push_button1 ; 7.604 ; 7.604 ; Rise       ; Push_button1    ;
+; D6        ; Push_button1 ; 7.641 ; 7.641 ; Rise       ; Push_button1    ;
+; D7        ; Push_button1 ; 8.025 ; 8.025 ; Rise       ; Push_button1    ;
+; D8        ; Push_button1 ; 7.108 ; 7.108 ; Rise       ; Push_button1    ;
+; D9        ; Push_button1 ; 7.720 ; 7.720 ; Rise       ; Push_button1    ;
+; D10       ; Push_button1 ; 7.623 ; 7.623 ; Rise       ; Push_button1    ;
+; D11       ; Push_button1 ; 7.439 ; 7.439 ; Rise       ; Push_button1    ;
+; D12       ; Push_button1 ; 7.777 ; 7.777 ; Rise       ; Push_button1    ;
+; D13       ; Push_button1 ; 7.423 ; 7.423 ; Rise       ; Push_button1    ;
+; D14       ; Push_button1 ; 7.661 ; 7.661 ; Rise       ; Push_button1    ;
+; D15       ; Push_button1 ; 7.327 ; 7.327 ; Rise       ; Push_button1    ;
+; HEX_0_A   ; Push_button1 ; 8.535 ; 8.535 ; Rise       ; Push_button1    ;
+; HEX_0_B   ; Push_button1 ; 8.483 ; 8.483 ; Rise       ; Push_button1    ;
+; HEX_0_C   ; Push_button1 ; 8.511 ; 8.511 ; Rise       ; Push_button1    ;
+; HEX_0_D   ; Push_button1 ; 8.203 ; 8.203 ; Rise       ; Push_button1    ;
+; HEX_0_E   ; Push_button1 ; 8.352 ; 8.352 ; Rise       ; Push_button1    ;
+; HEX_0_F   ; Push_button1 ; 8.354 ; 8.354 ; Rise       ; Push_button1    ;
+; HEX_0_G   ; Push_button1 ; 8.256 ; 8.256 ; Rise       ; Push_button1    ;
+; HEX_1_A   ; Push_button1 ; 8.551 ; 8.551 ; Rise       ; Push_button1    ;
+; HEX_1_B   ; Push_button1 ; 8.442 ; 8.442 ; Rise       ; Push_button1    ;
+; HEX_1_C   ; Push_button1 ; 9.060 ; 9.060 ; Rise       ; Push_button1    ;
+; HEX_1_D   ; Push_button1 ; 8.521 ; 8.521 ; Rise       ; Push_button1    ;
+; HEX_1_E   ; Push_button1 ; 8.854 ; 8.854 ; Rise       ; Push_button1    ;
+; HEX_1_F   ; Push_button1 ; 8.824 ; 8.824 ; Rise       ; Push_button1    ;
+; HEX_1_G   ; Push_button1 ; 8.606 ; 8.606 ; Rise       ; Push_button1    ;
+; HEX_2_A   ; Push_button1 ; 8.261 ; 8.261 ; Rise       ; Push_button1    ;
+; HEX_2_B   ; Push_button1 ; 8.434 ; 8.434 ; Rise       ; Push_button1    ;
+; HEX_2_C   ; Push_button1 ; 8.134 ; 8.134 ; Rise       ; Push_button1    ;
+; HEX_2_D   ; Push_button1 ; 8.474 ; 8.474 ; Rise       ; Push_button1    ;
+; HEX_2_E   ; Push_button1 ; 7.907 ; 7.907 ; Rise       ; Push_button1    ;
+; HEX_2_F   ; Push_button1 ; 8.286 ; 8.286 ; Rise       ; Push_button1    ;
+; HEX_2_G   ; Push_button1 ; 8.525 ; 8.525 ; Rise       ; Push_button1    ;
+; HEX_3_A   ; Push_button1 ; 8.252 ; 8.252 ; Rise       ; Push_button1    ;
+; HEX_3_B   ; Push_button1 ; 8.198 ; 8.198 ; Rise       ; Push_button1    ;
+; HEX_3_C   ; Push_button1 ; 8.393 ; 8.393 ; Rise       ; Push_button1    ;
+; HEX_3_D   ; Push_button1 ; 9.063 ; 9.063 ; Rise       ; Push_button1    ;
+; HEX_3_E   ; Push_button1 ; 8.349 ; 8.349 ; Rise       ; Push_button1    ;
+; HEX_3_F   ; Push_button1 ; 8.351 ; 8.351 ; Rise       ; Push_button1    ;
+; HEX_3_G   ; Push_button1 ; 8.668 ; 8.668 ; Rise       ; Push_button1    ;
+; HEX_4_A   ; Push_button1 ; 8.632 ; 8.632 ; Rise       ; Push_button1    ;
+; HEX_4_B   ; Push_button1 ; 8.731 ; 8.731 ; Rise       ; Push_button1    ;
+; HEX_4_C   ; Push_button1 ; 8.235 ; 8.235 ; Rise       ; Push_button1    ;
+; HEX_4_D   ; Push_button1 ; 8.801 ; 8.801 ; Rise       ; Push_button1    ;
+; HEX_4_E   ; Push_button1 ; 8.406 ; 8.406 ; Rise       ; Push_button1    ;
+; HEX_4_F   ; Push_button1 ; 8.071 ; 8.071 ; Rise       ; Push_button1    ;
+; HEX_4_G   ; Push_button1 ; 8.376 ; 8.376 ; Rise       ; Push_button1    ;
+; HEX_5_A   ; Push_button1 ; 8.362 ; 8.362 ; Rise       ; Push_button1    ;
+; HEX_5_B   ; Push_button1 ; 8.811 ; 8.811 ; Rise       ; Push_button1    ;
+; HEX_5_C   ; Push_button1 ; 8.487 ; 8.487 ; Rise       ; Push_button1    ;
+; HEX_5_D   ; Push_button1 ; 8.548 ; 8.548 ; Rise       ; Push_button1    ;
+; HEX_5_E   ; Push_button1 ; 8.549 ; 8.549 ; Rise       ; Push_button1    ;
+; HEX_5_F   ; Push_button1 ; 8.827 ; 8.827 ; Rise       ; Push_button1    ;
+; HEX_5_G   ; Push_button1 ; 8.778 ; 8.778 ; Rise       ; Push_button1    ;
+; HEX_6_A   ; Push_button1 ; 8.286 ; 8.286 ; Rise       ; Push_button1    ;
+; HEX_6_B   ; Push_button1 ; 8.403 ; 8.403 ; Rise       ; Push_button1    ;
+; HEX_6_C   ; Push_button1 ; 8.164 ; 8.164 ; Rise       ; Push_button1    ;
+; HEX_6_D   ; Push_button1 ; 8.715 ; 8.715 ; Rise       ; Push_button1    ;
+; HEX_6_E   ; Push_button1 ; 8.595 ; 8.595 ; Rise       ; Push_button1    ;
+; HEX_6_F   ; Push_button1 ; 8.283 ; 8.283 ; Rise       ; Push_button1    ;
+; HEX_6_G   ; Push_button1 ; 8.492 ; 8.492 ; Rise       ; Push_button1    ;
+; HEX_7_A   ; Push_button1 ; 8.281 ; 8.281 ; Rise       ; Push_button1    ;
+; HEX_7_B   ; Push_button1 ; 8.578 ; 8.578 ; Rise       ; Push_button1    ;
+; HEX_7_C   ; Push_button1 ; 8.281 ; 8.281 ; Rise       ; Push_button1    ;
+; HEX_7_D   ; Push_button1 ; 8.352 ; 8.352 ; Rise       ; Push_button1    ;
+; HEX_7_E   ; Push_button1 ; 8.363 ; 8.363 ; Rise       ; Push_button1    ;
+; HEX_7_F   ; Push_button1 ; 8.401 ; 8.401 ; Rise       ; Push_button1    ;
+; HEX_7_G   ; Push_button1 ; 8.343 ; 8.343 ; Rise       ; Push_button1    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; A0        ; Push_button1 ; 4.081 ; 4.081 ; Rise       ; Push_button1    ;
+; A1        ; Push_button1 ; 4.149 ; 4.149 ; Rise       ; Push_button1    ;
+; A2        ; Push_button1 ; 3.894 ; 3.894 ; Rise       ; Push_button1    ;
+; A3        ; Push_button1 ; 4.026 ; 4.026 ; Rise       ; Push_button1    ;
+; A4        ; Push_button1 ; 4.289 ; 4.289 ; Rise       ; Push_button1    ;
+; A5        ; Push_button1 ; 4.287 ; 4.287 ; Rise       ; Push_button1    ;
+; A6        ; Push_button1 ; 4.282 ; 4.282 ; Rise       ; Push_button1    ;
+; A7        ; Push_button1 ; 4.297 ; 4.297 ; Rise       ; Push_button1    ;
+; A8        ; Push_button1 ; 4.085 ; 4.085 ; Rise       ; Push_button1    ;
+; A9        ; Push_button1 ; 4.127 ; 4.127 ; Rise       ; Push_button1    ;
+; A10       ; Push_button1 ; 4.020 ; 4.020 ; Rise       ; Push_button1    ;
+; A11       ; Push_button1 ; 3.942 ; 3.942 ; Rise       ; Push_button1    ;
+; A12       ; Push_button1 ; 4.168 ; 4.168 ; Rise       ; Push_button1    ;
+; A13       ; Push_button1 ; 4.147 ; 4.147 ; Rise       ; Push_button1    ;
+; A14       ; Push_button1 ; 3.883 ; 3.883 ; Rise       ; Push_button1    ;
+; A15       ; Push_button1 ; 3.943 ; 3.943 ; Rise       ; Push_button1    ;
+; D0        ; Push_button1 ; 4.263 ; 4.263 ; Rise       ; Push_button1    ;
+; D1        ; Push_button1 ; 3.966 ; 3.966 ; Rise       ; Push_button1    ;
+; D2        ; Push_button1 ; 4.257 ; 4.257 ; Rise       ; Push_button1    ;
+; D3        ; Push_button1 ; 4.265 ; 4.265 ; Rise       ; Push_button1    ;
+; D4        ; Push_button1 ; 4.316 ; 4.316 ; Rise       ; Push_button1    ;
+; D5        ; Push_button1 ; 4.104 ; 4.104 ; Rise       ; Push_button1    ;
+; D6        ; Push_button1 ; 4.148 ; 4.148 ; Rise       ; Push_button1    ;
+; D7        ; Push_button1 ; 4.334 ; 4.334 ; Rise       ; Push_button1    ;
+; D8        ; Push_button1 ; 3.860 ; 3.860 ; Rise       ; Push_button1    ;
+; D9        ; Push_button1 ; 4.195 ; 4.195 ; Rise       ; Push_button1    ;
+; D10       ; Push_button1 ; 4.094 ; 4.094 ; Rise       ; Push_button1    ;
+; D11       ; Push_button1 ; 4.020 ; 4.020 ; Rise       ; Push_button1    ;
+; D12       ; Push_button1 ; 4.204 ; 4.204 ; Rise       ; Push_button1    ;
+; D13       ; Push_button1 ; 4.040 ; 4.040 ; Rise       ; Push_button1    ;
+; D14       ; Push_button1 ; 4.157 ; 4.157 ; Rise       ; Push_button1    ;
+; D15       ; Push_button1 ; 3.959 ; 3.959 ; Rise       ; Push_button1    ;
+; HEX_0_A   ; Push_button1 ; 4.294 ; 4.294 ; Rise       ; Push_button1    ;
+; HEX_0_B   ; Push_button1 ; 4.226 ; 4.226 ; Rise       ; Push_button1    ;
+; HEX_0_C   ; Push_button1 ; 4.219 ; 4.219 ; Rise       ; Push_button1    ;
+; HEX_0_D   ; Push_button1 ; 4.130 ; 4.130 ; Rise       ; Push_button1    ;
+; HEX_0_E   ; Push_button1 ; 4.257 ; 4.257 ; Rise       ; Push_button1    ;
+; HEX_0_F   ; Push_button1 ; 4.271 ; 4.271 ; Rise       ; Push_button1    ;
+; HEX_0_G   ; Push_button1 ; 4.174 ; 4.174 ; Rise       ; Push_button1    ;
+; HEX_1_A   ; Push_button1 ; 4.324 ; 4.324 ; Rise       ; Push_button1    ;
+; HEX_1_B   ; Push_button1 ; 4.312 ; 4.312 ; Rise       ; Push_button1    ;
+; HEX_1_C   ; Push_button1 ; 4.411 ; 4.411 ; Rise       ; Push_button1    ;
+; HEX_1_D   ; Push_button1 ; 4.299 ; 4.299 ; Rise       ; Push_button1    ;
+; HEX_1_E   ; Push_button1 ; 4.367 ; 4.367 ; Rise       ; Push_button1    ;
+; HEX_1_F   ; Push_button1 ; 4.347 ; 4.347 ; Rise       ; Push_button1    ;
+; HEX_1_G   ; Push_button1 ; 4.249 ; 4.249 ; Rise       ; Push_button1    ;
+; HEX_2_A   ; Push_button1 ; 4.239 ; 4.239 ; Rise       ; Push_button1    ;
+; HEX_2_B   ; Push_button1 ; 4.236 ; 4.236 ; Rise       ; Push_button1    ;
+; HEX_2_C   ; Push_button1 ; 4.141 ; 4.141 ; Rise       ; Push_button1    ;
+; HEX_2_D   ; Push_button1 ; 4.128 ; 4.128 ; Rise       ; Push_button1    ;
+; HEX_2_E   ; Push_button1 ; 4.086 ; 4.086 ; Rise       ; Push_button1    ;
+; HEX_2_F   ; Push_button1 ; 4.320 ; 4.320 ; Rise       ; Push_button1    ;
+; HEX_2_G   ; Push_button1 ; 4.431 ; 4.431 ; Rise       ; Push_button1    ;
+; HEX_3_A   ; Push_button1 ; 4.109 ; 4.109 ; Rise       ; Push_button1    ;
+; HEX_3_B   ; Push_button1 ; 4.218 ; 4.218 ; Rise       ; Push_button1    ;
+; HEX_3_C   ; Push_button1 ; 4.316 ; 4.316 ; Rise       ; Push_button1    ;
+; HEX_3_D   ; Push_button1 ; 4.586 ; 4.586 ; Rise       ; Push_button1    ;
+; HEX_3_E   ; Push_button1 ; 4.208 ; 4.208 ; Rise       ; Push_button1    ;
+; HEX_3_F   ; Push_button1 ; 4.207 ; 4.207 ; Rise       ; Push_button1    ;
+; HEX_3_G   ; Push_button1 ; 4.380 ; 4.380 ; Rise       ; Push_button1    ;
+; HEX_4_A   ; Push_button1 ; 4.314 ; 4.314 ; Rise       ; Push_button1    ;
+; HEX_4_B   ; Push_button1 ; 4.291 ; 4.291 ; Rise       ; Push_button1    ;
+; HEX_4_C   ; Push_button1 ; 4.127 ; 4.127 ; Rise       ; Push_button1    ;
+; HEX_4_D   ; Push_button1 ; 4.375 ; 4.375 ; Rise       ; Push_button1    ;
+; HEX_4_E   ; Push_button1 ; 4.201 ; 4.201 ; Rise       ; Push_button1    ;
+; HEX_4_F   ; Push_button1 ; 4.070 ; 4.070 ; Rise       ; Push_button1    ;
+; HEX_4_G   ; Push_button1 ; 4.203 ; 4.203 ; Rise       ; Push_button1    ;
+; HEX_5_A   ; Push_button1 ; 4.222 ; 4.222 ; Rise       ; Push_button1    ;
+; HEX_5_B   ; Push_button1 ; 4.422 ; 4.422 ; Rise       ; Push_button1    ;
+; HEX_5_C   ; Push_button1 ; 4.365 ; 4.365 ; Rise       ; Push_button1    ;
+; HEX_5_D   ; Push_button1 ; 4.334 ; 4.334 ; Rise       ; Push_button1    ;
+; HEX_5_E   ; Push_button1 ; 4.334 ; 4.334 ; Rise       ; Push_button1    ;
+; HEX_5_F   ; Push_button1 ; 4.436 ; 4.436 ; Rise       ; Push_button1    ;
+; HEX_5_G   ; Push_button1 ; 4.402 ; 4.402 ; Rise       ; Push_button1    ;
+; HEX_6_A   ; Push_button1 ; 4.247 ; 4.247 ; Rise       ; Push_button1    ;
+; HEX_6_B   ; Push_button1 ; 4.254 ; 4.254 ; Rise       ; Push_button1    ;
+; HEX_6_C   ; Push_button1 ; 4.157 ; 4.157 ; Rise       ; Push_button1    ;
+; HEX_6_D   ; Push_button1 ; 4.395 ; 4.395 ; Rise       ; Push_button1    ;
+; HEX_6_E   ; Push_button1 ; 4.337 ; 4.337 ; Rise       ; Push_button1    ;
+; HEX_6_F   ; Push_button1 ; 4.195 ; 4.195 ; Rise       ; Push_button1    ;
+; HEX_6_G   ; Push_button1 ; 4.282 ; 4.282 ; Rise       ; Push_button1    ;
+; HEX_7_A   ; Push_button1 ; 4.099 ; 4.099 ; Rise       ; Push_button1    ;
+; HEX_7_B   ; Push_button1 ; 4.299 ; 4.299 ; Rise       ; Push_button1    ;
+; HEX_7_C   ; Push_button1 ; 4.131 ; 4.131 ; Rise       ; Push_button1    ;
+; HEX_7_D   ; Push_button1 ; 4.138 ; 4.138 ; Rise       ; Push_button1    ;
+; HEX_7_E   ; Push_button1 ; 4.240 ; 4.240 ; Rise       ; Push_button1    ;
+; HEX_7_F   ; Push_button1 ; 4.278 ; 4.278 ; Rise       ; Push_button1    ;
+; HEX_7_G   ; Push_button1 ; 4.203 ; 4.203 ; Rise       ; Push_button1    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------+
+; Progagation Delay                                    ;
++--------------+-------------+-------+----+----+-------+
+; Input Port   ; Output Port ; RR    ; RF ; FR ; FF    ;
++--------------+-------------+-------+----+----+-------+
+; Push_button2 ; WE          ; 8.904 ;    ;    ; 8.904 ;
++--------------+-------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Progagation Delay                            ;
++--------------+-------------+-------+----+----+-------+
+; Input Port   ; Output Port ; RR    ; RF ; FR ; FF    ;
++--------------+-------------+-------+----+----+-------+
+; Push_button2 ; WE          ; 5.074 ;    ;    ; 5.074 ;
++--------------+-------------+-------+----+----+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 17    ; 17   ;
+; Unconstrained Input Port Paths  ; 33    ; 33   ;
+; Unconstrained Output Ports      ; 89    ; 89   ;
+; Unconstrained Output Port Paths ; 257   ; 257  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Sun Jun 09 14:37:36 2019
+Info: Command: quartus_sta WIMPAVR_Program -c WIMPAVR_Program
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'WIMPAVR_Program.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name Push_button1 Push_button1
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222       -33.222 Push_button1 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222       -33.222 Push_button1 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4557 megabytes
+    Info: Processing ended: Sun Jun 09 14:37:37 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

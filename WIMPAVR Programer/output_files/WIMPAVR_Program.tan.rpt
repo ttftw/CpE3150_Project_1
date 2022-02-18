@@ -1,0 +1,672 @@
+Classic Timing Analyzer report for WIMPAVR_Program
+Sat Jan 04 13:37:44 2020
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. tsu
+  7. tco
+  8. tpd
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                     ;
++------------------------------+-------+---------------+-------------+-----------------------------+-----------------------------+--------------+--------------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From                        ; To                          ; From Clock   ; To Clock     ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-----------------------------+-----------------------------+--------------+--------------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 4.563 ns    ; In13                        ; Input_Register:inst|inst13  ; --           ; Pushbutton0  ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 12.612 ns   ; Input_Register:inst12|inst6 ; HEX_1_B                     ; Push_button1 ; --           ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 16.280 ns   ; Display_Select              ; A9                          ; --           ; --           ; 0            ;
+; Worst-case th                ; N/A   ; None          ; 1.859 ns    ; In3                         ; Input_Register:inst12|inst3 ; --           ; Push_button1 ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                             ;                             ;              ;              ; 0            ;
++------------------------------+-------+---------------+-------------+-----------------------------+-----------------------------+--------------+--------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2C35F672C6       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Push_button1    ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; Pushbutton0     ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------+
+; tsu                                                                                    ;
++-------+--------------+------------+------+------------------------------+--------------+
+; Slack ; Required tsu ; Actual tsu ; From ; To                           ; To Clock     ;
++-------+--------------+------------+------+------------------------------+--------------+
+; N/A   ; None         ; 4.563 ns   ; In13 ; Input_Register:inst|inst13   ; Pushbutton0  ;
+; N/A   ; None         ; 4.461 ns   ; In15 ; Input_Register:inst|inst15   ; Pushbutton0  ;
+; N/A   ; None         ; 4.280 ns   ; In14 ; Input_Register:inst|inst14   ; Pushbutton0  ;
+; N/A   ; None         ; 3.603 ns   ; In13 ; Input_Register:inst12|inst13 ; Push_button1 ;
+; N/A   ; None         ; 3.505 ns   ; In15 ; Input_Register:inst12|inst15 ; Push_button1 ;
+; N/A   ; None         ; 3.325 ns   ; In14 ; Input_Register:inst12|inst14 ; Push_button1 ;
+; N/A   ; None         ; 1.937 ns   ; In10 ; Input_Register:inst12|inst10 ; Push_button1 ;
+; N/A   ; None         ; 1.868 ns   ; In11 ; Input_Register:inst12|inst11 ; Push_button1 ;
+; N/A   ; None         ; 1.464 ns   ; In10 ; Input_Register:inst|inst10   ; Pushbutton0  ;
+; N/A   ; None         ; 1.393 ns   ; In11 ; Input_Register:inst|inst11   ; Pushbutton0  ;
+; N/A   ; None         ; 1.393 ns   ; In0  ; Input_Register:inst|inst     ; Pushbutton0  ;
+; N/A   ; None         ; 1.355 ns   ; In9  ; Input_Register:inst12|inst9  ; Push_button1 ;
+; N/A   ; None         ; 1.137 ns   ; In8  ; Input_Register:inst12|inst8  ; Push_button1 ;
+; N/A   ; None         ; 1.044 ns   ; In1  ; Input_Register:inst|inst1    ; Pushbutton0  ;
+; N/A   ; None         ; 0.882 ns   ; In9  ; Input_Register:inst|inst9    ; Pushbutton0  ;
+; N/A   ; None         ; 0.795 ns   ; In2  ; Input_Register:inst|inst2    ; Pushbutton0  ;
+; N/A   ; None         ; 0.703 ns   ; In7  ; Input_Register:inst|inst7    ; Pushbutton0  ;
+; N/A   ; None         ; 0.662 ns   ; In8  ; Input_Register:inst|inst8    ; Pushbutton0  ;
+; N/A   ; None         ; 0.588 ns   ; In5  ; Input_Register:inst|inst5    ; Pushbutton0  ;
+; N/A   ; None         ; 0.517 ns   ; In6  ; Input_Register:inst|inst6    ; Pushbutton0  ;
+; N/A   ; None         ; 0.507 ns   ; In12 ; Input_Register:inst|inst12   ; Pushbutton0  ;
+; N/A   ; None         ; 0.491 ns   ; In4  ; Input_Register:inst|inst4    ; Pushbutton0  ;
+; N/A   ; None         ; -0.109 ns  ; In0  ; Input_Register:inst12|inst   ; Push_button1 ;
+; N/A   ; None         ; -0.137 ns  ; In3  ; Input_Register:inst|inst3    ; Pushbutton0  ;
+; N/A   ; None         ; -0.451 ns  ; In12 ; Input_Register:inst12|inst12 ; Push_button1 ;
+; N/A   ; None         ; -0.453 ns  ; In1  ; Input_Register:inst12|inst1  ; Push_button1 ;
+; N/A   ; None         ; -0.698 ns  ; In2  ; Input_Register:inst12|inst2  ; Push_button1 ;
+; N/A   ; None         ; -0.808 ns  ; In7  ; Input_Register:inst12|inst7  ; Push_button1 ;
+; N/A   ; None         ; -0.918 ns  ; In5  ; Input_Register:inst12|inst5  ; Push_button1 ;
+; N/A   ; None         ; -0.991 ns  ; In6  ; Input_Register:inst12|inst6  ; Push_button1 ;
+; N/A   ; None         ; -1.017 ns  ; In4  ; Input_Register:inst12|inst4  ; Push_button1 ;
+; N/A   ; None         ; -1.629 ns  ; In3  ; Input_Register:inst12|inst3  ; Push_button1 ;
++-------+--------------+------------+------+------------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                                                                                ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------------------+---------+--------------+
+; Slack                                   ; Required tco                                        ; Actual tco ; From                         ; To      ; From Clock   ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------------------+---------+--------------+
+; N/A                                     ; None                                                ; 12.612 ns  ; Input_Register:inst12|inst6  ; HEX_1_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.504 ns  ; Input_Register:inst12|inst6  ; HEX_1_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.451 ns  ; Input_Register:inst12|inst6  ; HEX_1_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.447 ns  ; Input_Register:inst12|inst6  ; HEX_1_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.443 ns  ; Input_Register:inst12|inst6  ; HEX_1_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.430 ns  ; Input_Register:inst12|inst6  ; HEX_1_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.184 ns  ; Input_Register:inst12|inst4  ; HEX_1_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.085 ns  ; Input_Register:inst12|inst7  ; HEX_1_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.070 ns  ; Input_Register:inst12|inst4  ; HEX_1_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.019 ns  ; Input_Register:inst12|inst4  ; HEX_1_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.013 ns  ; Input_Register:inst12|inst4  ; HEX_1_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.012 ns  ; Input_Register:inst12|inst4  ; HEX_1_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 12.001 ns  ; Input_Register:inst12|inst4  ; HEX_1_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.967 ns  ; Input_Register:inst12|inst7  ; HEX_1_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.916 ns  ; Input_Register:inst12|inst7  ; HEX_1_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.903 ns  ; Input_Register:inst12|inst7  ; HEX_1_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.888 ns  ; Input_Register:inst12|inst7  ; HEX_1_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.887 ns  ; Input_Register:inst12|inst7  ; HEX_1_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.850 ns  ; Input_Register:inst12|inst5  ; HEX_1_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.711 ns  ; Input_Register:inst12|inst5  ; HEX_1_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.682 ns  ; Input_Register:inst12|inst5  ; HEX_1_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.678 ns  ; Input_Register:inst12|inst5  ; HEX_1_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.668 ns  ; Input_Register:inst12|inst5  ; HEX_1_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.662 ns  ; Input_Register:inst12|inst5  ; HEX_1_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.534 ns  ; Input_Register:inst12|inst5  ; HEX_1_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.297 ns  ; Input_Register:inst12|inst4  ; HEX_1_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.131 ns  ; Input_Register:inst12|inst7  ; HEX_1_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 11.126 ns  ; Input_Register:inst|inst13   ; HEX_7_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 11.086 ns  ; Input_Register:inst|inst14   ; HEX_7_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.999 ns  ; Input_Register:inst12|inst6  ; HEX_1_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.976 ns  ; Input_Register:inst|inst15   ; HEX_7_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.959 ns  ; Input_Register:inst|inst9    ; HEX_6_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.946 ns  ; Input_Register:inst|inst10   ; HEX_6_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.927 ns  ; Input_Register:inst12|inst13 ; A13     ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.921 ns  ; Input_Register:inst|inst10   ; HEX_6_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.918 ns  ; Input_Register:inst|inst9    ; D9      ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.902 ns  ; Input_Register:inst|inst10   ; HEX_6_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.892 ns  ; Input_Register:inst|inst9    ; HEX_6_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.882 ns  ; Input_Register:inst|inst9    ; HEX_6_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.860 ns  ; Input_Register:inst12|inst9  ; A9      ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.823 ns  ; Input_Register:inst|inst11   ; HEX_6_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.814 ns  ; Input_Register:inst|inst12   ; HEX_7_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.773 ns  ; Input_Register:inst|inst11   ; HEX_6_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.753 ns  ; Input_Register:inst|inst11   ; HEX_6_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.657 ns  ; Input_Register:inst|inst8    ; HEX_6_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.608 ns  ; Input_Register:inst|inst8    ; HEX_6_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.589 ns  ; Input_Register:inst|inst8    ; HEX_6_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.512 ns  ; Input_Register:inst12|inst12 ; A12     ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.492 ns  ; Input_Register:inst12|inst13 ; HEX_3_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.486 ns  ; Input_Register:inst12|inst13 ; HEX_3_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.483 ns  ; Input_Register:inst|inst10   ; HEX_6_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.449 ns  ; Input_Register:inst12|inst13 ; HEX_3_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.444 ns  ; Input_Register:inst|inst9    ; HEX_6_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.440 ns  ; Input_Register:inst12|inst13 ; HEX_3_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.439 ns  ; Input_Register:inst12|inst13 ; HEX_3_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.438 ns  ; Input_Register:inst12|inst13 ; HEX_3_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.417 ns  ; Input_Register:inst|inst14   ; HEX_7_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.396 ns  ; Input_Register:inst|inst13   ; HEX_7_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.391 ns  ; Input_Register:inst12|inst15 ; A15     ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.389 ns  ; Input_Register:inst12|inst10 ; A10     ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.369 ns  ; Input_Register:inst12|inst15 ; HEX_3_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.361 ns  ; Input_Register:inst12|inst15 ; HEX_3_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.335 ns  ; Input_Register:inst|inst11   ; HEX_6_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.335 ns  ; Input_Register:inst12|inst15 ; HEX_3_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.326 ns  ; Input_Register:inst12|inst15 ; HEX_3_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.318 ns  ; Input_Register:inst12|inst15 ; HEX_3_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.317 ns  ; Input_Register:inst|inst3    ; HEX_4_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.300 ns  ; Input_Register:inst12|inst15 ; HEX_3_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.286 ns  ; Input_Register:inst|inst15   ; HEX_7_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.283 ns  ; Input_Register:inst|inst10   ; HEX_6_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.275 ns  ; Input_Register:inst|inst3    ; HEX_4_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.271 ns  ; Input_Register:inst|inst9    ; HEX_6_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.252 ns  ; Input_Register:inst|inst3    ; HEX_4_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.198 ns  ; Input_Register:inst|inst11   ; D11     ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.170 ns  ; Input_Register:inst|inst8    ; HEX_6_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.135 ns  ; Input_Register:inst|inst11   ; HEX_6_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.119 ns  ; Input_Register:inst12|inst14 ; HEX_3_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.117 ns  ; Input_Register:inst|inst12   ; HEX_7_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.111 ns  ; Input_Register:inst12|inst14 ; HEX_3_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.097 ns  ; Input_Register:inst12|inst14 ; HEX_3_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.085 ns  ; Input_Register:inst12|inst14 ; HEX_3_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.076 ns  ; Input_Register:inst12|inst14 ; HEX_3_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.074 ns  ; Input_Register:inst12|inst14 ; HEX_3_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.062 ns  ; Input_Register:inst12|inst5  ; A5      ; Push_button1 ;
+; N/A                                     ; None                                                ; 10.017 ns  ; Input_Register:inst|inst13   ; HEX_7_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 10.013 ns  ; Input_Register:inst|inst14   ; HEX_7_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.979 ns   ; Input_Register:inst12|inst4  ; A4      ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.976 ns   ; Input_Register:inst|inst10   ; HEX_6_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.970 ns   ; Input_Register:inst|inst8    ; HEX_6_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.968 ns   ; Input_Register:inst|inst9    ; HEX_6_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.890 ns   ; Input_Register:inst12|inst8  ; A8      ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.880 ns   ; Input_Register:inst|inst15   ; HEX_7_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.870 ns   ; Input_Register:inst|inst13   ; HEX_7_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.862 ns   ; Input_Register:inst|inst14   ; HEX_7_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.839 ns   ; Input_Register:inst12|inst6  ; A6      ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.828 ns   ; Input_Register:inst|inst11   ; HEX_6_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.811 ns   ; Input_Register:inst12|inst3  ; A3      ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.802 ns   ; Input_Register:inst12|inst12 ; HEX_3_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.798 ns   ; Input_Register:inst12|inst   ; A0      ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.793 ns   ; Input_Register:inst12|inst12 ; HEX_3_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.781 ns   ; Input_Register:inst12|inst1  ; A1      ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.780 ns   ; Input_Register:inst12|inst12 ; HEX_3_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.775 ns   ; Input_Register:inst12|inst12 ; HEX_3_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.758 ns   ; Input_Register:inst12|inst12 ; HEX_3_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.757 ns   ; Input_Register:inst12|inst12 ; HEX_3_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.725 ns   ; Input_Register:inst|inst15   ; HEX_7_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.708 ns   ; Input_Register:inst|inst12   ; HEX_7_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.663 ns   ; Input_Register:inst|inst8    ; HEX_6_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.599 ns   ; Input_Register:inst|inst3    ; HEX_4_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.595 ns   ; Input_Register:inst|inst3    ; HEX_4_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.587 ns   ; Input_Register:inst12|inst2  ; A2      ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.581 ns   ; Input_Register:inst|inst10   ; D10     ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.580 ns   ; Input_Register:inst|inst3    ; HEX_4_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.560 ns   ; Input_Register:inst|inst12   ; HEX_7_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.559 ns   ; Input_Register:inst|inst2    ; HEX_4_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.559 ns   ; Input_Register:inst|inst3    ; HEX_4_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.546 ns   ; Input_Register:inst12|inst3  ; HEX_0_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.545 ns   ; Input_Register:inst12|inst3  ; HEX_0_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.542 ns   ; Input_Register:inst12|inst11 ; A11     ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.537 ns   ; Input_Register:inst12|inst   ; HEX_0_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.533 ns   ; Input_Register:inst12|inst   ; HEX_0_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.531 ns   ; Input_Register:inst12|inst   ; HEX_0_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.529 ns   ; Input_Register:inst12|inst3  ; HEX_0_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.524 ns   ; Input_Register:inst12|inst   ; HEX_0_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.523 ns   ; Input_Register:inst12|inst3  ; HEX_0_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.521 ns   ; Input_Register:inst12|inst   ; HEX_0_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.514 ns   ; Input_Register:inst|inst2    ; HEX_4_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.513 ns   ; Input_Register:inst|inst2    ; HEX_4_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.460 ns   ; Input_Register:inst12|inst7  ; A7      ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.441 ns   ; Input_Register:inst|inst1    ; HEX_4_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.372 ns   ; Input_Register:inst|inst1    ; HEX_4_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.369 ns   ; Input_Register:inst|inst1    ; HEX_4_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.362 ns   ; Input_Register:inst12|inst1  ; HEX_0_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.354 ns   ; Input_Register:inst12|inst1  ; HEX_0_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.353 ns   ; Input_Register:inst12|inst1  ; HEX_0_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.333 ns   ; Input_Register:inst12|inst1  ; HEX_0_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.314 ns   ; Input_Register:inst|inst     ; HEX_4_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.290 ns   ; Input_Register:inst12|inst   ; HEX_0_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.285 ns   ; Input_Register:inst12|inst2  ; HEX_0_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.283 ns   ; Input_Register:inst12|inst   ; HEX_0_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.279 ns   ; Input_Register:inst12|inst3  ; HEX_0_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.271 ns   ; Input_Register:inst12|inst3  ; HEX_0_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.267 ns   ; Input_Register:inst12|inst2  ; HEX_0_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.266 ns   ; Input_Register:inst12|inst2  ; HEX_0_E ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.265 ns   ; Input_Register:inst|inst14   ; HEX_7_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.256 ns   ; Input_Register:inst12|inst2  ; HEX_0_B ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.254 ns   ; Input_Register:inst12|inst13 ; HEX_3_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.247 ns   ; Input_Register:inst|inst13   ; HEX_7_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.245 ns   ; Input_Register:inst12|inst12 ; HEX_3_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.242 ns   ; Input_Register:inst|inst     ; HEX_4_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.233 ns   ; Input_Register:inst|inst     ; HEX_4_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.223 ns   ; Input_Register:inst|inst13   ; HEX_7_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.222 ns   ; Input_Register:inst|inst14   ; HEX_7_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.195 ns   ; Input_Register:inst12|inst14 ; HEX_3_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.146 ns   ; Input_Register:inst12|inst14 ; A14     ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.128 ns   ; Input_Register:inst|inst15   ; HEX_7_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.116 ns   ; Input_Register:inst12|inst1  ; HEX_0_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.109 ns   ; Input_Register:inst12|inst1  ; HEX_0_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.090 ns   ; Input_Register:inst|inst10   ; HEX_6_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.086 ns   ; Input_Register:inst|inst15   ; HEX_7_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.061 ns   ; Input_Register:inst12|inst3  ; HEX_0_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.046 ns   ; Input_Register:inst|inst9    ; HEX_6_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.033 ns   ; Input_Register:inst|inst13   ; D13     ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 9.023 ns   ; Input_Register:inst12|inst2  ; HEX_0_G ; Push_button1 ;
+; N/A                                     ; None                                                ; 9.020 ns   ; Input_Register:inst12|inst2  ; HEX_0_F ; Push_button1 ;
+; N/A                                     ; None                                                ; 8.966 ns   ; Input_Register:inst|inst12   ; HEX_7_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.946 ns   ; Input_Register:inst12|inst1  ; HEX_0_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 8.937 ns   ; Input_Register:inst|inst14   ; HEX_7_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.937 ns   ; Input_Register:inst|inst11   ; HEX_6_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.934 ns   ; Input_Register:inst12|inst15 ; HEX_3_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 8.925 ns   ; Input_Register:inst|inst13   ; HEX_7_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.914 ns   ; Input_Register:inst|inst12   ; HEX_7_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.881 ns   ; Input_Register:inst|inst12   ; D12     ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.862 ns   ; Input_Register:inst|inst2    ; HEX_4_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.837 ns   ; Input_Register:inst|inst2    ; HEX_4_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.817 ns   ; Input_Register:inst|inst2    ; HEX_4_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.813 ns   ; Input_Register:inst12|inst2  ; HEX_0_A ; Push_button1 ;
+; N/A                                     ; None                                                ; 8.800 ns   ; Input_Register:inst|inst15   ; HEX_7_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.796 ns   ; Input_Register:inst|inst2    ; HEX_4_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.776 ns   ; Input_Register:inst|inst8    ; HEX_6_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.750 ns   ; Input_Register:inst|inst5    ; HEX_5_F ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.724 ns   ; Input_Register:inst|inst1    ; HEX_4_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.693 ns   ; Input_Register:inst|inst8    ; D8      ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.692 ns   ; Input_Register:inst|inst1    ; HEX_4_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.675 ns   ; Input_Register:inst|inst1    ; HEX_4_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.649 ns   ; Input_Register:inst|inst1    ; HEX_4_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.639 ns   ; Input_Register:inst|inst12   ; HEX_7_A ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.588 ns   ; Input_Register:inst|inst     ; HEX_4_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.574 ns   ; Input_Register:inst|inst5    ; HEX_5_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.572 ns   ; Input_Register:inst12|inst9  ; HEX_2_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 8.562 ns   ; Input_Register:inst|inst     ; HEX_4_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.549 ns   ; Input_Register:inst|inst5    ; HEX_5_G ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.542 ns   ; Input_Register:inst|inst     ; HEX_4_B ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.528 ns   ; Input_Register:inst12|inst11 ; HEX_2_D ; Push_button1 ;
+; N/A                                     ; None                                                ; 8.526 ns   ; Input_Register:inst|inst5    ; HEX_5_E ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.525 ns   ; Input_Register:inst|inst     ; HEX_4_D ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.523 ns   ; Input_Register:inst12|inst9  ; HEX_2_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 8.502 ns   ; Input_Register:inst|inst5    ; HEX_5_C ; Pushbutton0  ;
+; N/A                                     ; None                                                ; 8.476 ns   ; Input_Register:inst12|inst11 ; HEX_2_C ; Push_button1 ;
+; N/A                                     ; None                                                ; 8.420 ns   ; Input_Register:inst12|inst9  ; HEX_2_B ; Push_button1 ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;                              ;         ;              ;
++-----------------------------------------+-----------------------------------------------------+------------+------------------------------+---------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; tpd                                                                                                                                        ;
++-----------------------------------------+-----------------------------------------------------+-----------------+----------------+---------+
+; Slack                                   ; Required P2P Time                                   ; Actual P2P Time ; From           ; To      ;
++-----------------------------------------+-----------------------------------------------------+-----------------+----------------+---------+
+; N/A                                     ; None                                                ; 16.280 ns       ; Display_Select ; A9      ;
+; N/A                                     ; None                                                ; 16.170 ns       ; Display_Select ; HEX_6_F ;
+; N/A                                     ; None                                                ; 16.145 ns       ; Display_Select ; HEX_6_A ;
+; N/A                                     ; None                                                ; 16.126 ns       ; Display_Select ; HEX_6_C ;
+; N/A                                     ; None                                                ; 15.811 ns       ; Display_Select ; A10     ;
+; N/A                                     ; None                                                ; 15.707 ns       ; Display_Select ; HEX_6_G ;
+; N/A                                     ; None                                                ; 15.507 ns       ; Display_Select ; HEX_6_D ;
+; N/A                                     ; None                                                ; 15.365 ns       ; Display_Select ; HEX_7_F ;
+; N/A                                     ; None                                                ; 15.311 ns       ; Display_Select ; A8      ;
+; N/A                                     ; None                                                ; 15.200 ns       ; Display_Select ; HEX_6_B ;
+; N/A                                     ; None                                                ; 14.959 ns       ; Display_Select ; A11     ;
+; N/A                                     ; None                                                ; 14.836 ns       ; SRAM_15        ; HEX_7_F ;
+; N/A                                     ; None                                                ; 14.749 ns       ; SRAM_13        ; HEX_7_F ;
+; N/A                                     ; None                                                ; 14.743 ns       ; SRAM_9         ; HEX_6_F ;
+; N/A                                     ; None                                                ; 14.676 ns       ; SRAM_9         ; HEX_6_C ;
+; N/A                                     ; None                                                ; 14.666 ns       ; SRAM_9         ; HEX_6_A ;
+; N/A                                     ; None                                                ; 14.663 ns       ; Display_Select ; HEX_7_G ;
+; N/A                                     ; None                                                ; 14.652 ns       ; SRAM_12        ; HEX_7_F ;
+; N/A                                     ; None                                                ; 14.536 ns       ; Display_Select ; HEX_1_B ;
+; N/A                                     ; None                                                ; 14.428 ns       ; Display_Select ; HEX_1_G ;
+; N/A                                     ; None                                                ; 14.396 ns       ; Display_Select ; HEX_4_F ;
+; N/A                                     ; None                                                ; 14.375 ns       ; Display_Select ; HEX_1_E ;
+; N/A                                     ; None                                                ; 14.371 ns       ; Display_Select ; HEX_1_F ;
+; N/A                                     ; None                                                ; 14.367 ns       ; Display_Select ; HEX_1_D ;
+; N/A                                     ; None                                                ; 14.354 ns       ; Display_Select ; HEX_4_C ;
+; N/A                                     ; None                                                ; 14.354 ns       ; Display_Select ; HEX_1_C ;
+; N/A                                     ; None                                                ; 14.331 ns       ; Display_Select ; HEX_4_A ;
+; N/A                                     ; None                                                ; 14.325 ns       ; SRAM_3         ; HEX_4_F ;
+; N/A                                     ; None                                                ; 14.314 ns       ; Display_Select ; HEX_6_E ;
+; N/A                                     ; None                                                ; 14.293 ns       ; SRAM_1         ; HEX_4_F ;
+; N/A                                     ; None                                                ; 14.283 ns       ; SRAM_3         ; HEX_4_C ;
+; N/A                                     ; None                                                ; 14.260 ns       ; SRAM_3         ; HEX_4_A ;
+; N/A                                     ; None                                                ; 14.259 ns       ; Display_Select ; HEX_7_D ;
+; N/A                                     ; None                                                ; 14.236 ns       ; Display_Select ; A13     ;
+; N/A                                     ; None                                                ; 14.228 ns       ; SRAM_9         ; HEX_6_G ;
+; N/A                                     ; None                                                ; 14.224 ns       ; SRAM_1         ; HEX_4_C ;
+; N/A                                     ; None                                                ; 14.221 ns       ; SRAM_1         ; HEX_4_A ;
+; N/A                                     ; None                                                ; 14.218 ns       ; In13           ; A13     ;
+; N/A                                     ; None                                                ; 14.150 ns       ; SRAM_14        ; HEX_7_F ;
+; N/A                                     ; None                                                ; 14.146 ns       ; SRAM_15        ; HEX_7_G ;
+; N/A                                     ; None                                                ; 14.109 ns       ; Display_Select ; HEX_7_B ;
+; N/A                                     ; None                                                ; 14.055 ns       ; SRAM_9         ; HEX_6_D ;
+; N/A                                     ; None                                                ; 14.019 ns       ; SRAM_13        ; HEX_7_G ;
+; N/A                                     ; None                                                ; 14.008 ns       ; Display_Select ; HEX_1_A ;
+; N/A                                     ; None                                                ; 13.992 ns       ; Display_Select ; HEX_2_D ;
+; N/A                                     ; None                                                ; 13.955 ns       ; SRAM_12        ; HEX_7_G ;
+; N/A                                     ; None                                                ; 13.943 ns       ; Display_Select ; HEX_2_C ;
+; N/A                                     ; None                                                ; 13.840 ns       ; Display_Select ; HEX_2_B ;
+; N/A                                     ; None                                                ; 13.825 ns       ; Display_Select ; A12     ;
+; N/A                                     ; None                                                ; 13.801 ns       ; Display_Select ; HEX_3_D ;
+; N/A                                     ; None                                                ; 13.795 ns       ; Display_Select ; HEX_3_C ;
+; N/A                                     ; None                                                ; 13.791 ns       ; Display_Select ; HEX_2_A ;
+; N/A                                     ; None                                                ; 13.783 ns       ; In13           ; HEX_3_D ;
+; N/A                                     ; None                                                ; 13.777 ns       ; In13           ; HEX_3_C ;
+; N/A                                     ; None                                                ; 13.758 ns       ; Display_Select ; HEX_3_B ;
+; N/A                                     ; None                                                ; 13.752 ns       ; SRAM_9         ; HEX_6_B ;
+; N/A                                     ; None                                                ; 13.749 ns       ; Display_Select ; HEX_3_E ;
+; N/A                                     ; None                                                ; 13.748 ns       ; Display_Select ; HEX_3_F ;
+; N/A                                     ; None                                                ; 13.747 ns       ; Display_Select ; HEX_3_G ;
+; N/A                                     ; None                                                ; 13.740 ns       ; SRAM_15        ; HEX_7_D ;
+; N/A                                     ; None                                                ; 13.740 ns       ; In13           ; HEX_3_B ;
+; N/A                                     ; None                                                ; 13.731 ns       ; In13           ; HEX_3_E ;
+; N/A                                     ; None                                                ; 13.730 ns       ; In13           ; HEX_3_F ;
+; N/A                                     ; None                                                ; 13.729 ns       ; In13           ; HEX_3_G ;
+; N/A                                     ; None                                                ; 13.693 ns       ; Display_Select ; HEX_2_F ;
+; N/A                                     ; None                                                ; 13.678 ns       ; Display_Select ; HEX_4_E ;
+; N/A                                     ; None                                                ; 13.674 ns       ; Display_Select ; HEX_4_G ;
+; N/A                                     ; None                                                ; 13.663 ns       ; Display_Select ; HEX_2_G ;
+; N/A                                     ; None                                                ; 13.659 ns       ; Display_Select ; HEX_4_B ;
+; N/A                                     ; None                                                ; 13.640 ns       ; SRAM_13        ; HEX_7_D ;
+; N/A                                     ; None                                                ; 13.638 ns       ; Display_Select ; HEX_4_D ;
+; N/A                                     ; None                                                ; 13.629 ns       ; Display_Select ; HEX_2_E ;
+; N/A                                     ; None                                                ; 13.619 ns       ; Display_Select ; A15     ;
+; N/A                                     ; None                                                ; 13.607 ns       ; SRAM_3         ; HEX_4_E ;
+; N/A                                     ; None                                                ; 13.603 ns       ; SRAM_3         ; HEX_4_G ;
+; N/A                                     ; None                                                ; 13.588 ns       ; SRAM_3         ; HEX_4_B ;
+; N/A                                     ; None                                                ; 13.585 ns       ; SRAM_15        ; HEX_7_B ;
+; N/A                                     ; None                                                ; 13.576 ns       ; SRAM_1         ; HEX_4_E ;
+; N/A                                     ; None                                                ; 13.567 ns       ; SRAM_3         ; HEX_4_D ;
+; N/A                                     ; None                                                ; 13.546 ns       ; SRAM_12        ; HEX_7_D ;
+; N/A                                     ; None                                                ; 13.544 ns       ; SRAM_1         ; HEX_4_G ;
+; N/A                                     ; None                                                ; 13.527 ns       ; SRAM_1         ; HEX_4_B ;
+; N/A                                     ; None                                                ; 13.511 ns       ; Display_Select ; HEX_7_E ;
+; N/A                                     ; None                                                ; 13.501 ns       ; SRAM_1         ; HEX_4_D ;
+; N/A                                     ; None                                                ; 13.493 ns       ; SRAM_13        ; HEX_7_B ;
+; N/A                                     ; None                                                ; 13.481 ns       ; SRAM_14        ; HEX_7_G ;
+; N/A                                     ; None                                                ; 13.468 ns       ; Display_Select ; HEX_7_C ;
+; N/A                                     ; None                                                ; 13.443 ns       ; In15           ; A15     ;
+; N/A                                     ; None                                                ; 13.423 ns       ; SRAM_11        ; HEX_6_F ;
+; N/A                                     ; None                                                ; 13.421 ns       ; In15           ; HEX_3_D ;
+; N/A                                     ; None                                                ; 13.413 ns       ; In15           ; HEX_3_C ;
+; N/A                                     ; None                                                ; 13.398 ns       ; SRAM_12        ; HEX_7_B ;
+; N/A                                     ; None                                                ; 13.387 ns       ; In15           ; HEX_3_G ;
+; N/A                                     ; None                                                ; 13.378 ns       ; In15           ; HEX_3_B ;
+; N/A                                     ; None                                                ; 13.373 ns       ; SRAM_11        ; HEX_6_A ;
+; N/A                                     ; None                                                ; 13.370 ns       ; In15           ; HEX_3_E ;
+; N/A                                     ; None                                                ; 13.353 ns       ; SRAM_11        ; HEX_6_C ;
+; N/A                                     ; None                                                ; 13.352 ns       ; In15           ; HEX_3_F ;
+; N/A                                     ; None                                                ; 13.325 ns       ; SRAM_10        ; HEX_6_F ;
+; N/A                                     ; None                                                ; 13.300 ns       ; SRAM_10        ; HEX_6_A ;
+; N/A                                     ; None                                                ; 13.300 ns       ; SRAM_2         ; HEX_4_F ;
+; N/A                                     ; None                                                ; 13.281 ns       ; SRAM_10        ; HEX_6_C ;
+; N/A                                     ; None                                                ; 13.255 ns       ; SRAM_2         ; HEX_4_A ;
+; N/A                                     ; None                                                ; 13.254 ns       ; SRAM_2         ; HEX_4_C ;
+; N/A                                     ; None                                                ; 13.249 ns       ; SRAM_0         ; HEX_4_F ;
+; N/A                                     ; None                                                ; 13.183 ns       ; Display_Select ; HEX_7_A ;
+; N/A                                     ; None                                                ; 13.177 ns       ; SRAM_0         ; HEX_4_A ;
+; N/A                                     ; None                                                ; 13.168 ns       ; SRAM_0         ; HEX_4_C ;
+; N/A                                     ; None                                                ; 13.077 ns       ; SRAM_14        ; HEX_7_D ;
+; N/A                                     ; None                                                ; 13.036 ns       ; SRAM_8         ; HEX_6_F ;
+; N/A                                     ; None                                                ; 12.988 ns       ; SRAM_15        ; HEX_7_E ;
+; N/A                                     ; None                                                ; 12.987 ns       ; SRAM_8         ; HEX_6_A ;
+; N/A                                     ; None                                                ; 12.968 ns       ; SRAM_8         ; HEX_6_C ;
+; N/A                                     ; None                                                ; 12.959 ns       ; In14           ; HEX_3_D ;
+; N/A                                     ; None                                                ; 12.951 ns       ; In14           ; HEX_3_C ;
+; N/A                                     ; None                                                ; 12.946 ns       ; SRAM_15        ; HEX_7_C ;
+; N/A                                     ; None                                                ; 12.937 ns       ; In14           ; HEX_3_E ;
+; N/A                                     ; None                                                ; 12.935 ns       ; SRAM_11        ; HEX_6_G ;
+; N/A                                     ; None                                                ; 12.926 ns       ; SRAM_14        ; HEX_7_B ;
+; N/A                                     ; None                                                ; 12.925 ns       ; In14           ; HEX_3_G ;
+; N/A                                     ; None                                                ; 12.916 ns       ; In14           ; HEX_3_B ;
+; N/A                                     ; None                                                ; 12.914 ns       ; In14           ; HEX_3_F ;
+; N/A                                     ; None                                                ; 12.870 ns       ; SRAM_13        ; HEX_7_E ;
+; N/A                                     ; None                                                ; 12.862 ns       ; SRAM_10        ; HEX_6_G ;
+; N/A                                     ; None                                                ; 12.846 ns       ; SRAM_13        ; HEX_7_C ;
+; N/A                                     ; None                                                ; 12.830 ns       ; SRAM_9         ; HEX_6_E ;
+; N/A                                     ; None                                                ; 12.804 ns       ; SRAM_12        ; HEX_7_E ;
+; N/A                                     ; None                                                ; 12.752 ns       ; SRAM_12        ; HEX_7_C ;
+; N/A                                     ; None                                                ; 12.735 ns       ; SRAM_11        ; HEX_6_D ;
+; N/A                                     ; None                                                ; 12.699 ns       ; Display_Select ; HEX_5_F ;
+; N/A                                     ; None                                                ; 12.662 ns       ; SRAM_10        ; HEX_6_D ;
+; N/A                                     ; None                                                ; 12.660 ns       ; SRAM_15        ; HEX_7_A ;
+; N/A                                     ; None                                                ; 12.603 ns       ; SRAM_2         ; HEX_4_E ;
+; N/A                                     ; None                                                ; 12.578 ns       ; SRAM_2         ; HEX_4_G ;
+; N/A                                     ; None                                                ; 12.563 ns       ; Display_Select ; HEX_3_A ;
+; N/A                                     ; None                                                ; 12.558 ns       ; SRAM_2         ; HEX_4_B ;
+; N/A                                     ; None                                                ; 12.549 ns       ; SRAM_8         ; HEX_6_G ;
+; N/A                                     ; None                                                ; 12.548 ns       ; SRAM_13        ; HEX_7_A ;
+; N/A                                     ; None                                                ; 12.545 ns       ; In13           ; HEX_3_A ;
+; N/A                                     ; None                                                ; 12.537 ns       ; SRAM_2         ; HEX_4_D ;
+; N/A                                     ; None                                                ; 12.536 ns       ; Display_Select ; A5      ;
+; N/A                                     ; None                                                ; 12.523 ns       ; Display_Select ; HEX_5_B ;
+; N/A                                     ; None                                                ; 12.523 ns       ; SRAM_0         ; HEX_4_E ;
+; N/A                                     ; None                                                ; 12.498 ns       ; Display_Select ; HEX_5_G ;
+; N/A                                     ; None                                                ; 12.497 ns       ; SRAM_0         ; HEX_4_G ;
+; N/A                                     ; None                                                ; 12.477 ns       ; SRAM_12        ; HEX_7_A ;
+; N/A                                     ; None                                                ; 12.477 ns       ; SRAM_0         ; HEX_4_B ;
+; N/A                                     ; None                                                ; 12.475 ns       ; Display_Select ; HEX_5_E ;
+; N/A                                     ; None                                                ; 12.460 ns       ; SRAM_0         ; HEX_4_D ;
+; N/A                                     ; None                                                ; 12.451 ns       ; Display_Select ; HEX_5_C ;
+; N/A                                     ; None                                                ; 12.450 ns       ; Display_Select ; A14     ;
+; N/A                                     ; None                                                ; 12.428 ns       ; SRAM_11        ; HEX_6_B ;
+; N/A                                     ; None                                                ; 12.406 ns       ; Display_Select ; A0      ;
+; N/A                                     ; None                                                ; 12.355 ns       ; SRAM_10        ; HEX_6_B ;
+; N/A                                     ; None                                                ; 12.349 ns       ; SRAM_8         ; HEX_6_D ;
+; N/A                                     ; None                                                ; 12.346 ns       ; Display_Select ; HEX_5_D ;
+; N/A                                     ; None                                                ; 12.329 ns       ; SRAM_14        ; HEX_7_E ;
+; N/A                                     ; None                                                ; 12.311 ns       ; Display_Select ; HEX_5_A ;
+; N/A                                     ; None                                                ; 12.286 ns       ; SRAM_14        ; HEX_7_C ;
+; N/A                                     ; None                                                ; 12.161 ns       ; SRAM_5         ; HEX_5_F ;
+; N/A                                     ; None                                                ; 12.152 ns       ; Display_Select ; A3      ;
+; N/A                                     ; None                                                ; 12.145 ns       ; Display_Select ; HEX_0_A ;
+; N/A                                     ; None                                                ; 12.141 ns       ; Display_Select ; HEX_0_D ;
+; N/A                                     ; None                                                ; 12.139 ns       ; Display_Select ; HEX_0_E ;
+; N/A                                     ; None                                                ; 12.132 ns       ; Display_Select ; HEX_0_C ;
+; N/A                                     ; None                                                ; 12.129 ns       ; Display_Select ; HEX_0_B ;
+; N/A                                     ; None                                                ; 12.121 ns       ; Display_Select ; A1      ;
+; N/A                                     ; None                                                ; 12.042 ns       ; SRAM_8         ; HEX_6_B ;
+; N/A                                     ; None                                                ; 12.035 ns       ; In14           ; HEX_3_A ;
+; N/A                                     ; None                                                ; 12.001 ns       ; SRAM_14        ; HEX_7_A ;
+; N/A                                     ; None                                                ; 11.986 ns       ; In14           ; A14     ;
+; N/A                                     ; None                                                ; 11.986 ns       ; In15           ; HEX_3_A ;
+; N/A                                     ; None                                                ; 11.985 ns       ; SRAM_5         ; HEX_5_B ;
+; N/A                                     ; None                                                ; 11.960 ns       ; SRAM_5         ; HEX_5_G ;
+; N/A                                     ; None                                                ; 11.937 ns       ; SRAM_5         ; HEX_5_E ;
+; N/A                                     ; None                                                ; 11.923 ns       ; Display_Select ; A2      ;
+; N/A                                     ; None                                                ; 11.913 ns       ; SRAM_5         ; HEX_5_C ;
+; N/A                                     ; None                                                ; 11.899 ns       ; Display_Select ; A4      ;
+; N/A                                     ; None                                                ; 11.898 ns       ; Display_Select ; HEX_0_G ;
+; N/A                                     ; None                                                ; 11.891 ns       ; Display_Select ; HEX_0_F ;
+; N/A                                     ; None                                                ; 11.873 ns       ; In10           ; A10     ;
+; N/A                                     ; None                                                ; 11.808 ns       ; SRAM_5         ; HEX_5_D ;
+; N/A                                     ; None                                                ; 11.773 ns       ; SRAM_7         ; HEX_5_F ;
+; N/A                                     ; None                                                ; 11.773 ns       ; SRAM_5         ; HEX_5_A ;
+; N/A                                     ; None                                                ; 11.763 ns       ; Display_Select ; A6      ;
+; N/A                                     ; None                                                ; 11.728 ns       ; In9            ; A9      ;
+; N/A                                     ; None                                                ; 11.627 ns       ; SRAM_7         ; HEX_5_G ;
+; N/A                                     ; None                                                ; 11.624 ns       ; SRAM_7         ; HEX_5_B ;
+; N/A                                     ; None                                                ; 11.607 ns       ; SRAM_4         ; HEX_5_F ;
+; N/A                                     ; None                                                ; 11.568 ns       ; SRAM_7         ; HEX_5_E ;
+; N/A                                     ; None                                                ; 11.558 ns       ; SRAM_7         ; HEX_5_C ;
+; N/A                                     ; None                                                ; 11.537 ns       ; SRAM_11        ; HEX_6_E ;
+; N/A                                     ; None                                                ; 11.469 ns       ; SRAM_10        ; HEX_6_E ;
+; N/A                                     ; None                                                ; 11.465 ns       ; SRAM_6         ; HEX_5_F ;
+; N/A                                     ; None                                                ; 11.450 ns       ; SRAM_7         ; HEX_5_D ;
+; N/A                                     ; None                                                ; 11.435 ns       ; SRAM_4         ; HEX_5_G ;
+; N/A                                     ; None                                                ; 11.421 ns       ; SRAM_4         ; HEX_5_B ;
+; N/A                                     ; None                                                ; 11.414 ns       ; SRAM_7         ; HEX_5_A ;
+; N/A                                     ; None                                                ; 11.403 ns       ; SRAM_4         ; HEX_5_E ;
+; N/A                                     ; None                                                ; 11.381 ns       ; Display_Select ; A7      ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                 ;                ;         ;
++-----------------------------------------+-----------------------------------------------------+-----------------+----------------+---------+
+
+
++----------------------------------------------------------------------------------------------+
+; th                                                                                           ;
++---------------+-------------+-----------+------+------------------------------+--------------+
+; Minimum Slack ; Required th ; Actual th ; From ; To                           ; To Clock     ;
++---------------+-------------+-----------+------+------------------------------+--------------+
+; N/A           ; None        ; 1.859 ns  ; In3  ; Input_Register:inst12|inst3  ; Push_button1 ;
+; N/A           ; None        ; 1.247 ns  ; In4  ; Input_Register:inst12|inst4  ; Push_button1 ;
+; N/A           ; None        ; 1.221 ns  ; In6  ; Input_Register:inst12|inst6  ; Push_button1 ;
+; N/A           ; None        ; 1.148 ns  ; In5  ; Input_Register:inst12|inst5  ; Push_button1 ;
+; N/A           ; None        ; 1.038 ns  ; In7  ; Input_Register:inst12|inst7  ; Push_button1 ;
+; N/A           ; None        ; 0.928 ns  ; In2  ; Input_Register:inst12|inst2  ; Push_button1 ;
+; N/A           ; None        ; 0.683 ns  ; In1  ; Input_Register:inst12|inst1  ; Push_button1 ;
+; N/A           ; None        ; 0.681 ns  ; In12 ; Input_Register:inst12|inst12 ; Push_button1 ;
+; N/A           ; None        ; 0.367 ns  ; In3  ; Input_Register:inst|inst3    ; Pushbutton0  ;
+; N/A           ; None        ; 0.339 ns  ; In0  ; Input_Register:inst12|inst   ; Push_button1 ;
+; N/A           ; None        ; -0.261 ns ; In4  ; Input_Register:inst|inst4    ; Pushbutton0  ;
+; N/A           ; None        ; -0.277 ns ; In12 ; Input_Register:inst|inst12   ; Pushbutton0  ;
+; N/A           ; None        ; -0.287 ns ; In6  ; Input_Register:inst|inst6    ; Pushbutton0  ;
+; N/A           ; None        ; -0.358 ns ; In5  ; Input_Register:inst|inst5    ; Pushbutton0  ;
+; N/A           ; None        ; -0.432 ns ; In8  ; Input_Register:inst|inst8    ; Pushbutton0  ;
+; N/A           ; None        ; -0.473 ns ; In7  ; Input_Register:inst|inst7    ; Pushbutton0  ;
+; N/A           ; None        ; -0.565 ns ; In2  ; Input_Register:inst|inst2    ; Pushbutton0  ;
+; N/A           ; None        ; -0.652 ns ; In9  ; Input_Register:inst|inst9    ; Pushbutton0  ;
+; N/A           ; None        ; -0.814 ns ; In1  ; Input_Register:inst|inst1    ; Pushbutton0  ;
+; N/A           ; None        ; -0.907 ns ; In8  ; Input_Register:inst12|inst8  ; Push_button1 ;
+; N/A           ; None        ; -1.125 ns ; In9  ; Input_Register:inst12|inst9  ; Push_button1 ;
+; N/A           ; None        ; -1.163 ns ; In11 ; Input_Register:inst|inst11   ; Pushbutton0  ;
+; N/A           ; None        ; -1.163 ns ; In0  ; Input_Register:inst|inst     ; Pushbutton0  ;
+; N/A           ; None        ; -1.234 ns ; In10 ; Input_Register:inst|inst10   ; Pushbutton0  ;
+; N/A           ; None        ; -1.638 ns ; In11 ; Input_Register:inst12|inst11 ; Push_button1 ;
+; N/A           ; None        ; -1.707 ns ; In10 ; Input_Register:inst12|inst10 ; Push_button1 ;
+; N/A           ; None        ; -3.095 ns ; In14 ; Input_Register:inst12|inst14 ; Push_button1 ;
+; N/A           ; None        ; -3.275 ns ; In15 ; Input_Register:inst12|inst15 ; Push_button1 ;
+; N/A           ; None        ; -3.373 ns ; In13 ; Input_Register:inst12|inst13 ; Push_button1 ;
+; N/A           ; None        ; -4.050 ns ; In14 ; Input_Register:inst|inst14   ; Pushbutton0  ;
+; N/A           ; None        ; -4.231 ns ; In15 ; Input_Register:inst|inst15   ; Pushbutton0  ;
+; N/A           ; None        ; -4.333 ns ; In13 ; Input_Register:inst|inst13   ; Pushbutton0  ;
++---------------+-------------+-----------+------+------------------------------+--------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Jan 04 13:37:44 2020
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off WIMPAVR_Program -c WIMPAVR_Program --timing_analysis_only
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "Push_button1" is an undefined clock
+    Info: Assuming node "Pushbutton0" is an undefined clock
+Info: No valid register-to-register data paths exist for clock "Push_button1"
+Info: No valid register-to-register data paths exist for clock "Pushbutton0"
+Info: tsu for register "Input_Register:inst|inst13" (data pin = "In13", clock pin = "Pushbutton0") is 4.563 ns
+    Info: + Longest pin to register delay is 7.204 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.832 ns) = 0.832 ns; Loc. = PIN_T7; Fanout = 3; PIN Node = 'In13'
+        Info: 2: + IC(6.006 ns) + CELL(0.366 ns) = 7.204 ns; Loc. = LCFF_X40_Y16_N21; Fanout = 2; REG Node = 'Input_Register:inst|inst13'
+        Info: Total cell delay = 1.198 ns ( 16.63 % )
+        Info: Total interconnect delay = 6.006 ns ( 83.37 % )
+    Info: + Micro setup delay of destination is -0.036 ns
+    Info: - Shortest clock path from clock "Pushbutton0" to destination register is 2.605 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.842 ns) = 0.842 ns; Loc. = PIN_N23; Fanout = 1; CLK Node = 'Pushbutton0'
+        Info: 2: + IC(0.041 ns) + CELL(0.155 ns) = 1.038 ns; Loc. = CLKDELAYCTRL_G4; Fanout = 1; COMB Node = 'Pushbutton0~clk_delay_ctrl'
+        Info: 3: + IC(0.000 ns) + CELL(0.000 ns) = 1.038 ns; Loc. = CLKCTRL_G4; Fanout = 16; COMB Node = 'Pushbutton0~clkctrl'
+        Info: 4: + IC(1.030 ns) + CELL(0.537 ns) = 2.605 ns; Loc. = LCFF_X40_Y16_N21; Fanout = 2; REG Node = 'Input_Register:inst|inst13'
+        Info: Total cell delay = 1.534 ns ( 58.89 % )
+        Info: Total interconnect delay = 1.071 ns ( 41.11 % )
+Info: tco from clock "Push_button1" to destination pin "HEX_1_B" through register "Input_Register:inst12|inst6" is 12.612 ns
+    Info: + Longest clock path from clock "Push_button1" to source register is 4.107 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.862 ns) = 0.862 ns; Loc. = PIN_G26; Fanout = 16; CLK Node = 'Push_button1'
+        Info: 2: + IC(2.708 ns) + CELL(0.537 ns) = 4.107 ns; Loc. = LCFF_X17_Y14_N11; Fanout = 1; REG Node = 'Input_Register:inst12|inst6'
+        Info: Total cell delay = 1.399 ns ( 34.06 % )
+        Info: Total interconnect delay = 2.708 ns ( 65.94 % )
+    Info: + Micro clock to output delay of source is 0.250 ns
+    Info: + Longest register to pin delay is 8.255 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X17_Y14_N11; Fanout = 1; REG Node = 'Input_Register:inst12|inst6'
+        Info: 2: + IC(0.000 ns) + CELL(0.323 ns) = 0.323 ns; Loc. = LCCOMB_X17_Y14_N10; Fanout = 8; COMB Node = '8_2_1_mux:inst10|2_1_mux:inst10|inst2~0'
+        Info: 3: + IC(3.190 ns) + CELL(0.275 ns) = 3.788 ns; Loc. = LCCOMB_X54_Y11_N16; Fanout = 1; COMB Node = '8_bit_7_seg:inst3|7_segment_display:inst1|b:inst1|inst11~0'
+        Info: 4: + IC(1.678 ns) + CELL(2.789 ns) = 8.255 ns; Loc. = PIN_V21; Fanout = 0; PIN Node = 'HEX_1_B'
+        Info: Total cell delay = 3.387 ns ( 41.03 % )
+        Info: Total interconnect delay = 4.868 ns ( 58.97 % )
+Info: Longest tpd from source pin "Display_Select" to destination pin "A9" is 16.280 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.852 ns) = 0.852 ns; Loc. = PIN_V2; Fanout = 32; PIN Node = 'Display_Select'
+    Info: 2: + IC(7.093 ns) + CELL(0.150 ns) = 8.095 ns; Loc. = LCCOMB_X64_Y27_N12; Fanout = 8; COMB Node = '8_2_1_mux:inst13|2_1_mux:inst5|inst2~0'
+    Info: 3: + IC(5.387 ns) + CELL(2.798 ns) = 16.280 ns; Loc. = PIN_AD7; Fanout = 0; PIN Node = 'A9'
+    Info: Total cell delay = 3.800 ns ( 23.34 % )
+    Info: Total interconnect delay = 12.480 ns ( 76.66 % )
+Info: th for register "Input_Register:inst12|inst3" (data pin = "In3", clock pin = "Push_button1") is 1.859 ns
+    Info: + Longest clock path from clock "Push_button1" to destination register is 4.103 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.862 ns) = 0.862 ns; Loc. = PIN_G26; Fanout = 16; CLK Node = 'Push_button1'
+        Info: 2: + IC(2.704 ns) + CELL(0.537 ns) = 4.103 ns; Loc. = LCFF_X27_Y4_N1; Fanout = 1; REG Node = 'Input_Register:inst12|inst3'
+        Info: Total cell delay = 1.399 ns ( 34.10 % )
+        Info: Total interconnect delay = 2.704 ns ( 65.90 % )
+    Info: + Micro hold delay of destination is 0.266 ns
+    Info: - Shortest pin to register delay is 2.510 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_AE14; Fanout = 3; PIN Node = 'In3'
+        Info: 2: + IC(1.145 ns) + CELL(0.366 ns) = 2.510 ns; Loc. = LCFF_X27_Y4_N1; Fanout = 1; REG Node = 'Input_Register:inst12|inst3'
+        Info: Total cell delay = 1.365 ns ( 54.38 % )
+        Info: Total interconnect delay = 1.145 ns ( 45.62 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 181 megabytes
+    Info: Processing ended: Sat Jan 04 13:37:44 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

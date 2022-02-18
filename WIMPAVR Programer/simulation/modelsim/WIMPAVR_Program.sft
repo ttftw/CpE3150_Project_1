@@ -1,0 +1,4 @@
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {WIMPAVR_Program.vho WIMPAVR_Program_vhd.sdo}}
+}

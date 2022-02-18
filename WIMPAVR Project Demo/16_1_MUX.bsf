@@ -1,0 +1,183 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 168 400)
+	(text "16_1_MUX" (rect 5 0 66 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 368 25 380)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "MUX_0" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "MUX_0" (rect 21 27 61 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "MUX_1" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "MUX_1" (rect 21 43 61 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "MUX_2" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "MUX_2" (rect 21 59 61 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "MUX_3" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "MUX_3" (rect 21 75 61 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "MUX_4" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "MUX_4" (rect 21 91 61 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "MUX_5" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "MUX_5" (rect 21 107 61 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "MUX_6" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "MUX_6" (rect 21 123 61 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "MUX_7" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "MUX_7" (rect 21 139 61 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "MUX_8" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "MUX_8" (rect 21 155 61 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "MUX_9" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "MUX_9" (rect 21 171 61 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "MUX_10" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "MUX_10" (rect 21 187 68 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "MUX_11" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "MUX_11" (rect 21 203 68 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "MUX_12" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "MUX_12" (rect 21 219 68 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "MUX_13" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "MUX_13" (rect 21 235 68 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "MUX_14" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "MUX_14" (rect 21 251 68 265)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 16 256))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "MUX_15" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "MUX_15" (rect 21 267 68 281)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "S3" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "S3" (rect 21 283 36 297)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "S2" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "S2" (rect 21 299 36 313)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 16 304))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "S1" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "S1" (rect 21 315 36 329)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 16 320))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "S0" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "S0" (rect 21 331 36 345)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 16 336))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "ENABLE" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "ENABLE" (rect 21 347 68 361)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 16 352))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "OUTPUT" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "OUTPUT" (rect 84 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 368))
+	)
+)

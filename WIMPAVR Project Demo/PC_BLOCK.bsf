@@ -1,0 +1,281 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 184 400)
+	(text "PC_BLOCK" (rect 5 0 86 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 365 31 380)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "NSPC_0" (rect 0 0 59 16)(font "Arial" (font_size 8)))
+		(text "NSPC_0" (rect 21 27 80 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "NSPC_1" (rect 0 0 59 16)(font "Arial" (font_size 8)))
+		(text "NSPC_1" (rect 21 43 80 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "NSPC_2" (rect 0 0 59 16)(font "Arial" (font_size 8)))
+		(text "NSPC_2" (rect 21 59 80 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "NSPC_3" (rect 0 0 59 16)(font "Arial" (font_size 8)))
+		(text "NSPC_3" (rect 21 75 80 91)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "NSPC_4" (rect 0 0 59 16)(font "Arial" (font_size 8)))
+		(text "NSPC_4" (rect 21 91 80 107)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "NSPC_5" (rect 0 0 59 16)(font "Arial" (font_size 8)))
+		(text "NSPC_5" (rect 21 107 80 123)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "NSPC_6" (rect 0 0 59 16)(font "Arial" (font_size 8)))
+		(text "NSPC_6" (rect 21 123 80 139)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "NSPC_7" (rect 0 0 59 16)(font "Arial" (font_size 8)))
+		(text "NSPC_7" (rect 21 139 80 155)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "NSPC_8" (rect 0 0 59 16)(font "Arial" (font_size 8)))
+		(text "NSPC_8" (rect 21 155 80 171)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "NSPC_9" (rect 0 0 59 16)(font "Arial" (font_size 8)))
+		(text "NSPC_9" (rect 21 171 80 187)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "NSPC_10" (rect 0 0 67 16)(font "Arial" (font_size 8)))
+		(text "NSPC_10" (rect 21 187 88 203)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "NSPC_11" (rect 0 0 67 16)(font "Arial" (font_size 8)))
+		(text "NSPC_11" (rect 21 203 88 219)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "NSPC_12" (rect 0 0 67 16)(font "Arial" (font_size 8)))
+		(text "NSPC_12" (rect 21 219 88 235)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "NSPC_13" (rect 0 0 67 16)(font "Arial" (font_size 8)))
+		(text "NSPC_13" (rect 21 235 88 251)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "NSPC_14" (rect 0 0 67 16)(font "Arial" (font_size 8)))
+		(text "NSPC_14" (rect 21 251 88 267)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 16 256))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "NSPC_15" (rect 0 0 67 16)(font "Arial" (font_size 8)))
+		(text "NSPC_15" (rect 21 267 88 283)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "ENABLE" (rect 0 0 61 16)(font "Arial" (font_size 8)))
+		(text "ENABLE" (rect 21 283 82 299)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "WE" (rect 0 0 25 16)(font "Arial" (font_size 8)))
+		(text "WE" (rect 21 299 46 315)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 16 304))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "CLOCK" (rect 0 0 51 16)(font "Arial" (font_size 8)))
+		(text "CLOCK" (rect 21 315 72 331)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 16 320))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "CLRN" (rect 0 0 40 16)(font "Arial" (font_size 8)))
+		(text "CLRN" (rect 21 331 61 347)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 16 336))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "PC_0" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "PC_0" (rect 110 27 147 43)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "PC_1" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "PC_1" (rect 110 43 147 59)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "PC_2" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "PC_2" (rect 110 59 147 75)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "PC_3" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "PC_3" (rect 110 75 147 91)(font "Arial" (font_size 8)))
+		(line (pt 168 80)(pt 152 80))
+	)
+	(port
+		(pt 168 96)
+		(output)
+		(text "PC_4" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "PC_4" (rect 110 91 147 107)(font "Arial" (font_size 8)))
+		(line (pt 168 96)(pt 152 96))
+	)
+	(port
+		(pt 168 112)
+		(output)
+		(text "PC_5" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "PC_5" (rect 110 107 147 123)(font "Arial" (font_size 8)))
+		(line (pt 168 112)(pt 152 112))
+	)
+	(port
+		(pt 168 128)
+		(output)
+		(text "PC_6" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "PC_6" (rect 110 123 147 139)(font "Arial" (font_size 8)))
+		(line (pt 168 128)(pt 152 128))
+	)
+	(port
+		(pt 168 144)
+		(output)
+		(text "PC_7" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "PC_7" (rect 110 139 147 155)(font "Arial" (font_size 8)))
+		(line (pt 168 144)(pt 152 144))
+	)
+	(port
+		(pt 168 160)
+		(output)
+		(text "PC_8" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "PC_8" (rect 110 155 147 171)(font "Arial" (font_size 8)))
+		(line (pt 168 160)(pt 152 160))
+	)
+	(port
+		(pt 168 176)
+		(output)
+		(text "PC_9" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "PC_9" (rect 110 171 147 187)(font "Arial" (font_size 8)))
+		(line (pt 168 176)(pt 152 176))
+	)
+	(port
+		(pt 168 192)
+		(output)
+		(text "PC_10" (rect 0 0 46 16)(font "Arial" (font_size 8)))
+		(text "PC_10" (rect 101 187 147 203)(font "Arial" (font_size 8)))
+		(line (pt 168 192)(pt 152 192))
+	)
+	(port
+		(pt 168 208)
+		(output)
+		(text "PC_11" (rect 0 0 46 16)(font "Arial" (font_size 8)))
+		(text "PC_11" (rect 101 203 147 219)(font "Arial" (font_size 8)))
+		(line (pt 168 208)(pt 152 208))
+	)
+	(port
+		(pt 168 224)
+		(output)
+		(text "PC_12" (rect 0 0 46 16)(font "Arial" (font_size 8)))
+		(text "PC_12" (rect 101 219 147 235)(font "Arial" (font_size 8)))
+		(line (pt 168 224)(pt 152 224))
+	)
+	(port
+		(pt 168 240)
+		(output)
+		(text "PC_13" (rect 0 0 46 16)(font "Arial" (font_size 8)))
+		(text "PC_13" (rect 101 235 147 251)(font "Arial" (font_size 8)))
+		(line (pt 168 240)(pt 152 240))
+	)
+	(port
+		(pt 168 256)
+		(output)
+		(text "PC_14" (rect 0 0 46 16)(font "Arial" (font_size 8)))
+		(text "PC_14" (rect 101 251 147 267)(font "Arial" (font_size 8)))
+		(line (pt 168 256)(pt 152 256))
+	)
+	(port
+		(pt 168 272)
+		(output)
+		(text "PC_15" (rect 0 0 46 16)(font "Arial" (font_size 8)))
+		(text "PC_15" (rect 101 267 147 283)(font "Arial" (font_size 8)))
+		(line (pt 168 272)(pt 152 272))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 368))
+	)
+)

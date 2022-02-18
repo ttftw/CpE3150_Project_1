@@ -1,0 +1,76 @@
+Quartus II Archive log --	C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/WIMPAVR_tmp_archive.qarlog
+
+Archive:	C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/WIMPAVR_tmp_archive.qar
+Date:		Sun Dec 29 16:12:43 2019
+Quartus II 64-Bit		13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/16_1_MUX.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/16_B_REG.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/16_B_RIPPLE_ADDER.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/1_BIT_REGISTER.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/2_1_MUX.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/32_1_MUX.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/3_8_DEC.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/4_1_MUX.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/4_1_MUX_Enable.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/4_TO_16_DECODER.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/5_TO_32_DECODER.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/7_SEGMENT_DISPLAY.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/8_1_MUX.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/8_2_1_MUX.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/8_BIT_7_SEG.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/8_B_Ripple_Adder.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/A.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/ADD_EN.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/ALU_Control.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/ALU_TOP.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/AVR_TEST.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/B.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/Branch_Logic.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/C.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/CARRY_LOGIC.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/Control_Unit.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/D.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/DATA_LOAD_MUX.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/E.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/EXT_C.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/F.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/Full_Adder.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/G.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/IR_encoder.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/JUMP_SELECT.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/LOAD_SELECT.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/LOGIC_EN.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/LOGIC_SWAP.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/PC_ALU_TOP_LEVEL.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/PC_BLOCK.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/Register.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/Register_File.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/SELF_LOOP.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/SLOW_CLOCK.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/SWAP_EN.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/State_Machine.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/WIMPAVR.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/WIMPAVR.qpf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/WIMPAVR.qsf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/WIMPAVR_DEMO.qsf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/WIMPAVR_DEMO_assignment_defaults.qdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/WIMPAVR_assignment_defaults.qdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/WMIPAVR.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/Z_LOGIC.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/alu_control.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/branch_logic.bdf
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/incremental_db/compiled_partitions/WIMPAVR.db_info
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/incremental_db/compiled_partitions/WIMPAVR_DEMO.db_info
+C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/signalprobe_qsf.tcl
+	======= Total: 59 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Dec 29 16:12:45 2019
+Source archive file:	C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Project Demo/WIMPAVR_tmp_archive.qar
+Archive was extracted into	C:/Users/Dominic/OneDrive/Document/School/MST/ESC/WIMP AVR/WIMPAVR Sim/
+		 - successfully.
