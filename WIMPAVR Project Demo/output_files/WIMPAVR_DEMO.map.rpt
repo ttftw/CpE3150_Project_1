@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WIMPAVR_DEMO
-Sat Jan 04 14:10:22 2020
+Mon Feb 28 16:34:45 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -41,13 +41,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jan 04 14:10:22 2020        ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 28 16:34:45 2022        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; WIMPAVR_DEMO                                 ;
 ; Top-level Entity Name              ; AVR_TEST                                     ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 1,130                                        ;
-;     Total combinational functions  ; 865                                          ;
+; Total logic elements               ; 1,153                                        ;
+;     Total combinational functions  ; 888                                          ;
 ;     Dedicated logic registers      ; 319                                          ;
 ; Total registers                    ; 319                                          ;
 ; Total pins                         ; 114                                          ;
@@ -142,62 +142,62 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                                     ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-; Register.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/Register.bdf          ;
-; Register_File.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/Register_File.bdf     ;
-; 16_1_MUX.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/16_1_MUX.bdf          ;
-; 32_1_MUX.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/32_1_MUX.bdf          ;
-; Full_Adder.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/Full_Adder.bdf        ;
-; 8_B_Ripple_Adder.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/8_B_Ripple_Adder.bdf  ;
-; ADD_EN.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/ADD_EN.bdf            ;
-; LOGIC_EN.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/LOGIC_EN.bdf          ;
-; SWAP_EN.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/SWAP_EN.bdf           ;
-; AVR_TEST.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/AVR_TEST.bdf          ;
-; PC_BLOCK.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/PC_BLOCK.bdf          ;
-; DATA_LOAD_MUX.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/DATA_LOAD_MUX.bdf     ;
-; 1_BIT_REGISTER.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/1_BIT_REGISTER.bdf    ;
-; ALU_TOP.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/ALU_TOP.bdf           ;
-; branch_logic.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/branch_logic.bdf      ;
-; State_Machine.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/State_Machine.bdf     ;
-; Z_LOGIC.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/Z_LOGIC.bdf           ;
-; CARRY_LOGIC.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/CARRY_LOGIC.bdf       ;
-; 4_1_MUX.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/4_1_MUX.bdf           ;
-; LOAD_SELECT.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/LOAD_SELECT.bdf       ;
-; Control_Unit.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/Control_Unit.bdf      ;
-; 16_B_REG.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/16_B_REG.bdf          ;
-; alu_control.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/alu_control.bdf       ;
-; SLOW_CLOCK.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/SLOW_CLOCK.bdf        ;
-; ext_c.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/ext_c.bdf             ;
-; 8_2_1_mux.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/8_2_1_mux.bdf         ;
-; 2_1_mux.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/2_1_mux.bdf           ;
-; logic_swap.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/logic_swap.bdf        ;
-; 8_1_mux.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/8_1_mux.bdf           ;
-; self_loop.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/self_loop.bdf         ;
-; 5_to_32_decoder.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/5_to_32_decoder.bdf   ;
-; 4_to_16_decoder.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/4_to_16_decoder.bdf   ;
-; 3_8_dec.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/3_8_dec.bdf           ;
-; 8_bit_7_seg.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/8_bit_7_seg.bdf       ;
-; 7_segment_display.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/7_segment_display.bdf ;
-; a.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/a.bdf                 ;
-; b.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/b.bdf                 ;
-; c.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/c.bdf                 ;
-; d.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/d.bdf                 ;
-; e.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/e.bdf                 ;
-; f.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/f.bdf                 ;
-; g.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/g.bdf                 ;
-; pc_alu_top_level.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/pc_alu_top_level.bdf  ;
-; 16_b_ripple_adder.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/16_b_ripple_adder.bdf ;
-; jump_select.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/rdua/Documents/CpE 3150 SP 2017/New Curriculum/Quartus Files/WIMPAVR Project Demo/jump_select.bdf       ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                           ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------+
+; Register.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/Register.bdf          ;
+; Register_File.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/Register_File.bdf     ;
+; 16_1_MUX.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/16_1_MUX.bdf          ;
+; 32_1_MUX.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/32_1_MUX.bdf          ;
+; Full_Adder.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/Full_Adder.bdf        ;
+; 8_B_Ripple_Adder.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/8_B_Ripple_Adder.bdf  ;
+; ADD_EN.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/ADD_EN.bdf            ;
+; LOGIC_EN.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/LOGIC_EN.bdf          ;
+; SWAP_EN.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/SWAP_EN.bdf           ;
+; AVR_TEST.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/AVR_TEST.bdf          ;
+; PC_BLOCK.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/PC_BLOCK.bdf          ;
+; DATA_LOAD_MUX.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/DATA_LOAD_MUX.bdf     ;
+; 1_BIT_REGISTER.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/1_BIT_REGISTER.bdf    ;
+; ALU_TOP.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/ALU_TOP.bdf           ;
+; branch_logic.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/branch_logic.bdf      ;
+; State_Machine.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/State_Machine.bdf     ;
+; Z_LOGIC.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/Z_LOGIC.bdf           ;
+; CARRY_LOGIC.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/CARRY_LOGIC.bdf       ;
+; 4_1_MUX.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/4_1_MUX.bdf           ;
+; LOAD_SELECT.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/LOAD_SELECT.bdf       ;
+; Control_Unit.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/Control_Unit.bdf      ;
+; 16_B_REG.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/16_B_REG.bdf          ;
+; alu_control.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/alu_control.bdf       ;
+; SLOW_CLOCK.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/SLOW_CLOCK.bdf        ;
+; ext_c.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/ext_c.bdf             ;
+; 8_2_1_mux.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/8_2_1_mux.bdf         ;
+; 2_1_mux.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/2_1_mux.bdf           ;
+; logic_swap.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/logic_swap.bdf        ;
+; 8_1_mux.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/8_1_mux.bdf           ;
+; self_loop.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/self_loop.bdf         ;
+; 5_to_32_decoder.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/5_to_32_decoder.bdf   ;
+; 4_to_16_decoder.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/4_to_16_decoder.bdf   ;
+; 3_8_dec.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/3_8_dec.bdf           ;
+; 8_bit_7_seg.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/8_bit_7_seg.bdf       ;
+; 7_segment_display.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/7_segment_display.bdf ;
+; a.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/a.bdf                 ;
+; b.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/b.bdf                 ;
+; c.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/c.bdf                 ;
+; d.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/d.bdf                 ;
+; e.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/e.bdf                 ;
+; f.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/f.bdf                 ;
+; g.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/g.bdf                 ;
+; pc_alu_top_level.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/pc_alu_top_level.bdf  ;
+; 16_b_ripple_adder.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/16_b_ripple_adder.bdf ;
+; jump_select.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/jump_select.bdf       ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -205,16 +205,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Estimated Total logic elements              ; 1,130  ;
+; Estimated Total logic elements              ; 1,153  ;
 ;                                             ;        ;
-; Total combinational functions               ; 865    ;
+; Total combinational functions               ; 888    ;
 ; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 718    ;
-;     -- 3 input functions                    ; 95     ;
-;     -- <=2 input functions                  ; 52     ;
+;     -- 4 input functions                    ; 748    ;
+;     -- 3 input functions                    ; 94     ;
+;     -- <=2 input functions                  ; 46     ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 865    ;
+;     -- normal mode                          ; 888    ;
 ;     -- arithmetic mode                      ; 0      ;
 ;                                             ;        ;
 ; Total registers                             ; 319    ;
@@ -224,8 +224,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                                    ; 114    ;
 ; Maximum fan-out node                        ; inst11 ;
 ; Maximum fan-out                             ; 293    ;
-; Total fan-out                               ; 4532   ;
-; Average fan-out                             ; 3.49   ;
+; Total fan-out                               ; 4637   ;
+; Average fan-out                             ; 3.51   ;
 +---------------------------------------------+--------+
 
 
@@ -234,7 +234,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Library Name ;
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
-; |AVR_TEST                         ; 865 (6)           ; 319 (0)      ; 0           ; 0            ; 0       ; 0         ; 114  ; 0            ; |AVR_TEST                                                                                         ; work         ;
+; |AVR_TEST                         ; 888 (3)           ; 319 (0)      ; 0           ; 0            ; 0       ; 0         ; 114  ; 0            ; |AVR_TEST                                                                                         ; work         ;
 ;    |16_B_REG:inst9|               ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|16_B_REG:inst9                                                                          ;              ;
 ;       |1_BIT_REGISTER:inst10|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|16_B_REG:inst9|1_BIT_REGISTER:inst10                                                    ;              ;
 ;       |1_BIT_REGISTER:inst11|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|16_B_REG:inst9|1_BIT_REGISTER:inst11                                                    ;              ;
@@ -261,8 +261,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |2_1_mux:inst7|             ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_2_1_mux:inst16|2_1_mux:inst7                                                          ; work         ;
 ;       |2_1_mux:inst8|             ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_2_1_mux:inst16|2_1_mux:inst8                                                          ; work         ;
 ;       |2_1_mux:inst9|             ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_2_1_mux:inst16|2_1_mux:inst9                                                          ; work         ;
-;    |8_2_1_mux:inst17|             ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_2_1_mux:inst17                                                                        ; work         ;
-;       |2_1_mux:inst10|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_2_1_mux:inst17|2_1_mux:inst10                                                         ; work         ;
+;    |8_2_1_mux:inst17|             ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_2_1_mux:inst17                                                                        ; work         ;
+;       |2_1_mux:inst10|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_2_1_mux:inst17|2_1_mux:inst10                                                         ; work         ;
 ;       |2_1_mux:inst11|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_2_1_mux:inst17|2_1_mux:inst11                                                         ; work         ;
 ;       |2_1_mux:inst4|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_2_1_mux:inst17|2_1_mux:inst4                                                          ; work         ;
 ;       |2_1_mux:inst5|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_2_1_mux:inst17|2_1_mux:inst5                                                          ; work         ;
@@ -339,15 +339,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |e:inst4|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst28|7_segment_display:inst|e:inst4                                       ; work         ;
 ;          |f:inst5|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst28|7_segment_display:inst|f:inst5                                       ; work         ;
 ;          |g:inst6|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst28|7_segment_display:inst|g:inst6                                       ; work         ;
-;    |8_bit_7_seg:inst29|           ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29                                                                      ; work         ;
-;       |7_segment_display:inst1|   ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1                                              ; work         ;
-;          |a:inst|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1|a:inst                                       ; work         ;
+;    |8_bit_7_seg:inst29|           ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29                                                                      ; work         ;
+;       |7_segment_display:inst1|   ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1                                              ; work         ;
+;          |a:inst|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1|a:inst                                       ; work         ;
 ;          |b:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1|b:inst1                                      ; work         ;
-;          |c:inst2|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1|c:inst2                                      ; work         ;
+;          |c:inst2|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1|c:inst2                                      ; work         ;
 ;          |d:inst3|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1|d:inst3                                      ; work         ;
 ;          |e:inst4|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1|e:inst4                                      ; work         ;
 ;          |f:inst5|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1|f:inst5                                      ; work         ;
-;          |g:inst6|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1|g:inst6                                      ; work         ;
+;          |g:inst6|                ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst1|g:inst6                                      ; work         ;
 ;       |7_segment_display:inst|    ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst                                               ; work         ;
 ;          |a:inst|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst|a:inst                                        ; work         ;
 ;          |b:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst|b:inst1                                       ; work         ;
@@ -356,42 +356,51 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |e:inst4|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst|e:inst4                                       ; work         ;
 ;          |f:inst5|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst|f:inst5                                       ; work         ;
 ;          |g:inst6|                ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|8_bit_7_seg:inst29|7_segment_display:inst|g:inst6                                       ; work         ;
-;    |ALU_TOP:inst30|               ; 60 (2)            ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30                                                                          ;              ;
-;       |8_2_1_mux:inst11|          ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11                                                         ;              ;
-;          |2_1_mux:inst11|         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst11                                          ;              ;
+;    |ALU_TOP:inst30|               ; 87 (3)            ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30                                                                          ;              ;
+;       |4_1_MUX:inst16|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|4_1_MUX:inst16                                                           ;              ;
+;       |4_1_MUX:inst17|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|4_1_MUX:inst17                                                           ;              ;
+;       |4_1_MUX:inst18|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|4_1_MUX:inst18                                                           ;              ;
+;       |4_1_MUX:inst19|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|4_1_MUX:inst19                                                           ;              ;
+;       |4_1_MUX:inst20|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|4_1_MUX:inst20                                                           ;              ;
+;       |4_1_MUX:inst21|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|4_1_MUX:inst21                                                           ;              ;
+;       |4_1_MUX:inst22|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|4_1_MUX:inst22                                                           ;              ;
+;       |4_1_MUX:inst23|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|4_1_MUX:inst23                                                           ;              ;
+;       |8_2_1_mux:inst11|          ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11                                                         ;              ;
+;          |2_1_mux:inst10|         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst10                                          ;              ;
+;          |2_1_mux:inst11|         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst11                                          ;              ;
 ;          |2_1_mux:inst4|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst4                                           ;              ;
 ;          |2_1_mux:inst5|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst5                                           ;              ;
 ;          |2_1_mux:inst6|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst6                                           ;              ;
 ;          |2_1_mux:inst7|          ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst7                                           ;              ;
 ;          |2_1_mux:inst8|          ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst8                                           ;              ;
 ;          |2_1_mux:inst9|          ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst9                                           ;              ;
-;       |8_B_Ripple_Adder:inst10|   ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10                                                  ;              ;
+;       |8_B_Ripple_Adder:inst10|   ; 20 (7)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10                                                  ;              ;
 ;          |Full_Adder:inst10|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst10                                ;              ;
 ;          |Full_Adder:inst16|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst16                                ;              ;
 ;          |Full_Adder:inst17|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst17                                ;              ;
 ;          |Full_Adder:inst18|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst18                                ;              ;
 ;          |Full_Adder:inst19|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst19                                ;              ;
-;          |Full_Adder:inst20|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst20                                ;              ;
+;          |Full_Adder:inst20|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst20                                ;              ;
 ;          |Full_Adder:inst21|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst21                                ;              ;
 ;          |Full_Adder:inst|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst                                  ;              ;
-;       |CARRY_LOGIC:inst14|        ; 4 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|CARRY_LOGIC:inst14                                                       ;              ;
-;          |4_1_MUX:inst1|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|CARRY_LOGIC:inst14|4_1_MUX:inst1                                         ;              ;
+;       |CARRY_LOGIC:inst14|        ; 6 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|CARRY_LOGIC:inst14                                                       ;              ;
+;          |4_1_MUX:inst1|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|CARRY_LOGIC:inst14|4_1_MUX:inst1                                         ;              ;
 ;       |Z_LOGIC:inst12|            ; 5 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|Z_LOGIC:inst12                                                           ;              ;
-;       |alu_control:inst|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|alu_control:inst                                                         ;              ;
-;          |SWAP_EN:inst2|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|alu_control:inst|SWAP_EN:inst2                                           ;              ;
+;       |alu_control:inst|          ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|alu_control:inst                                                         ;              ;
+;          |ADD_EN:inst|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|alu_control:inst|ADD_EN:inst                                             ;              ;
+;          |LOGIC_EN:inst12|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|alu_control:inst|LOGIC_EN:inst12                                         ;              ;
 ;       |logic_swap:inst4|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|logic_swap:inst4                                                         ;              ;
-;       |logic_swap:inst7|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|logic_swap:inst7                                                         ;              ;
-;       |logic_swap:inst8|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|logic_swap:inst8                                                         ;              ;
-;    |Control_Unit:inst13|          ; 5 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Control_Unit:inst13                                                                     ;              ;
+;    |Control_Unit:inst13|          ; 9 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Control_Unit:inst13                                                                     ;              ;
+;       |LOAD_SELECT:inst1|         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Control_Unit:inst13|LOAD_SELECT:inst1                                                   ;              ;
 ;       |branch_logic:inst|         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Control_Unit:inst13|branch_logic:inst                                                   ;              ;
-;    |DATA_LOAD_MUX:inst3|          ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3                                                                     ; work         ;
+;    |DATA_LOAD_MUX:inst3|          ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3                                                                     ; work         ;
 ;       |4_1_MUX:inst10|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3|4_1_MUX:inst10                                                      ; work         ;
 ;       |4_1_MUX:inst4|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3|4_1_MUX:inst4                                                       ; work         ;
 ;       |4_1_MUX:inst5|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3|4_1_MUX:inst5                                                       ; work         ;
 ;       |4_1_MUX:inst6|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3|4_1_MUX:inst6                                                       ; work         ;
 ;       |4_1_MUX:inst7|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3|4_1_MUX:inst7                                                       ; work         ;
 ;       |4_1_MUX:inst8|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3|4_1_MUX:inst8                                                       ; work         ;
-;       |4_1_MUX:inst9|             ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3|4_1_MUX:inst9                                                       ; work         ;
+;       |4_1_MUX:inst9|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3|4_1_MUX:inst9                                                       ; work         ;
 ;       |4_1_MUX:inst|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|DATA_LOAD_MUX:inst3|4_1_MUX:inst                                                        ; work         ;
 ;    |PC_BLOCK:inst14|              ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|PC_BLOCK:inst14                                                                         ; work         ;
 ;       |1_BIT_REGISTER:inst10|     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|PC_BLOCK:inst14|1_BIT_REGISTER:inst10                                                   ; work         ;
@@ -410,27 +419,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |1_BIT_REGISTER:inst7|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|PC_BLOCK:inst14|1_BIT_REGISTER:inst7                                                    ; work         ;
 ;       |1_BIT_REGISTER:inst8|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|PC_BLOCK:inst14|1_BIT_REGISTER:inst8                                                    ; work         ;
 ;       |1_BIT_REGISTER:inst9|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|PC_BLOCK:inst14|1_BIT_REGISTER:inst9                                                    ; work         ;
-;    |Register_File:inst12|         ; 431 (0)           ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12                                                                    ;              ;
+;    |Register_File:inst12|         ; 430 (0)           ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12                                                                    ;              ;
 ;       |32_1_MUX:inst34|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst34                                                    ; work         ;
 ;       |32_1_MUX:inst35|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst35                                                    ; work         ;
 ;       |32_1_MUX:inst36|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst36                                                    ; work         ;
-;       |32_1_MUX:inst37|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst37                                                    ; work         ;
+;       |32_1_MUX:inst37|           ; 22 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst37                                                    ; work         ;
+;          |16_1_MUX:inst|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst37|16_1_MUX:inst                                      ; work         ;
+;             |8_1_mux:inst|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst37|16_1_MUX:inst|8_1_mux:inst                         ; work         ;
 ;       |32_1_MUX:inst38|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst38                                                    ; work         ;
 ;       |32_1_MUX:inst39|           ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst39                                                    ;              ;
-;       |32_1_MUX:inst40|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst40                                                    ; work         ;
-;       |32_1_MUX:inst41|           ; 31 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst41                                                    ; work         ;
+;       |32_1_MUX:inst40|           ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst40                                                    ; work         ;
+;       |32_1_MUX:inst41|           ; 27 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst41                                                    ; work         ;
 ;          |16_1_MUX:inst1|         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst41|16_1_MUX:inst1                                     ; work         ;
-;          |16_1_MUX:inst|          ; 17 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst41|16_1_MUX:inst                                      ; work         ;
-;             |8_1_mux:inst|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst41|16_1_MUX:inst|8_1_mux:inst                         ; work         ;
+;          |16_1_MUX:inst|          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst41|16_1_MUX:inst                                      ; work         ;
 ;       |32_1_MUX:inst42|           ; 27 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst42                                                    ; work         ;
 ;          |16_1_MUX:inst1|         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst42|16_1_MUX:inst1                                     ; work         ;
 ;          |16_1_MUX:inst|          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst42|16_1_MUX:inst                                      ; work         ;
 ;       |32_1_MUX:inst43|           ; 27 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst43                                                    ; work         ;
 ;          |16_1_MUX:inst1|         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst43|16_1_MUX:inst1                                     ; work         ;
 ;          |16_1_MUX:inst|          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst43|16_1_MUX:inst                                      ; work         ;
-;       |32_1_MUX:inst44|           ; 27 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst44                                                    ; work         ;
+;       |32_1_MUX:inst44|           ; 29 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst44                                                    ; work         ;
 ;          |16_1_MUX:inst1|         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst44|16_1_MUX:inst1                                     ; work         ;
-;          |16_1_MUX:inst|          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst44|16_1_MUX:inst                                      ; work         ;
+;          |16_1_MUX:inst|          ; 15 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst44|16_1_MUX:inst                                      ; work         ;
+;             |8_1_mux:inst|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst44|16_1_MUX:inst|8_1_mux:inst                         ; work         ;
 ;       |32_1_MUX:inst45|           ; 27 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst45                                                    ; work         ;
 ;          |16_1_MUX:inst1|         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst45|16_1_MUX:inst1                                     ; work         ;
 ;          |16_1_MUX:inst|          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst45|16_1_MUX:inst                                      ; work         ;
@@ -440,15 +451,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |32_1_MUX:inst47|           ; 27 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst47                                                    ; work         ;
 ;          |16_1_MUX:inst1|         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst47|16_1_MUX:inst1                                     ; work         ;
 ;          |16_1_MUX:inst|          ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst47|16_1_MUX:inst                                      ; work         ;
-;       |32_1_MUX:inst48|           ; 23 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst48                                                    ; work         ;
-;          |16_1_MUX:inst1|         ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst48|16_1_MUX:inst1                                     ; work         ;
-;          |16_1_MUX:inst|          ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst48|16_1_MUX:inst                                      ; work         ;
+;       |32_1_MUX:inst48|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst48                                                    ; work         ;
 ;       |32_1_MUX:inst49|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|32_1_MUX:inst49                                                    ; work         ;
-;       |5_to_32_decoder:inst|      ; 43 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|5_to_32_decoder:inst                                               ;              ;
+;       |5_to_32_decoder:inst|      ; 41 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|5_to_32_decoder:inst                                               ;              ;
 ;          |4_to_16_decoder:inst53| ; 18 (4)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst53                        ;              ;
 ;             |3_8_dec:inst4|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst53|3_8_dec:inst4          ;              ;
 ;             |3_8_dec:inst|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst53|3_8_dec:inst           ;              ;
-;          |4_to_16_decoder:inst|   ; 20 (6)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst                          ;              ;
+;          |4_to_16_decoder:inst|   ; 18 (4)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst                          ;              ;
 ;             |3_8_dec:inst4|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst|3_8_dec:inst4            ;              ;
 ;             |3_8_dec:inst|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst|3_8_dec:inst             ;              ;
 ;       |Register:inst10|           ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|Register_File:inst12|Register:inst10                                                    ; work         ;
@@ -486,7 +495,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |SLOW_CLOCK:inst19|            ; 29 (26)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|SLOW_CLOCK:inst19                                                                       ;              ;
 ;       |4_1_MUX:inst65|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|SLOW_CLOCK:inst19|4_1_MUX:inst65                                                        ;              ;
 ;    |State_Machine:inst15|         ; 2 (2)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|State_Machine:inst15                                                                    ;              ;
-;    |pc_alu_top_level:inst1|       ; 52 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1                                                                  ; work         ;
+;    |pc_alu_top_level:inst1|       ; 50 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1                                                                  ; work         ;
 ;       |16_b_ripple_adder:inst2|   ; 31 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|16_b_ripple_adder:inst2                                          ; work         ;
 ;          |8_B_Ripple_Adder:inst1| ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1                   ; work         ;
 ;             |Full_Adder:inst10|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1|Full_Adder:inst10 ; work         ;
@@ -506,18 +515,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |Full_Adder:inst20|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst20  ; work         ;
 ;             |Full_Adder:inst21|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst21  ; work         ;
 ;             |Full_Adder:inst|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst    ; work         ;
-;       |jump_select:inst|          ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst                                                 ; work         ;
+;       |jump_select:inst|          ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst                                                 ; work         ;
 ;          |2_1_mux:inst10|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst10                                  ; work         ;
-;          |2_1_mux:inst11|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst11                                  ; work         ;
-;          |2_1_mux:inst12|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst12                                  ; work         ;
-;          |2_1_mux:inst1|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst1                                   ; work         ;
+;          |2_1_mux:inst11|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst11                                  ; work         ;
+;          |2_1_mux:inst12|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst12                                  ; work         ;
+;          |2_1_mux:inst1|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst1                                   ; work         ;
 ;          |2_1_mux:inst2|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst2                                   ; work         ;
 ;          |2_1_mux:inst3|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst3                                   ; work         ;
 ;          |2_1_mux:inst4|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst4                                   ; work         ;
 ;          |2_1_mux:inst5|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst5                                   ; work         ;
 ;          |2_1_mux:inst6|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst6                                   ; work         ;
 ;          |2_1_mux:inst7|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst7                                   ; work         ;
-;          |2_1_mux:inst8|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst8                                   ; work         ;
+;          |2_1_mux:inst8|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst8                                   ; work         ;
 ;          |2_1_mux:inst|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst                                    ; work         ;
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -553,7 +562,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Jan 04 14:10:14 2020
+    Info: Processing started: Mon Feb 28 16:34:40 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WIMPAVR -c WIMPAVR_DEMO
 Info: Found 1 design units, including 1 entities, in source file register.bdf
     Info: Found entity 1: Register
@@ -636,10 +645,6 @@ Info: Elaborating entity "ALU_TOP" for hierarchy "ALU_TOP:inst30"
 Info: Elaborating entity "Z_LOGIC" for hierarchy "ALU_TOP:inst30|Z_LOGIC:inst12"
 Info: Elaborating entity "8_B_Ripple_Adder" for hierarchy "ALU_TOP:inst30|8_B_Ripple_Adder:inst10"
 Info: Elaborating entity "Full_Adder" for hierarchy "ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst"
-Info: Elaborating entity "CARRY_LOGIC" for hierarchy "ALU_TOP:inst30|CARRY_LOGIC:inst14"
-Warning: Using design file ext_c.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: ext_c
-Info: Elaborating entity "EXT_C" for hierarchy "ALU_TOP:inst30|CARRY_LOGIC:inst14|EXT_C:inst3"
 Info: Elaborating entity "alu_control" for hierarchy "ALU_TOP:inst30|alu_control:inst"
 Warning: Pin "IR9" not connected
 Warning: Pin "IR8" not connected
@@ -647,12 +652,14 @@ Warning: Pin "IR7" not connected
 Warning: Pin "IR6" not connected
 Warning: Pin "IR5" not connected
 Warning: Pin "IR4" not connected
-Warning: Pin "IR3" not connected
 Warning: Pin "IR2" not connected
-Warning: Pin "IR0" not connected
+Info: Elaborating entity "SWAP_EN" for hierarchy "ALU_TOP:inst30|alu_control:inst|SWAP_EN:inst2"
 Info: Elaborating entity "ADD_EN" for hierarchy "ALU_TOP:inst30|alu_control:inst|ADD_EN:inst"
 Info: Elaborating entity "LOGIC_EN" for hierarchy "ALU_TOP:inst30|alu_control:inst|LOGIC_EN:inst12"
-Info: Elaborating entity "SWAP_EN" for hierarchy "ALU_TOP:inst30|alu_control:inst|SWAP_EN:inst2"
+Info: Elaborating entity "CARRY_LOGIC" for hierarchy "ALU_TOP:inst30|CARRY_LOGIC:inst14"
+Warning: Using design file ext_c.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: ext_c
+Info: Elaborating entity "ext_c" for hierarchy "ALU_TOP:inst30|CARRY_LOGIC:inst14|ext_c:inst3"
 Warning: Using design file 8_2_1_mux.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: 8_2_1_mux
 Info: Elaborating entity "8_2_1_MUX" for hierarchy "ALU_TOP:inst30|8_2_1_MUX:inst11"
@@ -732,14 +739,14 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "WE" is stuck at VCC
     Warning (13410): Pin "SRAM16" is stuck at GND
     Warning (13410): Pin "SRAM17" is stuck at GND
-Info: Implemented 1252 device resources after synthesis - the final resource count might be different
+Info: Implemented 1275 device resources after synthesis - the final resource count might be different
     Info: Implemented 29 input pins
     Info: Implemented 85 output pins
-    Info: Implemented 1138 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 55 warnings
-    Info: Peak virtual memory: 234 megabytes
-    Info: Processing ended: Sat Jan 04 14:10:22 2020
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Implemented 1161 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 229 megabytes
+    Info: Processing ended: Mon Feb 28 16:34:45 2022
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 

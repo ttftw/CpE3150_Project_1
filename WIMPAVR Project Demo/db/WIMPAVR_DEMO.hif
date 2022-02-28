@@ -55,7 +55,15 @@ AUTO
 }
 # hierarchies {
 SLOW_CLOCK:inst19|4_1_MUX:inst65
+ALU_TOP:inst30|4_1_MUX:inst16
 ALU_TOP:inst30|CARRY_LOGIC:inst14|4_1_MUX:inst1
+ALU_TOP:inst30|4_1_MUX:inst17
+ALU_TOP:inst30|4_1_MUX:inst18
+ALU_TOP:inst30|4_1_MUX:inst19
+ALU_TOP:inst30|4_1_MUX:inst20
+ALU_TOP:inst30|4_1_MUX:inst21
+ALU_TOP:inst30|4_1_MUX:inst22
+ALU_TOP:inst30|4_1_MUX:inst23
 ALU_TOP:inst30|logic_swap:inst1|4_1_MUX:inst3
 ALU_TOP:inst30|logic_swap:inst2|4_1_MUX:inst3
 ALU_TOP:inst30|logic_swap:inst3|4_1_MUX:inst3
@@ -72,26 +80,6 @@ DATA_LOAD_MUX:inst3|4_1_MUX:inst7
 DATA_LOAD_MUX:inst3|4_1_MUX:inst8
 DATA_LOAD_MUX:inst3|4_1_MUX:inst9
 DATA_LOAD_MUX:inst3|4_1_MUX:inst10
-}
-# macro_sequence
-
-# end
-# entity
-Control_Unit
-# storage
-db|WIMPAVR_DEMO.(4).cnf
-db|WIMPAVR_DEMO.(4).cnf
-# case_insensitive
-# source_file
-control_unit.bdf
-b842311bfd18ec419fb448cb767a65
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Control_Unit:inst13
 }
 # macro_sequence
 
@@ -117,46 +105,6 @@ Control_Unit:inst13|branch_logic:inst
 
 # end
 # entity
-LOAD_SELECT
-# storage
-db|WIMPAVR_DEMO.(6).cnf
-db|WIMPAVR_DEMO.(6).cnf
-# case_insensitive
-# source_file
-load_select.bdf
-297cbccf530b72d726de8159267549
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Control_Unit:inst13|LOAD_SELECT:inst1
-}
-# macro_sequence
-
-# end
-# entity
-ALU_TOP
-# storage
-db|WIMPAVR_DEMO.(7).cnf
-db|WIMPAVR_DEMO.(7).cnf
-# case_insensitive
-# source_file
-alu_top.bdf
-d24ffec25cf4dbc6c41e676310e63cc1
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ALU_TOP:inst30
-}
-# macro_sequence
-
-# end
-# entity
 Z_LOGIC
 # storage
 db|WIMPAVR_DEMO.(8).cnf
@@ -172,28 +120,6 @@ AUTO
 }
 # hierarchies {
 ALU_TOP:inst30|Z_LOGIC:inst12
-}
-# macro_sequence
-
-# end
-# entity
-8_B_Ripple_Adder
-# storage
-db|WIMPAVR_DEMO.(9).cnf
-db|WIMPAVR_DEMO.(9).cnf
-# case_insensitive
-# source_file
-8_b_ripple_adder.bdf
-51bbb587f9801c52cbc29b1d85adcee7
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ALU_TOP:inst30|8_B_Ripple_Adder:inst10
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1
 }
 # macro_sequence
 
@@ -242,66 +168,6 @@ pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1|Full_Adder
 
 # end
 # entity
-CARRY_LOGIC
-# storage
-db|WIMPAVR_DEMO.(11).cnf
-db|WIMPAVR_DEMO.(11).cnf
-# case_insensitive
-# source_file
-carry_logic.bdf
-77f0cf116cbb998c013e268bd96720
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ALU_TOP:inst30|CARRY_LOGIC:inst14
-}
-# macro_sequence
-
-# end
-# entity
-EXT_C
-# storage
-db|WIMPAVR_DEMO.(12).cnf
-db|WIMPAVR_DEMO.(12).cnf
-# case_insensitive
-# source_file
-ext_c.bdf
-b0b17f2797e3e6b2f17d916fc6fe97cf
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ALU_TOP:inst30|CARRY_LOGIC:inst14|ext_c:inst3
-}
-# macro_sequence
-
-# end
-# entity
-alu_control
-# storage
-db|WIMPAVR_DEMO.(13).cnf
-db|WIMPAVR_DEMO.(13).cnf
-# case_insensitive
-# source_file
-alu_control.bdf
-a2419f3651daa8823391ba6781433690
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ALU_TOP:inst30|alu_control:inst
-}
-# macro_sequence
-
-# end
-# entity
 ADD_EN
 # storage
 db|WIMPAVR_DEMO.(14).cnf
@@ -337,26 +203,6 @@ AUTO
 }
 # hierarchies {
 ALU_TOP:inst30|alu_control:inst|LOGIC_EN:inst12
-}
-# macro_sequence
-
-# end
-# entity
-SWAP_EN
-# storage
-db|WIMPAVR_DEMO.(16).cnf
-db|WIMPAVR_DEMO.(16).cnf
-# case_insensitive
-# source_file
-swap_en.bdf
-e473feaba27590e33ad61bb46ec634fe
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ALU_TOP:inst30|alu_control:inst|SWAP_EN:inst2
 }
 # macro_sequence
 
@@ -1617,26 +1463,6 @@ pc_alu_top_level:inst1|jump_select:inst
 
 # end
 # entity
-AVR_TEST
-# storage
-db|WIMPAVR_DEMO.(0).cnf
-db|WIMPAVR_DEMO.(0).cnf
-# case_insensitive
-# source_file
-avr_test.bdf
-5e8d66a0c296a34457c6ae6aa9576e9
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 SLOW_CLOCK
 # storage
 db|WIMPAVR_DEMO.(2).cnf
@@ -1652,6 +1478,188 @@ AUTO
 }
 # hierarchies {
 SLOW_CLOCK:inst19
+}
+# macro_sequence
+
+# end
+# entity
+alu_control
+# storage
+db|WIMPAVR_DEMO.(13).cnf
+db|WIMPAVR_DEMO.(13).cnf
+# case_insensitive
+# source_file
+alu_control.bdf
+4ee6f759708e176a57dfb678d6736eeb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU_TOP:inst30|alu_control:inst
+}
+# macro_sequence
+
+# end
+# entity
+SWAP_EN
+# storage
+db|WIMPAVR_DEMO.(16).cnf
+db|WIMPAVR_DEMO.(16).cnf
+# case_insensitive
+# source_file
+swap_en.bdf
+3159299b361327d322f611a44812f82
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU_TOP:inst30|alu_control:inst|SWAP_EN:inst2
+}
+# macro_sequence
+
+# end
+# entity
+8_B_Ripple_Adder
+# storage
+db|WIMPAVR_DEMO.(9).cnf
+db|WIMPAVR_DEMO.(9).cnf
+# case_insensitive
+# source_file
+8_b_ripple_adder.bdf
+c475a5b860d5148a84f2ba6dd2da8b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU_TOP:inst30|8_B_Ripple_Adder:inst10
+pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst
+pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Control_Unit
+# storage
+db|WIMPAVR_DEMO.(4).cnf
+db|WIMPAVR_DEMO.(4).cnf
+# case_insensitive
+# source_file
+control_unit.bdf
+5f6ae4164c6fab227fc63d166abcb245
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Control_Unit:inst13
+}
+# macro_sequence
+
+# end
+# entity
+LOAD_SELECT
+# storage
+db|WIMPAVR_DEMO.(6).cnf
+db|WIMPAVR_DEMO.(6).cnf
+# case_insensitive
+# source_file
+load_select.bdf
+5c46f015c0f553496442f90c1be7c90
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Control_Unit:inst13|LOAD_SELECT:inst1
+}
+# macro_sequence
+
+# end
+# entity
+CARRY_LOGIC
+# storage
+db|WIMPAVR_DEMO.(11).cnf
+db|WIMPAVR_DEMO.(11).cnf
+# case_insensitive
+# source_file
+carry_logic.bdf
+dca3868497c313b4ef3677b47af8cb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU_TOP:inst30|CARRY_LOGIC:inst14
+}
+# macro_sequence
+
+# end
+# entity
+ext_c
+# storage
+db|WIMPAVR_DEMO.(12).cnf
+db|WIMPAVR_DEMO.(12).cnf
+# case_insensitive
+# source_file
+ext_c.bdf
+254babae1f9cb0e1b01aada4fa9b26
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU_TOP:inst30|CARRY_LOGIC:inst14|ext_c:inst3
+}
+# macro_sequence
+
+# end
+# entity
+AVR_TEST
+# storage
+db|WIMPAVR_DEMO.(0).cnf
+db|WIMPAVR_DEMO.(0).cnf
+# case_insensitive
+# source_file
+avr_test.bdf
+c570986bad7cbb6496ac33c6552ea8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+ALU_TOP
+# storage
+db|WIMPAVR_DEMO.(7).cnf
+db|WIMPAVR_DEMO.(7).cnf
+# case_insensitive
+# source_file
+alu_top.bdf
+de983dfab925f949ba3ed297caddc36
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU_TOP:inst30
 }
 # macro_sequence
 
