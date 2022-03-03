@@ -33,9 +33,6 @@ state_machine.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-State_Machine:inst15
-}
 # macro_sequence
 
 # end
@@ -52,34 +49,6 @@ db|WIMPAVR_DEMO.(3).cnf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-SLOW_CLOCK:inst19|4_1_MUX:inst65
-ALU_TOP:inst30|4_1_MUX:inst16
-ALU_TOP:inst30|CARRY_LOGIC:inst14|4_1_MUX:inst1
-ALU_TOP:inst30|4_1_MUX:inst17
-ALU_TOP:inst30|4_1_MUX:inst18
-ALU_TOP:inst30|4_1_MUX:inst19
-ALU_TOP:inst30|4_1_MUX:inst20
-ALU_TOP:inst30|4_1_MUX:inst21
-ALU_TOP:inst30|4_1_MUX:inst22
-ALU_TOP:inst30|4_1_MUX:inst23
-ALU_TOP:inst30|logic_swap:inst1|4_1_MUX:inst3
-ALU_TOP:inst30|logic_swap:inst2|4_1_MUX:inst3
-ALU_TOP:inst30|logic_swap:inst3|4_1_MUX:inst3
-ALU_TOP:inst30|logic_swap:inst4|4_1_MUX:inst3
-ALU_TOP:inst30|logic_swap:inst5|4_1_MUX:inst3
-ALU_TOP:inst30|logic_swap:inst6|4_1_MUX:inst3
-ALU_TOP:inst30|logic_swap:inst7|4_1_MUX:inst3
-ALU_TOP:inst30|logic_swap:inst8|4_1_MUX:inst3
-DATA_LOAD_MUX:inst3|4_1_MUX:inst
-DATA_LOAD_MUX:inst3|4_1_MUX:inst4
-DATA_LOAD_MUX:inst3|4_1_MUX:inst5
-DATA_LOAD_MUX:inst3|4_1_MUX:inst6
-DATA_LOAD_MUX:inst3|4_1_MUX:inst7
-DATA_LOAD_MUX:inst3|4_1_MUX:inst8
-DATA_LOAD_MUX:inst3|4_1_MUX:inst9
-DATA_LOAD_MUX:inst3|4_1_MUX:inst10
 }
 # macro_sequence
 
@@ -98,9 +67,6 @@ branch_logic.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Control_Unit:inst13|branch_logic:inst
-}
 # macro_sequence
 
 # end
@@ -118,9 +84,6 @@ z_logic.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ALU_TOP:inst30|Z_LOGIC:inst12
-}
 # macro_sequence
 
 # end
@@ -137,32 +100,6 @@ full_adder.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst
-ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst16
-ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst17
-ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst18
-ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst10
-ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst19
-ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst20
-ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder:inst21
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst16
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst17
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst18
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst10
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst19
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst20
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst|Full_Adder:inst21
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1|Full_Adder:inst
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1|Full_Adder:inst16
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1|Full_Adder:inst17
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1|Full_Adder:inst18
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1|Full_Adder:inst10
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1|Full_Adder:inst19
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1|Full_Adder:inst20
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1|Full_Adder:inst21
 }
 # macro_sequence
 
@@ -182,7 +119,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ALU_TOP:inst30|alu_control:inst|ADD_EN:inst
+ADD_EN:inst
 }
 # macro_sequence
 
@@ -202,7 +139,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ALU_TOP:inst30|alu_control:inst|LOGIC_EN:inst12
+LOGIC_EN:inst12
 }
 # macro_sequence
 
@@ -221,13 +158,6 @@ e290d0a96649d8ef33a49819ed275a8
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ALU_TOP:inst30|8_2_1_mux:inst11
-8_2_1_mux:inst16
-8_2_1_mux:inst4
-8_2_1_mux:inst5
-8_2_1_mux:inst17
-}
 # macro_sequence
 
 # end
@@ -244,92 +174,6 @@ c72d863e5fb8ede1ba260916ea89337
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst4
-ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst5
-ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst6
-ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst7
-ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst8
-ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst9
-ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst10
-ALU_TOP:inst30|8_2_1_mux:inst11|2_1_mux:inst11
-16_B_REG:inst9|1_BIT_REGISTER:inst1|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst2|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst5|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst6|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst9|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst10|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst13|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst14|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst3|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst4|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst7|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst8|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst11|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst12|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst15|2_1_mux:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst16|2_1_mux:inst1
-8_2_1_mux:inst16|2_1_mux:inst4
-8_2_1_mux:inst16|2_1_mux:inst5
-8_2_1_mux:inst16|2_1_mux:inst6
-8_2_1_mux:inst16|2_1_mux:inst7
-8_2_1_mux:inst16|2_1_mux:inst8
-8_2_1_mux:inst16|2_1_mux:inst9
-8_2_1_mux:inst16|2_1_mux:inst10
-8_2_1_mux:inst16|2_1_mux:inst11
-PC_BLOCK:inst14|1_BIT_REGISTER:inst1|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst2|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst5|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst6|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst9|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst10|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst13|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst14|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst3|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst4|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst7|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst8|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst11|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst12|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst16|2_1_mux:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst15|2_1_mux:inst1
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst1
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst2
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst3
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst4
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst5
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst6
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst7
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst8
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst10
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst11
-pc_alu_top_level:inst1|jump_select:inst|2_1_mux:inst12
-8_2_1_mux:inst4|2_1_mux:inst4
-8_2_1_mux:inst4|2_1_mux:inst5
-8_2_1_mux:inst4|2_1_mux:inst6
-8_2_1_mux:inst4|2_1_mux:inst7
-8_2_1_mux:inst4|2_1_mux:inst8
-8_2_1_mux:inst4|2_1_mux:inst9
-8_2_1_mux:inst4|2_1_mux:inst10
-8_2_1_mux:inst4|2_1_mux:inst11
-8_2_1_mux:inst5|2_1_mux:inst4
-8_2_1_mux:inst5|2_1_mux:inst5
-8_2_1_mux:inst5|2_1_mux:inst6
-8_2_1_mux:inst5|2_1_mux:inst7
-8_2_1_mux:inst5|2_1_mux:inst8
-8_2_1_mux:inst5|2_1_mux:inst9
-8_2_1_mux:inst5|2_1_mux:inst10
-8_2_1_mux:inst5|2_1_mux:inst11
-8_2_1_mux:inst17|2_1_mux:inst4
-8_2_1_mux:inst17|2_1_mux:inst5
-8_2_1_mux:inst17|2_1_mux:inst6
-8_2_1_mux:inst17|2_1_mux:inst7
-8_2_1_mux:inst17|2_1_mux:inst8
-8_2_1_mux:inst17|2_1_mux:inst9
-8_2_1_mux:inst17|2_1_mux:inst10
-8_2_1_mux:inst17|2_1_mux:inst11
 }
 # macro_sequence
 
@@ -348,16 +192,6 @@ d06166a1838c102bc23ea9b4d9aa9f
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ALU_TOP:inst30|logic_swap:inst1
-ALU_TOP:inst30|logic_swap:inst2
-ALU_TOP:inst30|logic_swap:inst3
-ALU_TOP:inst30|logic_swap:inst4
-ALU_TOP:inst30|logic_swap:inst5
-ALU_TOP:inst30|logic_swap:inst6
-ALU_TOP:inst30|logic_swap:inst7
-ALU_TOP:inst30|logic_swap:inst8
-}
 # macro_sequence
 
 # end
@@ -374,9 +208,6 @@ db|WIMPAVR_DEMO.(20).cnf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-16_B_REG:inst9
 }
 # macro_sequence
 
@@ -395,40 +226,6 @@ e5e64fbfc5b2635fa36f9c4e2c70b16
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-16_B_REG:inst9|1_BIT_REGISTER:inst1
-16_B_REG:inst9|1_BIT_REGISTER:inst2
-16_B_REG:inst9|1_BIT_REGISTER:inst5
-16_B_REG:inst9|1_BIT_REGISTER:inst6
-16_B_REG:inst9|1_BIT_REGISTER:inst9
-16_B_REG:inst9|1_BIT_REGISTER:inst10
-16_B_REG:inst9|1_BIT_REGISTER:inst13
-16_B_REG:inst9|1_BIT_REGISTER:inst14
-16_B_REG:inst9|1_BIT_REGISTER:inst3
-16_B_REG:inst9|1_BIT_REGISTER:inst4
-16_B_REG:inst9|1_BIT_REGISTER:inst7
-16_B_REG:inst9|1_BIT_REGISTER:inst8
-16_B_REG:inst9|1_BIT_REGISTER:inst11
-16_B_REG:inst9|1_BIT_REGISTER:inst12
-16_B_REG:inst9|1_BIT_REGISTER:inst15
-16_B_REG:inst9|1_BIT_REGISTER:inst16
-PC_BLOCK:inst14|1_BIT_REGISTER:inst1
-PC_BLOCK:inst14|1_BIT_REGISTER:inst2
-PC_BLOCK:inst14|1_BIT_REGISTER:inst5
-PC_BLOCK:inst14|1_BIT_REGISTER:inst6
-PC_BLOCK:inst14|1_BIT_REGISTER:inst9
-PC_BLOCK:inst14|1_BIT_REGISTER:inst10
-PC_BLOCK:inst14|1_BIT_REGISTER:inst13
-PC_BLOCK:inst14|1_BIT_REGISTER:inst14
-PC_BLOCK:inst14|1_BIT_REGISTER:inst3
-PC_BLOCK:inst14|1_BIT_REGISTER:inst4
-PC_BLOCK:inst14|1_BIT_REGISTER:inst7
-PC_BLOCK:inst14|1_BIT_REGISTER:inst8
-PC_BLOCK:inst14|1_BIT_REGISTER:inst11
-PC_BLOCK:inst14|1_BIT_REGISTER:inst12
-PC_BLOCK:inst14|1_BIT_REGISTER:inst16
-PC_BLOCK:inst14|1_BIT_REGISTER:inst15
-}
 # macro_sequence
 
 # end
@@ -445,9 +242,6 @@ register_file.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Register_File:inst12
 }
 # macro_sequence
 
@@ -466,40 +260,6 @@ b0301374121584efd27a82d9f90218
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Register_File:inst12|32_1_MUX:inst39
-Register_File:inst12|32_1_MUX:inst40
-Register_File:inst12|32_1_MUX:inst37
-Register_File:inst12|32_1_MUX:inst38
-Register_File:inst12|32_1_MUX:inst35
-Register_File:inst12|32_1_MUX:inst36
-Register_File:inst12|32_1_MUX:inst49
-Register_File:inst12|32_1_MUX:inst34
-Register_File:inst12|32_1_MUX:inst48
-Register_File:inst12|32_1_MUX:inst47
-Register_File:inst12|32_1_MUX:inst46
-Register_File:inst12|32_1_MUX:inst45
-Register_File:inst12|32_1_MUX:inst44
-Register_File:inst12|32_1_MUX:inst43
-Register_File:inst12|32_1_MUX:inst42
-Register_File:inst12|32_1_MUX:inst41
-Register_File:inst12|32_1_MUX:inst58
-Register_File:inst12|32_1_MUX:inst59
-Register_File:inst12|32_1_MUX:inst60
-Register_File:inst12|32_1_MUX:inst61
-Register_File:inst12|32_1_MUX:inst62
-Register_File:inst12|32_1_MUX:inst63
-Register_File:inst12|32_1_MUX:inst64
-Register_File:inst12|32_1_MUX:inst65
-Register_File:inst12|32_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst50
-Register_File:inst12|32_1_MUX:inst51
-Register_File:inst12|32_1_MUX:inst52
-Register_File:inst12|32_1_MUX:inst53
-Register_File:inst12|32_1_MUX:inst54
-Register_File:inst12|32_1_MUX:inst55
-Register_File:inst12|32_1_MUX:inst56
-}
 # macro_sequence
 
 # end
@@ -516,72 +276,6 @@ be75375d82d9361e4a9ee47e451c4a5
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Register_File:inst12|32_1_MUX:inst39|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst39|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst40|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst40|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst37|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst37|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst38|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst38|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst35|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst35|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst36|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst36|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst49|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst49|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst34|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst34|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst48|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst48|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst47|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst47|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst46|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst46|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst45|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst45|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst44|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst44|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst43|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst43|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst42|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst42|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst41|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst41|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst58|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst58|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst59|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst59|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst60|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst60|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst61|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst61|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst62|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst62|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst63|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst63|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst64|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst64|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst65|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst65|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst1|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst1|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst50|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst50|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst51|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst51|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst52|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst52|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst53|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst53|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst54|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst54|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst55|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst55|16_1_MUX:inst
-Register_File:inst12|32_1_MUX:inst56|16_1_MUX:inst1
-Register_File:inst12|32_1_MUX:inst56|16_1_MUX:inst
 }
 # macro_sequence
 
@@ -600,136 +294,6 @@ eac4608e3c83a62a2e3911a8bd4af30
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Register_File:inst12|32_1_MUX:inst39|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst39|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst39|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst39|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst40|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst40|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst40|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst40|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst37|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst37|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst37|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst37|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst38|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst38|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst38|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst38|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst35|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst35|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst35|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst35|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst36|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst36|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst36|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst36|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst49|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst49|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst49|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst49|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst34|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst34|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst34|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst34|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst48|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst48|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst48|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst48|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst47|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst47|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst47|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst47|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst46|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst46|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst46|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst46|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst45|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst45|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst45|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst45|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst44|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst44|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst44|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst44|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst43|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst43|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst43|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst43|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst42|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst42|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst42|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst42|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst41|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst41|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst41|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst41|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst58|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst58|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst58|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst58|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst59|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst59|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst59|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst59|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst60|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst60|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst60|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst60|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst61|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst61|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst61|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst61|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst62|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst62|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst62|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst62|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst63|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst63|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst63|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst63|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst64|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst64|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst64|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst64|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst65|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst65|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst65|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst65|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst1|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst1|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst1|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst1|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst50|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst50|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst50|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst50|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst51|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst51|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst51|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst51|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst52|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst52|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst52|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst52|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst53|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst53|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst53|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst53|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst54|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst54|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst54|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst54|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst55|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst55|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst55|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst55|16_1_MUX:inst|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst56|16_1_MUX:inst1|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst56|16_1_MUX:inst1|8_1_mux:inst
-Register_File:inst12|32_1_MUX:inst56|16_1_MUX:inst|8_1_mux:inst1
-Register_File:inst12|32_1_MUX:inst56|16_1_MUX:inst|8_1_mux:inst
-}
 # macro_sequence
 
 # end
@@ -746,40 +310,6 @@ register.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Register_File:inst12|Register:inst2
-Register_File:inst12|Register:inst3
-Register_File:inst12|Register:inst4
-Register_File:inst12|Register:inst5
-Register_File:inst12|Register:inst6
-Register_File:inst12|Register:inst7
-Register_File:inst12|Register:inst8
-Register_File:inst12|Register:inst9
-Register_File:inst12|Register:inst10
-Register_File:inst12|Register:inst11
-Register_File:inst12|Register:inst12
-Register_File:inst12|Register:inst13
-Register_File:inst12|Register:inst14
-Register_File:inst12|Register:inst15
-Register_File:inst12|Register:inst16
-Register_File:inst12|Register:inst17
-Register_File:inst12|Register:inst18
-Register_File:inst12|Register:inst19
-Register_File:inst12|Register:inst20
-Register_File:inst12|Register:inst21
-Register_File:inst12|Register:inst22
-Register_File:inst12|Register:inst23
-Register_File:inst12|Register:inst24
-Register_File:inst12|Register:inst25
-Register_File:inst12|Register:inst26
-Register_File:inst12|Register:inst27
-Register_File:inst12|Register:inst28
-Register_File:inst12|Register:inst29
-Register_File:inst12|Register:inst30
-Register_File:inst12|Register:inst31
-Register_File:inst12|Register:inst32
-Register_File:inst12|Register:inst33
 }
 # macro_sequence
 
@@ -798,264 +328,6 @@ self_loop.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Register_File:inst12|Register:inst2|self_loop:inst8
-Register_File:inst12|Register:inst2|self_loop:inst7
-Register_File:inst12|Register:inst2|self_loop:inst6
-Register_File:inst12|Register:inst2|self_loop:inst5
-Register_File:inst12|Register:inst2|self_loop:inst4
-Register_File:inst12|Register:inst2|self_loop:inst3
-Register_File:inst12|Register:inst2|self_loop:inst2
-Register_File:inst12|Register:inst2|self_loop:inst1
-Register_File:inst12|Register:inst3|self_loop:inst8
-Register_File:inst12|Register:inst3|self_loop:inst7
-Register_File:inst12|Register:inst3|self_loop:inst6
-Register_File:inst12|Register:inst3|self_loop:inst5
-Register_File:inst12|Register:inst3|self_loop:inst4
-Register_File:inst12|Register:inst3|self_loop:inst3
-Register_File:inst12|Register:inst3|self_loop:inst2
-Register_File:inst12|Register:inst3|self_loop:inst1
-Register_File:inst12|Register:inst4|self_loop:inst8
-Register_File:inst12|Register:inst4|self_loop:inst7
-Register_File:inst12|Register:inst4|self_loop:inst6
-Register_File:inst12|Register:inst4|self_loop:inst5
-Register_File:inst12|Register:inst4|self_loop:inst4
-Register_File:inst12|Register:inst4|self_loop:inst3
-Register_File:inst12|Register:inst4|self_loop:inst2
-Register_File:inst12|Register:inst4|self_loop:inst1
-Register_File:inst12|Register:inst5|self_loop:inst8
-Register_File:inst12|Register:inst5|self_loop:inst7
-Register_File:inst12|Register:inst5|self_loop:inst6
-Register_File:inst12|Register:inst5|self_loop:inst5
-Register_File:inst12|Register:inst5|self_loop:inst4
-Register_File:inst12|Register:inst5|self_loop:inst3
-Register_File:inst12|Register:inst5|self_loop:inst2
-Register_File:inst12|Register:inst5|self_loop:inst1
-Register_File:inst12|Register:inst6|self_loop:inst8
-Register_File:inst12|Register:inst6|self_loop:inst7
-Register_File:inst12|Register:inst6|self_loop:inst6
-Register_File:inst12|Register:inst6|self_loop:inst5
-Register_File:inst12|Register:inst6|self_loop:inst4
-Register_File:inst12|Register:inst6|self_loop:inst3
-Register_File:inst12|Register:inst6|self_loop:inst2
-Register_File:inst12|Register:inst6|self_loop:inst1
-Register_File:inst12|Register:inst7|self_loop:inst8
-Register_File:inst12|Register:inst7|self_loop:inst7
-Register_File:inst12|Register:inst7|self_loop:inst6
-Register_File:inst12|Register:inst7|self_loop:inst5
-Register_File:inst12|Register:inst7|self_loop:inst4
-Register_File:inst12|Register:inst7|self_loop:inst3
-Register_File:inst12|Register:inst7|self_loop:inst2
-Register_File:inst12|Register:inst7|self_loop:inst1
-Register_File:inst12|Register:inst8|self_loop:inst8
-Register_File:inst12|Register:inst8|self_loop:inst7
-Register_File:inst12|Register:inst8|self_loop:inst6
-Register_File:inst12|Register:inst8|self_loop:inst5
-Register_File:inst12|Register:inst8|self_loop:inst4
-Register_File:inst12|Register:inst8|self_loop:inst3
-Register_File:inst12|Register:inst8|self_loop:inst2
-Register_File:inst12|Register:inst8|self_loop:inst1
-Register_File:inst12|Register:inst9|self_loop:inst8
-Register_File:inst12|Register:inst9|self_loop:inst7
-Register_File:inst12|Register:inst9|self_loop:inst6
-Register_File:inst12|Register:inst9|self_loop:inst5
-Register_File:inst12|Register:inst9|self_loop:inst4
-Register_File:inst12|Register:inst9|self_loop:inst3
-Register_File:inst12|Register:inst9|self_loop:inst2
-Register_File:inst12|Register:inst9|self_loop:inst1
-Register_File:inst12|Register:inst10|self_loop:inst8
-Register_File:inst12|Register:inst10|self_loop:inst7
-Register_File:inst12|Register:inst10|self_loop:inst6
-Register_File:inst12|Register:inst10|self_loop:inst5
-Register_File:inst12|Register:inst10|self_loop:inst4
-Register_File:inst12|Register:inst10|self_loop:inst3
-Register_File:inst12|Register:inst10|self_loop:inst2
-Register_File:inst12|Register:inst10|self_loop:inst1
-Register_File:inst12|Register:inst11|self_loop:inst8
-Register_File:inst12|Register:inst11|self_loop:inst7
-Register_File:inst12|Register:inst11|self_loop:inst6
-Register_File:inst12|Register:inst11|self_loop:inst5
-Register_File:inst12|Register:inst11|self_loop:inst4
-Register_File:inst12|Register:inst11|self_loop:inst3
-Register_File:inst12|Register:inst11|self_loop:inst2
-Register_File:inst12|Register:inst11|self_loop:inst1
-Register_File:inst12|Register:inst12|self_loop:inst8
-Register_File:inst12|Register:inst12|self_loop:inst7
-Register_File:inst12|Register:inst12|self_loop:inst6
-Register_File:inst12|Register:inst12|self_loop:inst5
-Register_File:inst12|Register:inst12|self_loop:inst4
-Register_File:inst12|Register:inst12|self_loop:inst3
-Register_File:inst12|Register:inst12|self_loop:inst2
-Register_File:inst12|Register:inst12|self_loop:inst1
-Register_File:inst12|Register:inst13|self_loop:inst8
-Register_File:inst12|Register:inst13|self_loop:inst7
-Register_File:inst12|Register:inst13|self_loop:inst6
-Register_File:inst12|Register:inst13|self_loop:inst5
-Register_File:inst12|Register:inst13|self_loop:inst4
-Register_File:inst12|Register:inst13|self_loop:inst3
-Register_File:inst12|Register:inst13|self_loop:inst2
-Register_File:inst12|Register:inst13|self_loop:inst1
-Register_File:inst12|Register:inst14|self_loop:inst8
-Register_File:inst12|Register:inst14|self_loop:inst7
-Register_File:inst12|Register:inst14|self_loop:inst6
-Register_File:inst12|Register:inst14|self_loop:inst5
-Register_File:inst12|Register:inst14|self_loop:inst4
-Register_File:inst12|Register:inst14|self_loop:inst3
-Register_File:inst12|Register:inst14|self_loop:inst2
-Register_File:inst12|Register:inst14|self_loop:inst1
-Register_File:inst12|Register:inst15|self_loop:inst8
-Register_File:inst12|Register:inst15|self_loop:inst7
-Register_File:inst12|Register:inst15|self_loop:inst6
-Register_File:inst12|Register:inst15|self_loop:inst5
-Register_File:inst12|Register:inst15|self_loop:inst4
-Register_File:inst12|Register:inst15|self_loop:inst3
-Register_File:inst12|Register:inst15|self_loop:inst2
-Register_File:inst12|Register:inst15|self_loop:inst1
-Register_File:inst12|Register:inst16|self_loop:inst8
-Register_File:inst12|Register:inst16|self_loop:inst7
-Register_File:inst12|Register:inst16|self_loop:inst6
-Register_File:inst12|Register:inst16|self_loop:inst5
-Register_File:inst12|Register:inst16|self_loop:inst4
-Register_File:inst12|Register:inst16|self_loop:inst3
-Register_File:inst12|Register:inst16|self_loop:inst2
-Register_File:inst12|Register:inst16|self_loop:inst1
-Register_File:inst12|Register:inst17|self_loop:inst8
-Register_File:inst12|Register:inst17|self_loop:inst7
-Register_File:inst12|Register:inst17|self_loop:inst6
-Register_File:inst12|Register:inst17|self_loop:inst5
-Register_File:inst12|Register:inst17|self_loop:inst4
-Register_File:inst12|Register:inst17|self_loop:inst3
-Register_File:inst12|Register:inst17|self_loop:inst2
-Register_File:inst12|Register:inst17|self_loop:inst1
-Register_File:inst12|Register:inst18|self_loop:inst8
-Register_File:inst12|Register:inst18|self_loop:inst7
-Register_File:inst12|Register:inst18|self_loop:inst6
-Register_File:inst12|Register:inst18|self_loop:inst5
-Register_File:inst12|Register:inst18|self_loop:inst4
-Register_File:inst12|Register:inst18|self_loop:inst3
-Register_File:inst12|Register:inst18|self_loop:inst2
-Register_File:inst12|Register:inst18|self_loop:inst1
-Register_File:inst12|Register:inst19|self_loop:inst8
-Register_File:inst12|Register:inst19|self_loop:inst7
-Register_File:inst12|Register:inst19|self_loop:inst6
-Register_File:inst12|Register:inst19|self_loop:inst5
-Register_File:inst12|Register:inst19|self_loop:inst4
-Register_File:inst12|Register:inst19|self_loop:inst3
-Register_File:inst12|Register:inst19|self_loop:inst2
-Register_File:inst12|Register:inst19|self_loop:inst1
-Register_File:inst12|Register:inst20|self_loop:inst8
-Register_File:inst12|Register:inst20|self_loop:inst7
-Register_File:inst12|Register:inst20|self_loop:inst6
-Register_File:inst12|Register:inst20|self_loop:inst5
-Register_File:inst12|Register:inst20|self_loop:inst4
-Register_File:inst12|Register:inst20|self_loop:inst3
-Register_File:inst12|Register:inst20|self_loop:inst2
-Register_File:inst12|Register:inst20|self_loop:inst1
-Register_File:inst12|Register:inst21|self_loop:inst8
-Register_File:inst12|Register:inst21|self_loop:inst7
-Register_File:inst12|Register:inst21|self_loop:inst6
-Register_File:inst12|Register:inst21|self_loop:inst5
-Register_File:inst12|Register:inst21|self_loop:inst4
-Register_File:inst12|Register:inst21|self_loop:inst3
-Register_File:inst12|Register:inst21|self_loop:inst2
-Register_File:inst12|Register:inst21|self_loop:inst1
-Register_File:inst12|Register:inst22|self_loop:inst8
-Register_File:inst12|Register:inst22|self_loop:inst7
-Register_File:inst12|Register:inst22|self_loop:inst6
-Register_File:inst12|Register:inst22|self_loop:inst5
-Register_File:inst12|Register:inst22|self_loop:inst4
-Register_File:inst12|Register:inst22|self_loop:inst3
-Register_File:inst12|Register:inst22|self_loop:inst2
-Register_File:inst12|Register:inst22|self_loop:inst1
-Register_File:inst12|Register:inst23|self_loop:inst8
-Register_File:inst12|Register:inst23|self_loop:inst7
-Register_File:inst12|Register:inst23|self_loop:inst6
-Register_File:inst12|Register:inst23|self_loop:inst5
-Register_File:inst12|Register:inst23|self_loop:inst4
-Register_File:inst12|Register:inst23|self_loop:inst3
-Register_File:inst12|Register:inst23|self_loop:inst2
-Register_File:inst12|Register:inst23|self_loop:inst1
-Register_File:inst12|Register:inst24|self_loop:inst8
-Register_File:inst12|Register:inst24|self_loop:inst7
-Register_File:inst12|Register:inst24|self_loop:inst6
-Register_File:inst12|Register:inst24|self_loop:inst5
-Register_File:inst12|Register:inst24|self_loop:inst4
-Register_File:inst12|Register:inst24|self_loop:inst3
-Register_File:inst12|Register:inst24|self_loop:inst2
-Register_File:inst12|Register:inst24|self_loop:inst1
-Register_File:inst12|Register:inst25|self_loop:inst8
-Register_File:inst12|Register:inst25|self_loop:inst7
-Register_File:inst12|Register:inst25|self_loop:inst6
-Register_File:inst12|Register:inst25|self_loop:inst5
-Register_File:inst12|Register:inst25|self_loop:inst4
-Register_File:inst12|Register:inst25|self_loop:inst3
-Register_File:inst12|Register:inst25|self_loop:inst2
-Register_File:inst12|Register:inst25|self_loop:inst1
-Register_File:inst12|Register:inst26|self_loop:inst8
-Register_File:inst12|Register:inst26|self_loop:inst7
-Register_File:inst12|Register:inst26|self_loop:inst6
-Register_File:inst12|Register:inst26|self_loop:inst5
-Register_File:inst12|Register:inst26|self_loop:inst4
-Register_File:inst12|Register:inst26|self_loop:inst3
-Register_File:inst12|Register:inst26|self_loop:inst2
-Register_File:inst12|Register:inst26|self_loop:inst1
-Register_File:inst12|Register:inst27|self_loop:inst8
-Register_File:inst12|Register:inst27|self_loop:inst7
-Register_File:inst12|Register:inst27|self_loop:inst6
-Register_File:inst12|Register:inst27|self_loop:inst5
-Register_File:inst12|Register:inst27|self_loop:inst4
-Register_File:inst12|Register:inst27|self_loop:inst3
-Register_File:inst12|Register:inst27|self_loop:inst2
-Register_File:inst12|Register:inst27|self_loop:inst1
-Register_File:inst12|Register:inst28|self_loop:inst8
-Register_File:inst12|Register:inst28|self_loop:inst7
-Register_File:inst12|Register:inst28|self_loop:inst6
-Register_File:inst12|Register:inst28|self_loop:inst5
-Register_File:inst12|Register:inst28|self_loop:inst4
-Register_File:inst12|Register:inst28|self_loop:inst3
-Register_File:inst12|Register:inst28|self_loop:inst2
-Register_File:inst12|Register:inst28|self_loop:inst1
-Register_File:inst12|Register:inst29|self_loop:inst8
-Register_File:inst12|Register:inst29|self_loop:inst7
-Register_File:inst12|Register:inst29|self_loop:inst6
-Register_File:inst12|Register:inst29|self_loop:inst5
-Register_File:inst12|Register:inst29|self_loop:inst4
-Register_File:inst12|Register:inst29|self_loop:inst3
-Register_File:inst12|Register:inst29|self_loop:inst2
-Register_File:inst12|Register:inst29|self_loop:inst1
-Register_File:inst12|Register:inst30|self_loop:inst8
-Register_File:inst12|Register:inst30|self_loop:inst7
-Register_File:inst12|Register:inst30|self_loop:inst6
-Register_File:inst12|Register:inst30|self_loop:inst5
-Register_File:inst12|Register:inst30|self_loop:inst4
-Register_File:inst12|Register:inst30|self_loop:inst3
-Register_File:inst12|Register:inst30|self_loop:inst2
-Register_File:inst12|Register:inst30|self_loop:inst1
-Register_File:inst12|Register:inst31|self_loop:inst8
-Register_File:inst12|Register:inst31|self_loop:inst7
-Register_File:inst12|Register:inst31|self_loop:inst6
-Register_File:inst12|Register:inst31|self_loop:inst5
-Register_File:inst12|Register:inst31|self_loop:inst4
-Register_File:inst12|Register:inst31|self_loop:inst3
-Register_File:inst12|Register:inst31|self_loop:inst2
-Register_File:inst12|Register:inst31|self_loop:inst1
-Register_File:inst12|Register:inst32|self_loop:inst8
-Register_File:inst12|Register:inst32|self_loop:inst7
-Register_File:inst12|Register:inst32|self_loop:inst6
-Register_File:inst12|Register:inst32|self_loop:inst5
-Register_File:inst12|Register:inst32|self_loop:inst4
-Register_File:inst12|Register:inst32|self_loop:inst3
-Register_File:inst12|Register:inst32|self_loop:inst2
-Register_File:inst12|Register:inst32|self_loop:inst1
-Register_File:inst12|Register:inst33|self_loop:inst8
-Register_File:inst12|Register:inst33|self_loop:inst7
-Register_File:inst12|Register:inst33|self_loop:inst6
-Register_File:inst12|Register:inst33|self_loop:inst5
-Register_File:inst12|Register:inst33|self_loop:inst4
-Register_File:inst12|Register:inst33|self_loop:inst3
-Register_File:inst12|Register:inst33|self_loop:inst2
-Register_File:inst12|Register:inst33|self_loop:inst1
-}
 # macro_sequence
 
 # end
@@ -1072,9 +344,6 @@ a790e223c4f9736f51dd2cbafddd1dc2
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Register_File:inst12|5_to_32_decoder:inst
 }
 # macro_sequence
 
@@ -1093,10 +362,6 @@ cfa27e45570ba36452d8d8e23af93e7
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst
-Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst53
-}
 # macro_sequence
 
 # end
@@ -1113,12 +378,6 @@ db|WIMPAVR_DEMO.(30).cnf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst|3_8_dec:inst
-Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst|3_8_dec:inst4
-Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst53|3_8_dec:inst
-Register_File:inst12|5_to_32_decoder:inst|4_to_16_decoder:inst53|3_8_dec:inst4
 }
 # macro_sequence
 
@@ -1137,9 +396,6 @@ data_load_mux.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-DATA_LOAD_MUX:inst3
-}
 # macro_sequence
 
 # end
@@ -1156,12 +412,6 @@ be3e513f8edd3d3bce8dadd62bbfcbba
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-8_bit_7_seg:inst27
-8_bit_7_seg:inst28
-8_bit_7_seg:inst18
-8_bit_7_seg:inst29
 }
 # macro_sequence
 
@@ -1180,16 +430,6 @@ db|WIMPAVR_DEMO.(33).cnf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-8_bit_7_seg:inst27|7_segment_display:inst
-8_bit_7_seg:inst27|7_segment_display:inst1
-8_bit_7_seg:inst28|7_segment_display:inst
-8_bit_7_seg:inst28|7_segment_display:inst1
-8_bit_7_seg:inst18|7_segment_display:inst
-8_bit_7_seg:inst18|7_segment_display:inst1
-8_bit_7_seg:inst29|7_segment_display:inst
-8_bit_7_seg:inst29|7_segment_display:inst1
-}
 # macro_sequence
 
 # end
@@ -1206,16 +446,6 @@ e874f9f5794871da24c7cf42b2171
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-8_bit_7_seg:inst27|7_segment_display:inst|a:inst
-8_bit_7_seg:inst27|7_segment_display:inst1|a:inst
-8_bit_7_seg:inst28|7_segment_display:inst|a:inst
-8_bit_7_seg:inst28|7_segment_display:inst1|a:inst
-8_bit_7_seg:inst18|7_segment_display:inst|a:inst
-8_bit_7_seg:inst18|7_segment_display:inst1|a:inst
-8_bit_7_seg:inst29|7_segment_display:inst|a:inst
-8_bit_7_seg:inst29|7_segment_display:inst1|a:inst
 }
 # macro_sequence
 
@@ -1234,16 +464,6 @@ b.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-8_bit_7_seg:inst27|7_segment_display:inst|b:inst1
-8_bit_7_seg:inst27|7_segment_display:inst1|b:inst1
-8_bit_7_seg:inst28|7_segment_display:inst|b:inst1
-8_bit_7_seg:inst28|7_segment_display:inst1|b:inst1
-8_bit_7_seg:inst18|7_segment_display:inst|b:inst1
-8_bit_7_seg:inst18|7_segment_display:inst1|b:inst1
-8_bit_7_seg:inst29|7_segment_display:inst|b:inst1
-8_bit_7_seg:inst29|7_segment_display:inst1|b:inst1
-}
 # macro_sequence
 
 # end
@@ -1260,16 +480,6 @@ c.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-8_bit_7_seg:inst27|7_segment_display:inst|c:inst2
-8_bit_7_seg:inst27|7_segment_display:inst1|c:inst2
-8_bit_7_seg:inst28|7_segment_display:inst|c:inst2
-8_bit_7_seg:inst28|7_segment_display:inst1|c:inst2
-8_bit_7_seg:inst18|7_segment_display:inst|c:inst2
-8_bit_7_seg:inst18|7_segment_display:inst1|c:inst2
-8_bit_7_seg:inst29|7_segment_display:inst|c:inst2
-8_bit_7_seg:inst29|7_segment_display:inst1|c:inst2
 }
 # macro_sequence
 
@@ -1288,16 +498,6 @@ d.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-8_bit_7_seg:inst27|7_segment_display:inst|d:inst3
-8_bit_7_seg:inst27|7_segment_display:inst1|d:inst3
-8_bit_7_seg:inst28|7_segment_display:inst|d:inst3
-8_bit_7_seg:inst28|7_segment_display:inst1|d:inst3
-8_bit_7_seg:inst18|7_segment_display:inst|d:inst3
-8_bit_7_seg:inst18|7_segment_display:inst1|d:inst3
-8_bit_7_seg:inst29|7_segment_display:inst|d:inst3
-8_bit_7_seg:inst29|7_segment_display:inst1|d:inst3
-}
 # macro_sequence
 
 # end
@@ -1314,16 +514,6 @@ fbfdd99a492dcdfa53e1c46473b45b7
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-8_bit_7_seg:inst27|7_segment_display:inst|e:inst4
-8_bit_7_seg:inst27|7_segment_display:inst1|e:inst4
-8_bit_7_seg:inst28|7_segment_display:inst|e:inst4
-8_bit_7_seg:inst28|7_segment_display:inst1|e:inst4
-8_bit_7_seg:inst18|7_segment_display:inst|e:inst4
-8_bit_7_seg:inst18|7_segment_display:inst1|e:inst4
-8_bit_7_seg:inst29|7_segment_display:inst|e:inst4
-8_bit_7_seg:inst29|7_segment_display:inst1|e:inst4
 }
 # macro_sequence
 
@@ -1342,16 +532,6 @@ b1fe58b92c050f9fd38db85a48e894
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-8_bit_7_seg:inst27|7_segment_display:inst|f:inst5
-8_bit_7_seg:inst27|7_segment_display:inst1|f:inst5
-8_bit_7_seg:inst28|7_segment_display:inst|f:inst5
-8_bit_7_seg:inst28|7_segment_display:inst1|f:inst5
-8_bit_7_seg:inst18|7_segment_display:inst|f:inst5
-8_bit_7_seg:inst18|7_segment_display:inst1|f:inst5
-8_bit_7_seg:inst29|7_segment_display:inst|f:inst5
-8_bit_7_seg:inst29|7_segment_display:inst1|f:inst5
-}
 # macro_sequence
 
 # end
@@ -1368,16 +548,6 @@ b6125a4e879efe7b7bd93ddc52e7f0
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-8_bit_7_seg:inst27|7_segment_display:inst|g:inst6
-8_bit_7_seg:inst27|7_segment_display:inst1|g:inst6
-8_bit_7_seg:inst28|7_segment_display:inst|g:inst6
-8_bit_7_seg:inst28|7_segment_display:inst1|g:inst6
-8_bit_7_seg:inst18|7_segment_display:inst|g:inst6
-8_bit_7_seg:inst18|7_segment_display:inst1|g:inst6
-8_bit_7_seg:inst29|7_segment_display:inst|g:inst6
-8_bit_7_seg:inst29|7_segment_display:inst1|g:inst6
 }
 # macro_sequence
 
@@ -1396,9 +566,6 @@ pc_block.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-PC_BLOCK:inst14
-}
 # macro_sequence
 
 # end
@@ -1415,9 +582,6 @@ pc_alu_top_level.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-pc_alu_top_level:inst1
 }
 # macro_sequence
 
@@ -1436,9 +600,6 @@ db|WIMPAVR_DEMO.(43).cnf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2
-}
 # macro_sequence
 
 # end
@@ -1456,9 +617,6 @@ jump_select.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-pc_alu_top_level:inst1|jump_select:inst
-}
 # macro_sequence
 
 # end
@@ -1475,29 +633,6 @@ c0cdfbbbc83a23d5bcdcd6216a884455
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-SLOW_CLOCK:inst19
-}
-# macro_sequence
-
-# end
-# entity
-alu_control
-# storage
-db|WIMPAVR_DEMO.(13).cnf
-db|WIMPAVR_DEMO.(13).cnf
-# case_insensitive
-# source_file
-alu_control.bdf
-4ee6f759708e176a57dfb678d6736eeb
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ALU_TOP:inst30|alu_control:inst
 }
 # macro_sequence
 
@@ -1517,7 +652,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ALU_TOP:inst30|alu_control:inst|SWAP_EN:inst2
+SWAP_EN:inst2
 }
 # macro_sequence
 
@@ -1536,11 +671,6 @@ c475a5b860d5148a84f2ba6dd2da8b
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ALU_TOP:inst30|8_B_Ripple_Adder:inst10
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst
-pc_alu_top_level:inst1|16_b_ripple_adder:inst2|8_B_Ripple_Adder:inst1
-}
 # macro_sequence
 
 # end
@@ -1557,9 +687,6 @@ control_unit.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Control_Unit:inst13
 }
 # macro_sequence
 
@@ -1578,9 +705,6 @@ load_select.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Control_Unit:inst13|LOAD_SELECT:inst1
-}
 # macro_sequence
 
 # end
@@ -1597,9 +721,6 @@ dca3868497c313b4ef3677b47af8cb
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ALU_TOP:inst30|CARRY_LOGIC:inst14
 }
 # macro_sequence
 
@@ -1618,9 +739,6 @@ ext_c.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ALU_TOP:inst30|CARRY_LOGIC:inst14|ext_c:inst3
-}
 # macro_sequence
 
 # end
@@ -1637,9 +755,6 @@ c570986bad7cbb6496ac33c6552ea8
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -1658,8 +773,25 @@ de983dfab925f949ba3ed297caddc36
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+alu_control
+# storage
+db|WIMPAVR_DEMO.(13).cnf
+db|WIMPAVR_DEMO.(13).cnf
+# case_insensitive
+# source_file
+alu_control.bdf
+11b17298e90d4726d16938b77753770
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-ALU_TOP:inst30
+|
 }
 # macro_sequence
 
