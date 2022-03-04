@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WIMPAVR_DEMO
-Thu Mar 03 11:49:31 2022
+Thu Mar 03 20:10:04 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 03 11:49:31 2022        ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 03 20:10:04 2022        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; WIMPAVR_DEMO                                 ;
-; Top-level Entity Name              ; alu_control                                  ;
+; Top-level Entity Name              ; ALU_TOP                                      ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 11                                           ;
-;     Total combinational functions  ; 11                                           ;
-;     Dedicated logic registers      ; 0                                            ;
-; Total registers                    ; 0                                            ;
-; Total pins                         ; 23                                           ;
+; Total logic elements               ; 84                                           ;
+;     Total combinational functions  ; 84                                           ;
+;     Dedicated logic registers      ; 2                                            ;
+; Total registers                    ; 2                                            ;
+; Total pins                         ; 45                                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; alu_control        ; WIMPAVR_DEMO       ;
+; Top-level entity name                                                      ; ALU_TOP            ; WIMPAVR_DEMO       ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 3                  ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -146,55 +146,101 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                     ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+
-; ADD_EN.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/ADD_EN.bdf      ;
-; LOGIC_EN.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/LOGIC_EN.bdf    ;
-; SWAP_EN.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/SWAP_EN.bdf     ;
-; alu_control.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/alu_control.bdf ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                          ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+
+; 8_B_Ripple_Adder.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/8_B_Ripple_Adder.bdf ;
+; ADD_EN.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/ADD_EN.bdf           ;
+; LOGIC_EN.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/LOGIC_EN.bdf         ;
+; SWAP_EN.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/SWAP_EN.bdf          ;
+; ALU_TOP.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/ALU_TOP.bdf          ;
+; Z_LOGIC.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/Z_LOGIC.bdf          ;
+; CARRY_LOGIC.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/CARRY_LOGIC.bdf      ;
+; 4_1_MUX.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/4_1_MUX.bdf          ;
+; alu_control.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/alu_control.bdf      ;
+; Full_Adder_Sub.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/Full_Adder_Sub.bdf   ;
+; ext_c.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/ext_c.bdf            ;
+; 8_2_1_mux.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/8_2_1_mux.bdf        ;
+; 2_1_mux.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/2_1_mux.bdf          ;
+; logic_swap.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tyler/WIMPAVR_proj/WIMPAVR Project Demo/logic_swap.bdf       ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 11    ;
-;                                             ;       ;
-; Total combinational functions               ; 11    ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 4     ;
-;     -- 3 input functions                    ; 3     ;
-;     -- <=2 input functions                  ; 4     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 11    ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 23    ;
-; Maximum fan-out node                        ; IR11  ;
-; Maximum fan-out                             ; 4     ;
-; Total fan-out                               ; 40    ;
-; Average fan-out                             ; 1.18  ;
-+---------------------------------------------+-------+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                             ;
++---------------------------------------------+---------------------------+
+; Resource                                    ; Usage                     ;
++---------------------------------------------+---------------------------+
+; Estimated Total logic elements              ; 84                        ;
+;                                             ;                           ;
+; Total combinational functions               ; 84                        ;
+; Logic element usage by number of LUT inputs ;                           ;
+;     -- 4 input functions                    ; 70                        ;
+;     -- 3 input functions                    ; 3                         ;
+;     -- <=2 input functions                  ; 11                        ;
+;                                             ;                           ;
+; Logic elements by mode                      ;                           ;
+;     -- normal mode                          ; 84                        ;
+;     -- arithmetic mode                      ; 0                         ;
+;                                             ;                           ;
+; Total registers                             ; 2                         ;
+;     -- Dedicated logic registers            ; 2                         ;
+;     -- I/O registers                        ; 0                         ;
+;                                             ;                           ;
+; I/O pins                                    ; 45                        ;
+; Maximum fan-out node                        ; alu_control:inst|inst13~2 ;
+; Maximum fan-out                             ; 22                        ;
+; Total fan-out                               ; 327                       ;
+; Average fan-out                             ; 2.50                      ;
++---------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                  ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
-; |alu_control               ; 11 (9)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |alu_control                 ; work         ;
-;    |LOGIC_EN:inst12|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu_control|LOGIC_EN:inst12 ;              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                             ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
+; |ALU_TOP                     ; 84 (3)            ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 45   ; 0            ; |ALU_TOP                                              ; work         ;
+;    |4_1_MUX:inst16|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst16                               ;              ;
+;    |4_1_MUX:inst17|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst17                               ;              ;
+;    |4_1_MUX:inst18|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst18                               ;              ;
+;    |4_1_MUX:inst19|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst19                               ;              ;
+;    |4_1_MUX:inst20|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst20                               ;              ;
+;    |4_1_MUX:inst21|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst21                               ;              ;
+;    |4_1_MUX:inst22|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst22                               ;              ;
+;    |4_1_MUX:inst23|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst23                               ;              ;
+;    |8_2_1_mux:inst11|        ; 26 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11                             ;              ;
+;       |2_1_mux:inst10|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst10              ;              ;
+;       |2_1_mux:inst11|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst11              ;              ;
+;       |2_1_mux:inst4|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst4               ;              ;
+;       |2_1_mux:inst5|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst5               ;              ;
+;       |2_1_mux:inst6|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst6               ;              ;
+;       |2_1_mux:inst7|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst7               ;              ;
+;       |2_1_mux:inst8|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst8               ;              ;
+;       |2_1_mux:inst9|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst9               ;              ;
+;    |8_B_Ripple_Adder:inst10| ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10                      ;              ;
+;       |Full_Adder_Sub:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst1 ;              ;
+;       |Full_Adder_Sub:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst2 ;              ;
+;       |Full_Adder_Sub:inst3| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst3 ;              ;
+;       |Full_Adder_Sub:inst4| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst4 ;              ;
+;       |Full_Adder_Sub:inst5| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst5 ;              ;
+;       |Full_Adder_Sub:inst6| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst6 ;              ;
+;       |Full_Adder_Sub:inst7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst7 ;              ;
+;       |Full_Adder_Sub:inst8| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst8 ;              ;
+;    |CARRY_LOGIC:inst14|      ; 9 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|CARRY_LOGIC:inst14                           ;              ;
+;       |4_1_MUX:inst1|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|CARRY_LOGIC:inst14|4_1_MUX:inst1             ;              ;
+;    |Z_LOGIC:inst12|          ; 6 (6)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|Z_LOGIC:inst12                               ;              ;
+;    |alu_control:inst|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|alu_control:inst                             ;              ;
+;    |logic_swap:inst1|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst1                             ;              ;
+;    |logic_swap:inst2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst2                             ;              ;
+;    |logic_swap:inst3|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst3                             ;              ;
+;    |logic_swap:inst4|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst4                             ;              ;
+;    |logic_swap:inst5|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst5                             ;              ;
+;    |logic_swap:inst7|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst7                             ;              ;
+;    |logic_swap:inst8|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst8                             ;              ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -203,10 +249,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 2     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -219,7 +265,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Mar 03 11:49:30 2022
+    Info: Processing started: Thu Mar 03 20:10:03 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WIMPAVR -c WIMPAVR_DEMO
 Info: Found 1 design units, including 1 entities, in source file register.bdf
     Info: Found entity 1: Register
@@ -279,7 +325,13 @@ Info: Found 1 design units, including 1 entities, in source file slow_clock.bdf
     Info: Found entity 1: SLOW_CLOCK
 Info: Found 1 design units, including 1 entities, in source file 4_1_mux_enable.bdf
     Info: Found entity 1: 4_1_MUX_Enable
-Info: Elaborating entity "alu_control" for the top level hierarchy
+Info: Found 1 design units, including 1 entities, in source file full_adder_sub.bdf
+    Info: Found entity 1: Full_Adder_Sub
+Info: Elaborating entity "ALU_TOP" for the top level hierarchy
+Info: Elaborating entity "Z_LOGIC" for hierarchy "Z_LOGIC:inst12"
+Info: Elaborating entity "8_B_Ripple_Adder" for hierarchy "8_B_Ripple_Adder:inst10"
+Info: Elaborating entity "Full_Adder_Sub" for hierarchy "8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst1"
+Info: Elaborating entity "alu_control" for hierarchy "alu_control:inst"
 Warning: Pin "IR9" not connected
 Warning: Pin "IR8" not connected
 Warning: Pin "IR7" not connected
@@ -287,25 +339,35 @@ Warning: Pin "IR6" not connected
 Warning: Pin "IR5" not connected
 Warning: Pin "IR4" not connected
 Warning: Pin "IR2" not connected
-Info: Elaborating entity "SWAP_EN" for hierarchy "SWAP_EN:inst2"
-Info: Elaborating entity "ADD_EN" for hierarchy "ADD_EN:inst"
-Info: Elaborating entity "LOGIC_EN" for hierarchy "LOGIC_EN:inst12"
-Warning: Design contains 7 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "IR9"
-    Warning (15610): No output dependent on input pin "IR8"
-    Warning (15610): No output dependent on input pin "IR7"
-    Warning (15610): No output dependent on input pin "IR6"
-    Warning (15610): No output dependent on input pin "IR5"
+Info: Elaborating entity "SWAP_EN" for hierarchy "alu_control:inst|SWAP_EN:inst2"
+Info: Elaborating entity "ADD_EN" for hierarchy "alu_control:inst|ADD_EN:inst"
+Info: Elaborating entity "LOGIC_EN" for hierarchy "alu_control:inst|LOGIC_EN:inst12"
+Info: Elaborating entity "4_1_MUX" for hierarchy "4_1_MUX:inst16"
+Info: Elaborating entity "CARRY_LOGIC" for hierarchy "CARRY_LOGIC:inst14"
+Warning: Using design file ext_c.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: ext_c
+Info: Elaborating entity "ext_c" for hierarchy "CARRY_LOGIC:inst14|ext_c:inst3"
+Warning: Using design file 8_2_1_mux.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: 8_2_1_mux
+Info: Elaborating entity "8_2_1_MUX" for hierarchy "8_2_1_MUX:inst11"
+Warning: Using design file 2_1_mux.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: 2_1_mux
+Info: Elaborating entity "2_1_MUX" for hierarchy "8_2_1_MUX:inst11|2_1_MUX:inst4"
+Warning: Using design file logic_swap.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: logic_swap
+Info: Elaborating entity "LOGIC_SWAP" for hierarchy "LOGIC_SWAP:inst1"
+Warning: Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "IR4"
-    Warning (15610): No output dependent on input pin "IR2"
-Info: Implemented 34 device resources after synthesis - the final resource count might be different
-    Info: Implemented 16 input pins
-    Info: Implemented 7 output pins
-    Info: Implemented 11 logic cells
+    Warning (15610): No output dependent on input pin "IR5"
+    Warning (15610): No output dependent on input pin "IR6"
+Info: Implemented 129 device resources after synthesis - the final resource count might be different
+    Info: Implemented 35 input pins
+    Info: Implemented 10 output pins
+    Info: Implemented 84 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 218 megabytes
-    Info: Processing ended: Thu Mar 03 11:49:31 2022
+    Info: Peak virtual memory: 222 megabytes
+    Info: Processing ended: Thu Mar 03 20:10:04 2022
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

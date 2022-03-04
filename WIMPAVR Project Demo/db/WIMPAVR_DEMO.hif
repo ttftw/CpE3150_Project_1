@@ -50,6 +50,25 @@ db|WIMPAVR_DEMO.(3).cnf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+4_1_MUX:inst16
+CARRY_LOGIC:inst14|4_1_MUX:inst1
+4_1_MUX:inst17
+4_1_MUX:inst18
+4_1_MUX:inst19
+4_1_MUX:inst20
+4_1_MUX:inst21
+4_1_MUX:inst22
+4_1_MUX:inst23
+logic_swap:inst1|4_1_MUX:inst3
+logic_swap:inst2|4_1_MUX:inst3
+logic_swap:inst3|4_1_MUX:inst3
+logic_swap:inst4|4_1_MUX:inst3
+logic_swap:inst5|4_1_MUX:inst3
+logic_swap:inst6|4_1_MUX:inst3
+logic_swap:inst7|4_1_MUX:inst3
+logic_swap:inst8|4_1_MUX:inst3
+}
 # macro_sequence
 
 # end
@@ -83,6 +102,9 @@ z_logic.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+Z_LOGIC:inst12
 }
 # macro_sequence
 
@@ -119,7 +141,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ADD_EN:inst
+alu_control:inst|ADD_EN:inst
 }
 # macro_sequence
 
@@ -139,7 +161,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-LOGIC_EN:inst12
+alu_control:inst|LOGIC_EN:inst12
 }
 # macro_sequence
 
@@ -158,6 +180,9 @@ e290d0a96649d8ef33a49819ed275a8
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+8_2_1_mux:inst11
+}
 # macro_sequence
 
 # end
@@ -175,6 +200,16 @@ c72d863e5fb8ede1ba260916ea89337
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+8_2_1_mux:inst11|2_1_mux:inst4
+8_2_1_mux:inst11|2_1_mux:inst5
+8_2_1_mux:inst11|2_1_mux:inst6
+8_2_1_mux:inst11|2_1_mux:inst7
+8_2_1_mux:inst11|2_1_mux:inst8
+8_2_1_mux:inst11|2_1_mux:inst9
+8_2_1_mux:inst11|2_1_mux:inst10
+8_2_1_mux:inst11|2_1_mux:inst11
+}
 # macro_sequence
 
 # end
@@ -191,6 +226,16 @@ d06166a1838c102bc23ea9b4d9aa9f
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+logic_swap:inst1
+logic_swap:inst2
+logic_swap:inst3
+logic_swap:inst4
+logic_swap:inst5
+logic_swap:inst6
+logic_swap:inst7
+logic_swap:inst8
 }
 # macro_sequence
 
@@ -652,24 +697,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-SWAP_EN:inst2
-}
-# macro_sequence
-
-# end
-# entity
-8_B_Ripple_Adder
-# storage
-db|WIMPAVR_DEMO.(9).cnf
-db|WIMPAVR_DEMO.(9).cnf
-# case_insensitive
-# source_file
-8_b_ripple_adder.bdf
-c475a5b860d5148a84f2ba6dd2da8b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+alu_control:inst|SWAP_EN:inst2
 }
 # macro_sequence
 
@@ -722,6 +750,9 @@ dca3868497c313b4ef3677b47af8cb
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+CARRY_LOGIC:inst14
+}
 # macro_sequence
 
 # end
@@ -739,6 +770,9 @@ ext_c.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+CARRY_LOGIC:inst14|ext_c:inst3
+}
 # macro_sequence
 
 # end
@@ -751,23 +785,6 @@ db|WIMPAVR_DEMO.(0).cnf
 # source_file
 avr_test.bdf
 c570986bad7cbb6496ac33c6552ea8
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-ALU_TOP
-# storage
-db|WIMPAVR_DEMO.(7).cnf
-db|WIMPAVR_DEMO.(7).cnf
-# case_insensitive
-# source_file
-alu_top.bdf
-de983dfab925f949ba3ed297caddc36
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -791,7 +808,74 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
+alu_control:inst
+}
+# macro_sequence
+
+# end
+# entity
+Full_Adder_Sub
+# storage
+db|WIMPAVR_DEMO.(45).cnf
+db|WIMPAVR_DEMO.(45).cnf
+# case_insensitive
+# source_file
+full_adder_sub.bdf
+6de7e9dafabb1bb2cb9a801124cfae54
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst1
+8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst2
+8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst3
+8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst4
+8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst5
+8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst6
+8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst7
+8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst8
+}
+# macro_sequence
+
+# end
+# entity
+ALU_TOP
+# storage
+db|WIMPAVR_DEMO.(7).cnf
+db|WIMPAVR_DEMO.(7).cnf
+# case_insensitive
+# source_file
+alu_top.bdf
+b7d449e013678f12d345be25fefeb5f2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+8_B_Ripple_Adder
+# storage
+db|WIMPAVR_DEMO.(9).cnf
+db|WIMPAVR_DEMO.(9).cnf
+# case_insensitive
+# source_file
+8_b_ripple_adder.bdf
+caabfa28dd1c76d77c68ed95d4ef2b8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+8_B_Ripple_Adder:inst10
 }
 # macro_sequence
 
