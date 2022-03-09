@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WIMPAVR_DEMO
-Thu Mar 03 20:10:04 2022
+Fri Mar 04 15:28:47 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -40,13 +40,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 03 20:10:04 2022        ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 04 15:28:47 2022        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; WIMPAVR_DEMO                                 ;
 ; Top-level Entity Name              ; ALU_TOP                                      ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 84                                           ;
-;     Total combinational functions  ; 84                                           ;
+; Total logic elements               ; 82                                           ;
+;     Total combinational functions  ; 82                                           ;
 ;     Dedicated logic registers      ; 2                                            ;
 ; Total registers                    ; 2                                            ;
 ; Total pins                         ; 45                                           ;
@@ -173,16 +173,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+---------------------------+
 ; Resource                                    ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Estimated Total logic elements              ; 84                        ;
+; Estimated Total logic elements              ; 82                        ;
 ;                                             ;                           ;
-; Total combinational functions               ; 84                        ;
+; Total combinational functions               ; 82                        ;
 ; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 70                        ;
-;     -- 3 input functions                    ; 3                         ;
-;     -- <=2 input functions                  ; 11                        ;
+;     -- 4 input functions                    ; 67                        ;
+;     -- 3 input functions                    ; 7                         ;
+;     -- <=2 input functions                  ; 8                         ;
 ;                                             ;                           ;
 ; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 84                        ;
+;     -- normal mode                          ; 82                        ;
 ;     -- arithmetic mode                      ; 0                         ;
 ;                                             ;                           ;
 ; Total registers                             ; 2                         ;
@@ -191,9 +191,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;                           ;
 ; I/O pins                                    ; 45                        ;
 ; Maximum fan-out node                        ; alu_control:inst|inst13~2 ;
-; Maximum fan-out                             ; 22                        ;
-; Total fan-out                               ; 327                       ;
-; Average fan-out                             ; 2.50                      ;
+; Maximum fan-out                             ; 18                        ;
+; Total fan-out                               ; 321                       ;
+; Average fan-out                             ; 2.49                      ;
 +---------------------------------------------+---------------------------+
 
 
@@ -202,23 +202,23 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Library Name ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
-; |ALU_TOP                     ; 84 (3)            ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 45   ; 0            ; |ALU_TOP                                              ; work         ;
-;    |4_1_MUX:inst16|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst16                               ;              ;
-;    |4_1_MUX:inst17|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst17                               ;              ;
-;    |4_1_MUX:inst18|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst18                               ;              ;
-;    |4_1_MUX:inst19|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst19                               ;              ;
-;    |4_1_MUX:inst20|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst20                               ;              ;
-;    |4_1_MUX:inst21|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst21                               ;              ;
-;    |4_1_MUX:inst22|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst22                               ;              ;
-;    |4_1_MUX:inst23|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:inst23                               ;              ;
-;    |8_2_1_mux:inst11|        ; 26 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11                             ;              ;
-;       |2_1_mux:inst10|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst10              ;              ;
+; |ALU_TOP                     ; 82 (3)            ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 45   ; 0            ; |ALU_TOP                                              ; work         ;
+;    |4_1_MUX:MUX0|            ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:MUX0                                 ;              ;
+;    |4_1_MUX:MUX1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:MUX1                                 ;              ;
+;    |4_1_MUX:MUX2|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:MUX2                                 ;              ;
+;    |4_1_MUX:MUX3|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:MUX3                                 ;              ;
+;    |4_1_MUX:MUX4|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:MUX4                                 ;              ;
+;    |4_1_MUX:MUX5|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:MUX5                                 ;              ;
+;    |4_1_MUX:MUX6|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:MUX6                                 ;              ;
+;    |4_1_MUX:MUX7|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|4_1_MUX:MUX7                                 ;              ;
+;    |8_2_1_mux:inst11|        ; 28 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11                             ;              ;
+;       |2_1_mux:inst10|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst10              ;              ;
 ;       |2_1_mux:inst11|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst11              ;              ;
-;       |2_1_mux:inst4|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst4               ;              ;
+;       |2_1_mux:inst4|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst4               ;              ;
 ;       |2_1_mux:inst5|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst5               ;              ;
 ;       |2_1_mux:inst6|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst6               ;              ;
-;       |2_1_mux:inst7|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst7               ;              ;
-;       |2_1_mux:inst8|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst8               ;              ;
+;       |2_1_mux:inst7|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst7               ;              ;
+;       |2_1_mux:inst8|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst8               ;              ;
 ;       |2_1_mux:inst9|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_2_1_mux:inst11|2_1_mux:inst9               ;              ;
 ;    |8_B_Ripple_Adder:inst10| ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10                      ;              ;
 ;       |Full_Adder_Sub:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst1 ;              ;
@@ -229,16 +229,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |Full_Adder_Sub:inst6| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst6 ;              ;
 ;       |Full_Adder_Sub:inst7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst7 ;              ;
 ;       |Full_Adder_Sub:inst8| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst8 ;              ;
-;    |CARRY_LOGIC:inst14|      ; 9 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|CARRY_LOGIC:inst14                           ;              ;
+;    |CARRY_LOGIC:inst14|      ; 6 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|CARRY_LOGIC:inst14                           ;              ;
 ;       |4_1_MUX:inst1|        ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|CARRY_LOGIC:inst14|4_1_MUX:inst1             ;              ;
 ;    |Z_LOGIC:inst12|          ; 6 (6)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|Z_LOGIC:inst12                               ;              ;
-;    |alu_control:inst|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|alu_control:inst                             ;              ;
-;    |logic_swap:inst1|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst1                             ;              ;
+;    |alu_control:inst|        ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|alu_control:inst                             ;              ;
+;    |logic_swap:inst1|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst1                             ;              ;
 ;    |logic_swap:inst2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst2                             ;              ;
 ;    |logic_swap:inst3|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst3                             ;              ;
-;    |logic_swap:inst4|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst4                             ;              ;
-;    |logic_swap:inst5|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst5                             ;              ;
-;    |logic_swap:inst7|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst7                             ;              ;
 ;    |logic_swap:inst8|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_TOP|logic_swap:inst8                             ;              ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -265,7 +262,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Mar 03 20:10:03 2022
+    Info: Processing started: Fri Mar 04 15:28:45 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WIMPAVR -c WIMPAVR_DEMO
 Info: Found 1 design units, including 1 entities, in source file register.bdf
     Info: Found entity 1: Register
@@ -342,7 +339,7 @@ Warning: Pin "IR2" not connected
 Info: Elaborating entity "SWAP_EN" for hierarchy "alu_control:inst|SWAP_EN:inst2"
 Info: Elaborating entity "ADD_EN" for hierarchy "alu_control:inst|ADD_EN:inst"
 Info: Elaborating entity "LOGIC_EN" for hierarchy "alu_control:inst|LOGIC_EN:inst12"
-Info: Elaborating entity "4_1_MUX" for hierarchy "4_1_MUX:inst16"
+Info: Elaborating entity "4_1_MUX" for hierarchy "4_1_MUX:MUX0"
 Info: Elaborating entity "CARRY_LOGIC" for hierarchy "CARRY_LOGIC:inst14"
 Warning: Using design file ext_c.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: ext_c
@@ -360,14 +357,14 @@ Warning: Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "IR4"
     Warning (15610): No output dependent on input pin "IR5"
     Warning (15610): No output dependent on input pin "IR6"
-Info: Implemented 129 device resources after synthesis - the final resource count might be different
+Info: Implemented 127 device resources after synthesis - the final resource count might be different
     Info: Implemented 35 input pins
     Info: Implemented 10 output pins
-    Info: Implemented 84 logic cells
+    Info: Implemented 82 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 17 warnings
     Info: Peak virtual memory: 222 megabytes
-    Info: Processing ended: Thu Mar 03 20:10:04 2022
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Fri Mar 04 15:28:47 2022
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

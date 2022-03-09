@@ -51,15 +51,15 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-4_1_MUX:inst16
+4_1_MUX:MUX0
 CARRY_LOGIC:inst14|4_1_MUX:inst1
-4_1_MUX:inst17
-4_1_MUX:inst18
-4_1_MUX:inst19
-4_1_MUX:inst20
-4_1_MUX:inst21
-4_1_MUX:inst22
-4_1_MUX:inst23
+4_1_MUX:MUX1
+4_1_MUX:MUX2
+4_1_MUX:MUX3
+4_1_MUX:MUX4
+4_1_MUX:MUX5
+4_1_MUX:MUX6
+4_1_MUX:MUX7
 logic_swap:inst1|4_1_MUX:inst3
 logic_swap:inst2|4_1_MUX:inst3
 logic_swap:inst3|4_1_MUX:inst3
@@ -737,26 +737,6 @@ AUTO
 
 # end
 # entity
-CARRY_LOGIC
-# storage
-db|WIMPAVR_DEMO.(11).cnf
-db|WIMPAVR_DEMO.(11).cnf
-# case_insensitive
-# source_file
-carry_logic.bdf
-dca3868497c313b4ef3677b47af8cb
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-CARRY_LOGIC:inst14
-}
-# macro_sequence
-
-# end
-# entity
 ext_c
 # storage
 db|WIMPAVR_DEMO.(12).cnf
@@ -841,26 +821,6 @@ AUTO
 
 # end
 # entity
-ALU_TOP
-# storage
-db|WIMPAVR_DEMO.(7).cnf
-db|WIMPAVR_DEMO.(7).cnf
-# case_insensitive
-# source_file
-alu_top.bdf
-b7d449e013678f12d345be25fefeb5f2
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 8_B_Ripple_Adder
 # storage
 db|WIMPAVR_DEMO.(9).cnf
@@ -876,6 +836,46 @@ AUTO
 }
 # hierarchies {
 8_B_Ripple_Adder:inst10
+}
+# macro_sequence
+
+# end
+# entity
+ALU_TOP
+# storage
+db|WIMPAVR_DEMO.(7).cnf
+db|WIMPAVR_DEMO.(7).cnf
+# case_insensitive
+# source_file
+alu_top.bdf
+aa50a9586678de7d3b48fb7970ac28d9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+CARRY_LOGIC
+# storage
+db|WIMPAVR_DEMO.(11).cnf
+db|WIMPAVR_DEMO.(11).cnf
+# case_insensitive
+# source_file
+carry_logic.bdf
+3e21ef42d55a3d298131a32c4786a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CARRY_LOGIC:inst14
 }
 # macro_sequence
 
