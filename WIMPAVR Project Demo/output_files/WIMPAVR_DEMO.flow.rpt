@@ -1,5 +1,5 @@
 Flow report for WIMPAVR_DEMO
-Wed Mar 09 18:33:58 2022
+Wed Mar 09 18:39:23 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Wed Mar 09 18:33:58 2022        ;
+; Flow Status                        ; Successful - Wed Mar 09 18:39:23 2022        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; WIMPAVR_DEMO                                 ;
 ; Top-level Entity Name              ; AVR_TEST                                     ;
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Device                             ; EP2C35F672C6                                 ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; No                                           ;
-; Total logic elements               ; 941 / 33,216 ( 3 % )                         ;
-;     Total combinational functions  ; 890 / 33,216 ( 3 % )                         ;
+; Total logic elements               ; 966 / 33,216 ( 3 % )                         ;
+;     Total combinational functions  ; 891 / 33,216 ( 3 % )                         ;
 ;     Dedicated logic registers      ; 319 / 33,216 ( < 1 % )                       ;
 ; Total registers                    ; 319                                          ;
 ; Total pins                         ; 114 / 475 ( 24 % )                           ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/09/2022 18:33:42 ;
+; Start date & time ; 03/09/2022 18:39:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; WIMPAVR_DEMO        ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +---------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                       ; Value                                                                                                       ; Default Value ; Entity Name ; Section Id     ;
 +---------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 238300908790322.164687242222952                                                                             ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                 ; 238300908790322.164687274718588                                                                             ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT                ; Vhdl                                                                                                        ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                   ; ModelSim-Altera (VHDL)                                                                                      ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP                ; 85                                                                                                          ; --            ; --          ; --             ;
@@ -97,11 +97,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:05     ; 1.0                     ; 229 MB              ; 00:00:05                           ;
-; Fitter                  ; 00:00:06     ; 1.0                     ; 287 MB              ; 00:00:05                           ;
+; Analysis & Synthesis    ; 00:00:05     ; 1.0                     ; 230 MB              ; 00:00:05                           ;
+; Fitter                  ; 00:00:05     ; 1.0                     ; 287 MB              ; 00:00:05                           ;
 ; Assembler               ; 00:00:01     ; 1.0                     ; 259 MB              ; 00:00:01                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 174 MB              ; 00:00:01                           ;
-; EDA Netlist Writer      ; 00:00:00     ; 1.0                     ; 187 MB              ; 00:00:01                           ;
+; EDA Netlist Writer      ; 00:00:01     ; 1.0                     ; 187 MB              ; 00:00:01                           ;
 ; Total                   ; 00:00:12     ; --                      ; --                  ; 00:00:13                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
