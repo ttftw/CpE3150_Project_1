@@ -1537,26 +1537,6 @@ ALU_TOP:inst30|CARRY_LOGIC:inst14|ext_c:inst3
 
 # end
 # entity
-alu_control
-# storage
-db|WIMPAVR_DEMO.(13).cnf
-db|WIMPAVR_DEMO.(13).cnf
-# case_insensitive
-# source_file
-alu_control.bdf
-11b17298e90d4726d16938b77753770
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ALU_TOP:inst30|alu_control:inst
-}
-# macro_sequence
-
-# end
-# entity
 Full_Adder_Sub
 # storage
 db|WIMPAVR_DEMO.(45).cnf
@@ -1677,6 +1657,26 @@ AUTO
 }
 # hierarchies {
 ALU_TOP:inst30
+}
+# macro_sequence
+
+# end
+# entity
+alu_control
+# storage
+db|WIMPAVR_DEMO.(13).cnf
+db|WIMPAVR_DEMO.(13).cnf
+# case_insensitive
+# source_file
+alu_control.bdf
+78187eca11dd5e56b53e477ca1822c1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ALU_TOP:inst30|alu_control:inst
 }
 # macro_sequence
 

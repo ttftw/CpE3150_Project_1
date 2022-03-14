@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WIMPAVR_DEMO
-Wed Mar 09 18:39:12 2022
+Mon Mar 14 11:57:56 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 09 18:39:12 2022        ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 14 11:57:56 2022        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; WIMPAVR_DEMO                                 ;
 ; Top-level Entity Name              ; AVR_TEST                                     ;
@@ -210,8 +210,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Total combinational functions               ; 891    ;
 ; Logic element usage by number of LUT inputs ;        ;
 ;     -- 4 input functions                    ; 747    ;
-;     -- 3 input functions                    ; 92     ;
-;     -- <=2 input functions                  ; 52     ;
+;     -- 3 input functions                    ; 93     ;
+;     -- <=2 input functions                  ; 51     ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
 ;     -- normal mode                          ; 891    ;
@@ -224,7 +224,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                                    ; 114    ;
 ; Maximum fan-out node                        ; inst11 ;
 ; Maximum fan-out                             ; 293    ;
-; Total fan-out                               ; 4639   ;
+; Total fan-out                               ; 4640   ;
 ; Average fan-out                             ; 3.50   ;
 +---------------------------------------------+--------+
 
@@ -383,8 +383,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |Full_Adder_Sub:inst6|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst6                                ;              ;
 ;          |Full_Adder_Sub:inst7|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst7                                ;              ;
 ;          |Full_Adder_Sub:inst8|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|8_B_Ripple_Adder:inst10|Full_Adder_Sub:inst8                                ;              ;
-;       |CARRY_LOGIC:inst14|         ; 6 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|CARRY_LOGIC:inst14                                                          ;              ;
-;          |4_1_MUX:inst1|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|CARRY_LOGIC:inst14|4_1_MUX:inst1                                            ;              ;
+;       |CARRY_LOGIC:inst14|         ; 6 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|CARRY_LOGIC:inst14                                                          ;              ;
+;          |4_1_MUX:inst1|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|CARRY_LOGIC:inst14|4_1_MUX:inst1                                            ;              ;
 ;       |Z_LOGIC:inst12|             ; 5 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|Z_LOGIC:inst12                                                              ;              ;
 ;       |alu_control:inst|           ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|alu_control:inst                                                            ;              ;
 ;       |logic_swap:inst4|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AVR_TEST|ALU_TOP:inst30|logic_swap:inst4                                                            ;              ;
@@ -560,7 +560,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed Mar 09 18:39:07 2022
+    Info: Processing started: Mon Mar 14 11:57:51 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WIMPAVR -c WIMPAVR_DEMO
 Info: Found 1 design units, including 1 entities, in source file register.bdf
     Info: Found entity 1: Register
@@ -745,8 +745,8 @@ Info: Implemented 1278 device resources after synthesis - the final resource cou
     Info: Implemented 1164 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 53 warnings
     Info: Peak virtual memory: 230 megabytes
-    Info: Processing ended: Wed Mar 09 18:39:12 2022
+    Info: Processing ended: Mon Mar 14 11:57:56 2022
     Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 
